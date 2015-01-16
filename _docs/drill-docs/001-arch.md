@@ -54,5 +54,5 @@ You can access Drill through the following interfaces:
 Click on either of the following links to continue reading about Drill's
 architecture:
 
-  * [Core Modules within a Drillbit](/confluence/display/DRILL/Core+Modules+within+a+Drillbit)
-  * [Architectural Highlights](/confluence/display/DRILL/Architectural+Highlights)
+  * [Core Modules within a Drillbit](http://drill.apache.org/docs/core-modules-within-a-drillbit)
+  * [Architectural Highlights](http://drill.apache.org/docs/architectural-highlights)
