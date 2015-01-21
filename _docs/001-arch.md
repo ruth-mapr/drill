@@ -28,7 +28,7 @@ requisite for Drill is Zookeeper.
 
 The following image represents the flow of a Drill query:
  
-![image](/img/queryFlow.PNG)
+![image](img/queryFlow.PNG)
 
 The flow of a Drill query typically involves the following steps:
 
