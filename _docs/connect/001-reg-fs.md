@@ -1,6 +1,6 @@
 ---
 title: "Registering a File System"
-parent: "Workspaces"
+parent: "Storage Plugin Registration"
 ---
 You can register a storage plugin instance that connects Drill to a local file
 system or a distributed file system registered in `core-site.xml`, such as S3

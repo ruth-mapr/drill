@@ -1,6 +1,6 @@
 ---
 title: "Registering Hive"
-parent: "Workspaces"
+parent: "Storage Plugin Registration"
 ---
 You can register a storage plugin instance that connects Drill to a Hive data
 source that has a remote or embedded metastore service. When you register a

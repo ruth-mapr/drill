@@ -1,6 +1,6 @@
 ---
 title: "Registering HBase"
-parent: "Workspaces"
+parent: "Storage Plugin Registration"
 ---
 Register a storage plugin instance and specify a zookeeper quorum to connect
 Drill to an HBase data source. When you register a storage plugin instance for
