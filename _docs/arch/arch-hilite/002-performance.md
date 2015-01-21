@@ -41,8 +41,7 @@ generates highly efficient custom code for every single query for every single
 operator. Here is a quick overview of the Drill compilation/code generation
 process at a glance.
 
-![](../../img/58.png?
-version=1&modificationDate=1407172137000&api=v2)
+![](../../img/58.png)
 
 **Optimistic and pipelined query execution**
 
