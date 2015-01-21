@@ -1,6 +1,6 @@
 ---
 title: "Query 1: Selecting Flat Data"
-parent: "Query Complex Data"
+parent: "Querying Complex Data"
 ---
 A very simple query against the `donuts.json` file returns the values for the
 four "flat" columns (the columns that contain data at the top level only: no

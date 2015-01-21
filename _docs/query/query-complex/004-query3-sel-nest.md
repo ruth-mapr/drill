@@ -1,6 +1,6 @@
 ---
 title: "Query 3: Selecting Nested Data for a Column"
-parent: "Query Complex Data"
+parent: "Querying Complex Data"
 ---
 The following queries show how to access the nested data inside the parts of
 the record that are not flat (such as `topping`). To isolate and return nested

@@ -1,6 +1,6 @@
 ---
 title: "Query 4: Selecting Multiple Columns Within Nested Data"
-parent: "Query Complex Data"
+parent: "Querying Complex Data"
 ---
 The following query goes one step further to extract the JSON data, selecting
 specific `id` and `type` data values _as individual columns_ from inside the

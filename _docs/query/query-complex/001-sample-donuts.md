@@ -1,6 +1,6 @@
 ---
 title: "Sample Data: Donuts"
-parent: "Query Complex Data"
+parent: "Querying Complex Data"
 ---
 The complex data queries use sample `donuts.json` and `moredonuts.json` files.
 Here is the single complete "record" (`0001`) from the `donuts.json `file. In

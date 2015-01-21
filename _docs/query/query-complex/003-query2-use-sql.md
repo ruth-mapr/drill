@@ -1,6 +1,6 @@
 ---
 title: "Query 2: Using Standard SQL Functions, Clauses, and Joins"
-parent: "Query Complex Data"
+parent: "Querying Complex Data"
 ---
 You can use standard SQL clauses, such as WHERE and ORDER BY, to elaborate on
 this kind of simple query:
