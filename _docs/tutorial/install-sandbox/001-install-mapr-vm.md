@@ -8,12 +8,12 @@ VMware Player or VMware Fusion:
 1. Download the MapR Sandbox with Drill file to a directory on your machine:  
    <https://www.mapr.com/products/mapr-sandbox-hadoop/download-sandbox-drill>
 2. Open the virtual machine player, and select the **Open a Virtual Machine **option.  
+  
+    Tip for VMware Fusion  
 
-   Tip for VMware Fusion  
+    If you are running VMware Fusion, select** Import**.  
 
-   If you are running VMware Fusion, select** Import**.
-
-   ![drill query flow]({{ site.baseurl }}/docs/img/vmWelcome.png)
+    ![drill query flow]({{ site.baseurl }}/docs/img/vmWelcome.png)
 
 3. Navigate to the directory where you downloaded the MapR Sandbox with Apache Drill file, and select `MapR-Sandbox-For-Apache-Drill-4.0.1_VM.ova`.
 
