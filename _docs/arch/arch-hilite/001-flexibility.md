@@ -4,7 +4,7 @@ parent: "Architectural Highlights"
 ---
 The following features contribute to Drill's flexible architecture:
 
-**_Dynamic schema discovery _**
+**_Dynamic schema discovery_**
 
 Drill does not require schema or type specification for the data in order to
 start the query execution process. Instead, Drill starts processing the data
