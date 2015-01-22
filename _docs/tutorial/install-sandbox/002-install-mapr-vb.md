@@ -32,7 +32,7 @@ VirtualBox adapter.
 
      ![drill query flow]({{ site.baseurl }}/docs/img/vbMaprSetting.png)
 8. Click **OK **to continue.
-9. Click ![](https://lh5.googleusercontent.com/6TjVEW28MJhPud2Nc2ButYB_GDqKTnadaluSulg0Zb259MgN1IRCgIlo-kMAEJ7lGWHf2aqc-nIjUsUFlaXP-LceAIKE5owNqXUWxXS0WXcBLWzUqg5X1VIXXswajb6oWA).  
+9. Click ![drill query flow]({{ site.baseurl }}/docs/img/settings.png).  
 
     The MapR-Sandbox-For-Apache-Drill-0.6.0-r2-4.0.1 - Settings dialog appears.
      
@@ -53,7 +53,7 @@ VirtualBox adapter.
      Example: `127.0.1.1 maprdemo`
 13. You can navigate to the URL provided or to [localhost:8047](http://localhost:8047) to experience the Drill Web UI, or you can log into the sandbox through the command line.  
 
-    a. To navigate to the MapR Sandbox with Apache Drill, enter the provided URL in your browser's address bar.
+    a. To navigate to the MapR Sandbox with Apache Drill, enter the provided URL in your browser's address bar.  
     b. To log into the virtual machine and access the command line, enter Alt+F2 on Windows or Option+F5 on Mac. When prompted, enter `mapr` as the login and password.
 
 # What's Next
