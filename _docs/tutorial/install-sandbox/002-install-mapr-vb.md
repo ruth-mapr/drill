@@ -14,11 +14,9 @@ VirtualBox:
 3. Select **File > Import Appliance**. The Import Virtual Appliance dialog appears.
 
      ![drill query flow]({{ site.baseurl }}/docs/img/vbImport.png)
-
 4. Navigate to the directory where you downloaded the MapR Sandbox with Apache Drill and click **Next**. The Appliance Settings window appears.
 
      ![drill query flow]({{ site.baseurl }}/docs/img/vbapplSettings.png)
-
 5. Select the check box at the bottom of the screen: **Reinitialize the MAC address of all network cards**, then click **Import**. The Import Appliance imports the sandbox.
 6. When the import completes, select **File > Preferences**. The VirtualBox - Settings dialog appears.
 
