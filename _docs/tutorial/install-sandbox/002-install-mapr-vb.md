@@ -32,9 +32,7 @@ VirtualBox adapter.
 
      ![drill query flow]({{ site.baseurl }}/docs/img/vbMaprSetting.png)
 8. Click **OK **to continue.
-9. Click <img src="http://kristinehahn.github.io/drill/docs/img/settings.png") alt="settings icon">. 
-
-    The MapR-Sandbox-For-Apache-Drill-0.6.0-r2-4.0.1 - Settings dialog appears.
+9. Click <img src="http://kristinehahn.github.io/drill/docs/img/settings.png") alt="settings icon">. The MapR-Sandbox-For-Apache-Drill-0.6.0-r2-4.0.1 - Settings dialog appears.
      
      ![drill query flow]({{ site.baseurl }}/docs/img/vbGenSettings.png)    
 10. Click **OK** to continue.
