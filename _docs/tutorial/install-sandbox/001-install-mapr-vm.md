@@ -38,7 +38,6 @@ Drill.
 6. Verify that a DNS entry was created on the host machine for the virtual machine. If not, create the entry.
 
    For Linux and Mac, create the entry in `/etc/hosts`.  
-
    For Windows, create the entry in the `%WINDIR%\system32\drivers\etc\hosts` file.  
      
    For example: `127.0.1.1 <vm_hostname>`
