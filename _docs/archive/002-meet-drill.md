@@ -10,7 +10,8 @@ provides low latency ad-hoc queries to many different data sources & nested
 data. Drill is designed to scale to 10,000 servers and query petabytes of data
 in seconds.
 
-![](../img/drill2.png)
+<!--![](../img/drill2.png)-->
+![drill query flow]({{ site.baseurl }}/docs/img/drill2.png)
 
 In a nutshell, Few key points about Apache Drill are:
 
@@ -28,7 +29,8 @@ we face while dealing with huge data. A standard Drill Query might take 100ms
 - 3 minutes for its execution as compared to Apache Hadoop or HIVE/PIG. Below
 is a diagram to help you relate in terms of the execution times:
 
-![](../img/drill-runtime.png)
+<!--![](../img/drill-runtime.png)-->
+![drill query flow]({{ site.baseurl }}/docs/img/drill-runtime.png)
 
 ### Drill is powerful
 

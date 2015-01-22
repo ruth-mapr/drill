@@ -9,7 +9,8 @@ source.
 The following image represents the storage plugin layer between Drill and a
 data source:
 
-![](img/storageplugin.png)
+<!--![](img/storageplugin.png)-->
+![drill query flow]({{ site.baseurl }}/docs/img/storageplugin.png)
 
 Storage plugins provide the following information to Drill:
 

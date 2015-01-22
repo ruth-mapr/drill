@@ -29,4 +29,5 @@ in the Web UI to view the configuration for the `dfs` instance.
 The following image shows a portion of the configuration with the `maprdb`
 format plugin for the` dfs` instance:
 
-![](../img/18.png)
+<!--![](../img/18.png)-->
+![drill query flow]({{ site.baseurl }}/docs/img/18.png)
