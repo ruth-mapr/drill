@@ -158,10 +158,10 @@ duplicate schemas for it in Hive!
 
 The products table has two column families.
 
-Column Family|Columns 
----|---  
-details|name
-category pricing|price  
+| Column Family    | Columns | 
+| -------------    | ------- |  
+| details          | name    |
+|category pricing  | price   |
   
 The products table contains 965 rows.
 
