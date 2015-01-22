@@ -37,9 +37,9 @@ Drill.
 
 6. Verify that a DNS entry was created on the host machine for the virtual machine. If not, create the entry.
 
-   * For Linux and Mac, create the entry in `/etc/hosts`.  
+   -- For Linux and Mac, create the entry in `/etc/hosts`.  
 
-   * For Windows, create the entry in the `%WINDIR%\system32\drivers\etc\hosts` file.  
+   -- For Windows, create the entry in the `%WINDIR%\system32\drivers\etc\hosts` file.  
      Example: `127.0.1.1 <vm_hostname>`
 
 7. You can navigate to the URL provided to experience Drill Web UI or you can login to the sandbox through the command line.
