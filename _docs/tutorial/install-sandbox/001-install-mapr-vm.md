@@ -27,12 +27,12 @@ VMware Player or VMware Fusion:
 
 5. Select `MapR-Sandbox-For-Apache-Drill-4.0.1_VM`, and click **Play virtual machine**. It takes a few minutes for the MapR services to start.
      
-   After the MapR services start and installation completes, the following screen
+    After the MapR services start and installation completes, the following screen
 appears:
 
-   ![drill query flow]({{ site.baseurl }}/docs/img/loginSandBox.png)
+    ![drill query flow]({{ site.baseurl }}/docs/img/loginSandBox.png)
 
-   Note the URL provided in the screen, which corresponds to the Web UI in Apache
+    Note the URL provided in the screen, which corresponds to the Web UI in Apache
 Drill.
 
 6. Verify that a DNS entry was created on the host machine for the virtual machine. If not, create the entry.
