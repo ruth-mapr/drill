@@ -89,7 +89,7 @@ access is supported by accessing element n at ByteBuf[0] + Index * Stride,
 where Index is 0-based. The following illustrates the underlying buffer of
 INT4 values [1 .. 6]:
 
-![image](../img/value1.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value1.png)
 <!--https://lh5.googleusercontent.com/iobQUgeF4dyrWFeqVfhIBZKbkjrLk5sBJqYhWdzm
 IyMmmcX1pzZaeQiKZ5OzYeafxcY5IZHXDKuG_JkPwJrjxeLJITpXBbn7r5ep1V07a3JBQC0cJg4qKf
 VhzPZ0PDeh-->
@@ -102,7 +102,7 @@ the value is NULL. Otherwise the value is retrieved from the underlying
 buffer. The following illustrates a NullableValueVector of INT4 values 2, 3
 and 6:
 
-![](../img/value2.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value2.png)
 
 <!--![](https://lh5.googleusercontent.com/3M19t18av5cuXflB3WYHS0OJBaO-zFHD8TcNaKF0
 ua6g9h_LPnBijkGavCCwDDsbQzSoT5Glj1dgIwfhzK_xFPjPzc3w5O2NaVrbvEQgFhuOpK3yEr-
@@ -119,7 +119,7 @@ has no values (note the offset field is unused in this case). The following
 illustrates three fields; one with two values, one with no values, and one
 with a single value:
 
-![](../img/value3.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value3.png)
 <!--![](https://lh6.googleusercontent.com/nFIJjIOPAl9zXttVURgp-xkW8v6z6F7ikN7sMREm
 58pdtfTlwdfjEUH4CHxknHexGdIeEhPHbMMzAgqMwnL99IZlR_YzAWvJaiStOO4QMtML8zLuwLvFDr
 hJKLMNc0zg)-->
@@ -140,8 +140,7 @@ an entry is deduced by subtracting the offset of the following field. Because
 of this, the offset table will always contain one more entry than total
 elements, with the last entry pointing to the end of the buffer.
 
-  
-![](../img/value4.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value4.png)  
 <!--![](https://lh5.googleusercontent.com/ZxAfkmCVRJsKgLYO0pLbRM-
 aEjR2yyNZWfYkFSmlsod8GnM3huKHQuc6Do-Bp4U1wK-
 hF3e6vGHTiGPqhEc25YEHEuVTNqb1sBj0LdVrOlvGBzL8nywQbn8O1RlN-vrw)-->
@@ -156,7 +155,7 @@ while the count indicates the maximum number of elements for the column. The
 following example illustrates a RepeatedMap with two records; one with two
 objects, and one with a single object:
 
-![](../img/value5.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value5.png)
 <!--![](https://lh3.googleusercontent.com
 /l8yo_z_MbBz9C3OoGQEy1bNOrmnNbo2e0XtCUDRbdRR4mbCYK8h-
 Lz7_VlhDtbTkPQziwwyNpw3ylfEKjMKtj-D0pUah4arohs1hcnHrzoFfE-QZRwUdQmEReMdpSgIT)-->
@@ -177,14 +176,14 @@ or variable width ValueVector, the offset references the corresponding lookup
 table. The following illustrates a SelectionVector of INT4 (fixed width)
 values 2, 3 and 5 from the original vector of [1 .. 6]:
 
-![](../img/value6.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value6.png)
 <!--![](https://lh5.googleusercontent.com/-hLlAaq9n-Q0_fZ_MKk3yFpXWZO7JOJLm-
 NDh_a_x2Ir5BhZDrZX0t-6e_w3K7R4gfgQIsv-sPxryTUzrJRszNpA3pEEn5V5uRCAlMtHejTpcu-
 _QFPfSTzzpdsf88OS)-->
 
 The following illustrates the same ValueVector with nullable fields:
 
-![](../img/value7.png)
+![drill query flow]({{ site.baseurl }}/docs/img/value7.png)
 <!--![](https://lh3.googleusercontent.com
 /cJxo5H_nsWWlKFUFxjOHHC6YI4sPyG5Fjj1gbdAT2AEo-c6cdkZelso6rYeZV4leMWMfbei_-
 rncjasvR9u4MUXgkpFpM22CUSnnkVX6ynpkcLW1Q-s5F2NgqCez1Fa_)-->

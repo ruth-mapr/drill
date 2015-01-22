@@ -30,8 +30,6 @@ The following image represents the flow of a Drill query:
  
 ![drill query flow]({{ site.baseurl }}/docs/img/queryFlow.png)
 
-<!--![image](img/queryFlow.PNG)-->
-
 The flow of a Drill query typically involves the following steps:
 
   1. The Drill client issues a query. Any Drillbit in the cluster can accept queries from clients. There is no master-slave concept.

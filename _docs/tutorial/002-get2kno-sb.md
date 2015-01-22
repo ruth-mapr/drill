@@ -191,7 +191,7 @@ The Web interface for Apache Drill also provides a query UI where users can
 submit queries to Drill and observe results. Here is a screen shot of the Web
 UI for Apache Drill:
 
-![](../img/DrillWebUI.png)  
+![drill query flow]({{ site.baseurl }}/docs/img/DrillWebUI.png)
 
 ### REST API
 

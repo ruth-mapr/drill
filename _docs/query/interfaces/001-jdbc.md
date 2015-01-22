@@ -77,7 +77,7 @@ To define the Drill JDBC Driver, complete the following steps:
 
   1. In the SQuirreL toolbar, select **Drivers > New Driver**. The Add Driver dialog box appears.
   
-  ![](../../img/40.png)
+  ![drill query flow]({{ site.baseurl }}/docs/img/40.png)
      
   2. Enter the following information:
 
@@ -85,7 +85,7 @@ To define the Drill JDBC Driver, complete the following steps:
   
   3. Click **OK**. The SQuirreL client displays a message stating that the driver registration is successful, and you can see the driver in the Drivers panel.  
 
-     ![](../../img/52.png)
+     ![drill query flow]({{ site.baseurl }}/docs/img/52.png)
 
 ### B. Create an Alias
 
@@ -94,7 +94,7 @@ To create an alias, complete the following steps:
   1. Select the **Aliases** tab.
   2. In the SQuirreL toolbar, select **Aliases >****New Alias**. The Add Alias dialog box appears.
     
-     ![](../../img/19.png)
+     ![drill query flow]({{ site.baseurl }}/docs/img/19.png)
 
   3. Enter the following information:
   
@@ -109,10 +109,11 @@ To create an alias, complete the following steps:
   
   4. Click **Ok. **The Connect to: dialog box appears.  
 
-     ![](../../img/30.png?version=1&modificationDate=1410385290359&api=v2)
+     ![drill query flow]({{ site.baseurl }}/docs/img/30.png)
 
-  5. Click **Connect.** SQuirreL displays a message stating that the connection is successful.  
-![](../../img/53.png?version=1&modificationDate=1410385313418&api=v2)
+  5. Click **Connect.** SQuirreL displays a message stating that the connection is successful.
+  
+     ![drill query flow]({{ site.baseurl }}/docs/img/53.png)  
 
   6. Click **OK**. SQuirreL displays a series of tabs.
 
@@ -125,14 +126,15 @@ SQuirreL with Drill.
 
 To query sample data with Squirrel, complete the following steps:
 
-  1. Click the ![](http://doc.mapr.com/download/attachments/26986731/image2014-9-10%2014%3A43%3A14.png?version=1&modificationDate=1410385394576&api=v2) tab.
+  1. Click the SQL tab.
   2. Enter the following query in the query box:   
 ``SELECT * FROM cp.`employee.json`;``  
-Example:  
- ![](../../img/11.png?version=1&modificationDate=1410385451811&api=v2)
+     Example:  
+     ![drill query flow]({{ site.baseurl }}/docs/img/11.png)
 
-  3. Press **Ctrl+Enter** to run the query. The following query results display:  
- ![](../../img/42.png?version=1&modificationDate=1410385482574&api=v2)
+  3. Press **Ctrl+Enter** to run the query. The following query results display: 
+  
+     ![drill query flow]({{ site.baseurl }}/docs/img/42.png) 
 
 You have successfully run a Drill query from the SQuirreL client.
 

@@ -39,7 +39,7 @@ that span a few years.
 The following image shows the hierarchical structure of the `…/logs` directory
 and (sub) directories:
 
-![](../img/54.png)
+![drill query flow]({{ site.baseurl }}/docs/img/54.png)
 
 The following query requests log file data for 2013 from the `…/logs`
 directory in the file system:
@@ -54,7 +54,7 @@ If you run the `EXPLAIN PLAN` command for the query, you can see that the`
 The following image shows a portion of the physical plan when partition
 pruning is applied:
 
-![](../img/21.png)
+![drill query flow]({{ site.baseurl }}/docs/img/21.png)
 
 ## Filter Examples
 
