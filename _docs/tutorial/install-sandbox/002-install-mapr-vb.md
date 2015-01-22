@@ -16,7 +16,7 @@ VirtualBox:
      ![drill query flow]({{ site.baseurl }}/docs/img/vbImport.png)
 4. Navigate to the directory where you downloaded the MapR Sandbox with Apache Drill and click **Next**. The Appliance Settings window appears.
 
-     ![drill query flow]({{ site.baseurl }}/docs/img/vbapplSettings.png)
+     ![drill query flow]({{ site.baseurl }}/docs/img/vbApplSettings.png)
 5. Select the check box at the bottom of the screen: **Reinitialize the MAC address of all network cards**, then click **Import**. The Import Appliance imports the sandbox.
 6. When the import completes, select **File > Preferences**. The VirtualBox - Settings dialog appears.
 
@@ -32,28 +32,24 @@ VirtualBox adapter.
 
      ![drill query flow]({{ site.baseurl }}/docs/img/vbMaprSetting.png)
 8. Click **OK **to continue.
-9. Click ![](https://lh5.googleusercontent.com/6TjVEW28MJhPud2Nc2ButYB_GDqKTnadaluSulg0Zb259MgN1IRCgIlo-kMAEJ7lGWHf2aqc-nIjUsUFlaXP-LceAIKE5owNqXUWxXS0WXcBLWzUqg5X1VIXXswajb6oWA). The MapR-Sandbox-For-Apache-Drill-0.6.0-r2-4.0.1 - Settings dialog appears.
-  
-     <!--![](../../../img/vbGenSettings.png)-->
+9. Click ![](https://lh5.googleusercontent.com/6TjVEW28MJhPud2Nc2ButYB_GDqKTnadaluSulg0Zb259MgN1IRCgIlo-kMAEJ7lGWHf2aqc-nIjUsUFlaXP-LceAIKE5owNqXUWxXS0WXcBLWzUqg5X1VIXXswajb6oWA).  
+
+    The MapR-Sandbox-For-Apache-Drill-0.6.0-r2-4.0.1 - Settings dialog appears.
      
      ![drill query flow]({{ site.baseurl }}/docs/img/vbGenSettings.png)    
-
- 10. Click **OK** to continue.
- 11. Click **Start**. It takes a few minutes for the MapR services to start.   
+10. Click **OK** to continue.
+11. Click **Start**. It takes a few minutes for the MapR services to start.   
  
       After the MapR services start and installation completes, the following screen appears:
-
-      <!--![](../../../img/vbloginSandbox.png)-->
       
-      ![drill query flow]({{ site.baseurl }}/docs/img/vbloginSandbox.png)
+       ![drill query flow]({{ site.baseurl }}/docs/img/vbloginSandBox.png)
 12. The client must be able to resolve the actual hostname of the Drill node(s) with the IP(s). Verify that a DNS entry was created on the client machine for the Drill node(s).  
  
      If a DNS entry does not exist, create the entry for the Drill node(s).
-
      * For Windows, create the entry in the %WINDIR%\system32\drivers\etc\hosts file.
-
      * For Linux and Mac, create the entry in /etc/hosts.  
 <drill-machine-IP> <drill-machine-hostname>  
+  
      Example: `127.0.1.1 maprdemo`
 13. You can navigate to the URL provided or to [localhost:8047](http://localhost:8047) to experience the Drill Web UI, or you can log into the sandbox through the command line.  
 
