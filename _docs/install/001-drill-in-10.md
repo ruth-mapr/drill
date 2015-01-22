@@ -32,7 +32,7 @@ capable of querying nested data in formats like JSON and Parquet and
 performing dynamic schema discovery. Drill does not require a centralized
 metadata repository.
 
-### **_Dynamic schema discovery _**
+### **_Dynamic schema discovery_**
 
 Drill does not require schema or type specification for data in order to start
 the query execution process. Drill starts data processing in record-batches
@@ -337,7 +337,7 @@ The query returns the following results:
     | MIDDLE EAST | uickly special accounts cajole carefully blithely close reques |
     +------------+------------+
     5 rows selected (0.165 seconds)
-   0: jdbc:drill:zk=local>
+    0: jdbc:drill:zk=local>
 
 #### Nation File
 
@@ -352,16 +352,16 @@ your operating system:
 
 * Linux  
 
-  ``SELECT * FROM dfs.`/opt/drill/apache-drill-<version>/sample-
+      ``SELECT * FROM dfs.`/opt/drill/apache-drill-<version>/sample-
 data/nation.parquet`;``
 * Mac OS X
   
-  ``SELECT * FROM dfs.`/Users/max/drill/apache-drill-<version>/sample-
+      ``SELECT * FROM dfs.`/Users/max/drill/apache-drill-<version>/sample-
 data/nation.parquet`;``
 
 * Windows 
  
-  ``SELECT * FROM dfs.`C:\drill\apache-drill-<version>\sample-
+      ``SELECT * FROM dfs.`C:\drill\apache-drill-<version>\sample-
 data\nation.parquet`;``
 
 The query returns the following results:

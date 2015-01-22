@@ -32,7 +32,6 @@ of the file system. No up-front definitions are required on what partitions
 exist. Here is a visual example of how this works:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/example_query.png)
-<!--![example_query.png](../img/example_query.png)-->
 
 ### Set workspace to dfs.logs:
 
