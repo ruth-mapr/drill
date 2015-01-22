@@ -12,7 +12,7 @@ VirtualBox:
 <https://www.mapr.com/products/mapr-sandbox-hadoop/download-sandbox-drill>
 2. Open the virtual machine player.
 3. Select **File > Import Appliance**. The Import Virtual Appliance dialog appears.
-  
+
      ![drill query flow]({{ site.baseurl }}/docs/img/vbImport.png)
 
 4. Navigate to the directory where you downloaded the MapR Sandbox with Apache Drill and click **Next**. The Appliance Settings window appears.
