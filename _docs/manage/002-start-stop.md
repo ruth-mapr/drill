@@ -8,7 +8,7 @@ Drillbit locally. If you installed Drill in distributed mode on one or
 multiple nodes in a cluster, you must start the Drillbit service and then
 invoke SQLLine. Once SQLLine starts, you can issue queries to Drill.
 
-### Starting a Drillbit
+## Starting a Drillbit
 
 If you installed Drill in embedded mode, you do not need to start the
 Drillbit.
@@ -18,7 +18,7 @@ the following command:
 
 `bin/drillbit.sh restart`
 
-### Invoking SQLLine/Connecting to a Schema
+## Invoking SQLLine/Connecting to a Schema
 
 SQLLine is used as the Drill shell. SQLLine connects to relational databases
 and executes SQL commands. You invoke SQLLine for Drill in embedded or
@@ -37,7 +37,7 @@ When SQLLine starts, the system displays the following prompt:
 At this point, you can use Drill to query your data source or you can discover
 metadata.
 
-### Exiting SQLLine
+## Exiting SQLLine
 
 To exit SQLLine, issue the following command:
 

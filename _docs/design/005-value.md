@@ -7,16 +7,16 @@ columnar data between [Operators](https://docs.google.com/a/maprtech.com/docum
 ent/d/1zaxkcrK9mYyfpGwX1kAV80z0PCi8abefL45zOzb97dI/edit#bookmark=id.iip15ful18
 mm).
 
-# Goals
+## Goals
 
-#### Support Operators Written in Multiple Language
+### Support Operators Written in Multiple Language
 
 ValueVectors should support operators written in C/C++/Assembly. To support
 this, the underlying ByteBuffer will not require modification when passed
 through the JNI interface. The ValueVector will be considered immutable once
 constructed. Endianness has not yet been considered.
 
-#### Access
+### Access
 
 Reading a random element from a ValueVector must be a constant time operation.
 To accomodate, elements are identified by their offset from the start of the
@@ -24,7 +24,7 @@ buffer. Repeated, nullable and variable width ValueVectors utilize in an
 additional fixed width value vector to index each element. Write access is not
 supported once the ValueVector has been constructed by the RecordBatch.
 
-#### Efficient Subsets of Value Vectors
+### Efficient Subsets of Value Vectors
 
 When an operator returns a subset of values from a ValueVector, it should
 reuse the original ValueVector. To accomplish this, a level of indirection is
@@ -33,20 +33,20 @@ indirection is a sequence of offsets which reference an offset in the original
 ValueVector and the count of subsequent values which are to be included in the
 subset.
 
-#### Pooled Allocation
+### Pooled Allocation
 
 ValueVectors utilize one or more buffers under the covers. These buffers will
 be drawn from a pool. Value vectors are themselves created and destroyed as a
 schema changes during the course of record iteration.
 
-#### Homogenous Value Types
+### Homogenous Value Types
 
 Each value in a Value Vector is of the same type. The [Record Batch](https://d
 ocs.google.com/a/maprtech.com/document/d/1zaxkcrK9mYyfpGwX1kAV80z0PCi8abefL45z
 Ozb97dI/edit#bookmark=kix.s2xuoqnr8obe) implementation is responsible for
 creating a new Value Vector any time there is a change in schema.
 
-# Definitions
+## Definitions
 
 Data Types
 
@@ -71,7 +71,7 @@ The value vector is comprised of one or more contiguous buffers; one which
 stores a sequence of values, and zero or more which store any metadata
 associated with the ValueVector.
 
-# Data Structure
+## Data Structure
 
 A ValueVector stores values in a ByteBuf, which is a contiguous region of
 memory. Additional levels of indirection are used to support variable value
@@ -90,9 +90,7 @@ where Index is 0-based. The following illustrates the underlying buffer of
 INT4 values [1 .. 6]:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value1.png)
-<!--https://lh5.googleusercontent.com/iobQUgeF4dyrWFeqVfhIBZKbkjrLk5sBJqYhWdzm
-IyMmmcX1pzZaeQiKZ5OzYeafxcY5IZHXDKuG_JkPwJrjxeLJITpXBbn7r5ep1V07a3JBQC0cJg4qKf
-VhzPZ0PDeh-->
+
 
 Nullable Values
 
@@ -104,13 +102,10 @@ and 6:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value2.png)
 
-<!--![](https://lh5.googleusercontent.com/3M19t18av5cuXflB3WYHS0OJBaO-zFHD8TcNaKF0
-ua6g9h_LPnBijkGavCCwDDsbQzSoT5Glj1dgIwfhzK_xFPjPzc3w5O2NaVrbvEQgFhuOpK3yEr-
-nSyMocEjRuhGB)-->
 
   
 
-#### Repeated Values
+### Repeated Values
 
 A repeated ValueVector is used for elements which can contain multiple values
 (e.g. a JSON array). A table of offset and count pairs is used to represent
@@ -120,9 +115,7 @@ illustrates three fields; one with two values, one with no values, and one
 with a single value:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value3.png)
-<!--![](https://lh6.googleusercontent.com/nFIJjIOPAl9zXttVURgp-xkW8v6z6F7ikN7sMREm
-58pdtfTlwdfjEUH4CHxknHexGdIeEhPHbMMzAgqMwnL99IZlR_YzAWvJaiStOO4QMtML8zLuwLvFDr
-hJKLMNc0zg)-->
+
 
 ValueVector Representation of the equivalent JSON:
 
@@ -141,9 +134,6 @@ of this, the offset table will always contain one more entry than total
 elements, with the last entry pointing to the end of the buffer.
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value4.png)  
-<!--![](https://lh5.googleusercontent.com/ZxAfkmCVRJsKgLYO0pLbRM-
-aEjR2yyNZWfYkFSmlsod8GnM3huKHQuc6Do-Bp4U1wK-
-hF3e6vGHTiGPqhEc25YEHEuVTNqb1sBj0LdVrOlvGBzL8nywQbn8O1RlN-vrw)-->
 
 Repeated Map Vectors
 
@@ -156,9 +146,7 @@ following example illustrates a RepeatedMap with two records; one with two
 objects, and one with a single object:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value5.png)
-<!--![](https://lh3.googleusercontent.com
-/l8yo_z_MbBz9C3OoGQEy1bNOrmnNbo2e0XtCUDRbdRR4mbCYK8h-
-Lz7_VlhDtbTkPQziwwyNpw3ylfEKjMKtj-D0pUah4arohs1hcnHrzoFfE-QZRwUdQmEReMdpSgIT)-->
+
 
 ValueVector representation of the equivalent JSON:
 
@@ -177,14 +165,10 @@ table. The following illustrates a SelectionVector of INT4 (fixed width)
 values 2, 3 and 5 from the original vector of [1 .. 6]:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value6.png)
-<!--![](https://lh5.googleusercontent.com/-hLlAaq9n-Q0_fZ_MKk3yFpXWZO7JOJLm-
-NDh_a_x2Ir5BhZDrZX0t-6e_w3K7R4gfgQIsv-sPxryTUzrJRszNpA3pEEn5V5uRCAlMtHejTpcu-
-_QFPfSTzzpdsf88OS)-->
+
 
 The following illustrates the same ValueVector with nullable fields:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value7.png)
-<!--![](https://lh3.googleusercontent.com
-/cJxo5H_nsWWlKFUFxjOHHC6YI4sPyG5Fjj1gbdAT2AEo-c6cdkZelso6rYeZV4leMWMfbei_-
-rncjasvR9u4MUXgkpFpM22CUSnnkVX6ynpkcLW1Q-s5F2NgqCez1Fa_)-->
+
 

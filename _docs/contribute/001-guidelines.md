@@ -2,7 +2,7 @@
 title: "Apache Drill Contribution Guidelines"
 parent: "Contribute to Drill"
 ---
-# How to Contribute to Apache Drill
+## How to Contribute to Apache Drill
 
 Disclaimer: These contribution guidelines are largely based on Apache Hive
 contribution guidelines.
@@ -25,7 +25,7 @@ These guidelines include the following topics:
   * JIRA Guidelines
   * See Also
 
-## Getting the source code
+### Getting the source code
 
 First, you need the Drill source code.
 
@@ -35,7 +35,7 @@ us.apache.org/repos/asf/incubator-drill.git). Most development is done on
 
     git clone https://git-wip-us.apache.org/repos/asf/drill.git
 
-## Making Changes
+### Making Changes
 
 Before you start, send a message to the [Drill developer mailing list](http
 ://mail-archives.apache.org/mod_mbox/incubator-drill-dev/), or file a bug
@@ -46,7 +46,7 @@ understand your requirements.
 
 Modify the source code and add some features using your favorite IDE.
 
-### Coding Convention
+#### Coding Convention
 
 Please take care about the following points
 
@@ -61,7 +61,7 @@ Please take care about the following points
     * You must implement a class that contain test methods annotated with JUnit's 4.x @Test annotation and whose class name ends with `Test`.
     * Define methods within your class whose names begin with `test`, and call JUnit's many assert methods to verify conditions; these methods will be executed when you run `mvn clean test`.
 
-### Formatter configuration
+#### Formatter configuration
 
 Setting up IDE formatters is recommended and can be done by importing the
 following settings into your browser:
@@ -73,7 +73,7 @@ settings.jar?version=1&modificationDate=1363022308000&api=v2)
 Eclipse: [formatter xml from HBase](https://issues.apache.org/jira/secure/atta
 chment/12474245/eclipse_formatter_apache.xml)
 
-### Understanding Maven
+#### Understanding Maven
 
 Drill is built by Maven, a Java build tool.
 
@@ -84,7 +84,7 @@ To build Drill, run
     mvn clean install 
     
 
-### Creating a patch
+#### Creating a patch
 
 Check to see what files you have modified:
 
@@ -126,7 +126,7 @@ DRILL-1856.1.patch.txt, DRILL-1856.2.patch.txt, etc. And then click the
 gets back into the review queue. Appending '.txt' to the patch file name makes
 it easy to quickly view the contents of the patch in a web browser.
 
-### Applying a patch
+#### Applying a patch
 
 To apply a patch either you generated or found from JIRA, you can issue
 
@@ -137,7 +137,7 @@ if you just want to check whether the patch applies you can run patch with
 
   
 
-Review Process
+####Review Process
 
   * Use Hadoop's [code review checklist](http://wiki.apache.org/hadoop/CodeReviewChecklist) as a rough guide when doing reviews.
   * In JIRA, use attach file to notify that you've submitted a patch for that issue.
@@ -170,7 +170,7 @@ dDRrUUxVSVlMVXRtanRoWk9JcHgteUE&usp=sharing#gid=0) (WIP).
 More contribution ideas are located on the [Contribution Ideas](https://cwiki.
 apache.org/confluence/display/DRILL/Apache+Drill+Contribution+Ideas) page.
 
-## Contributing your work
+### Contributing your work
 
 Finally, patches should be _attached_ to an issue report in
 [JIRA](http://issues.apache.org/jira/browse/DRILL) via the **Attach File**
@@ -209,7 +209,7 @@ review your patches before commit. Use **Submit Patch** link like other
 contributors, and then wait for a "+1" from another committer before
 committing. Please also try to frequently review things in the patch queue.
 
-## JIRA Guidelines
+### JIRA Guidelines
 
 Please comment on issues in JIRA, making their concerns known. Please also
 vote for issues that are a high priority for you.
@@ -223,7 +223,7 @@ JIRA's automatically sent messages. If you change your mind, note this in a
 new comment, rather than editing an older comment. The issue should preserve
 this history of the discussion.
 
-## See Also
+### See Also
 
   * [Apache contributor documentation](http://www.apache.org/dev/contributors.html)
   * [Apache voting documentation](http://www.apache.org/foundation/voting.html)

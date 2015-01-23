@@ -2,7 +2,7 @@
 title: "Wikipedia Edit History"
 parent: "Sample Datasets"
 ---
-# Quick Stats
+## Quick Stats
 
 The Wikipedia Edit History is a public dump of the website made available by
 the wikipedia foundation. You can find details
@@ -12,7 +12,7 @@ together in this great [diagram](http://upload.wikimedia.org/wikipedia/commons
 /thumb/4/42/MediaWiki_1.20_%2844edaa2%29_database_schema.svg/2193px-
 MediaWiki_1.20_%2844edaa2%29_database_schema.svg.png).
 
-# Approach
+## Approach
 
 The _main_ distribution files are:
 
@@ -31,9 +31,9 @@ but otherwise this should work out just fine.
 
 The entities used in the query use cases.
 
-# Use Cases
+## Use Cases
 
-## Select Change Volume Based on Time
+### Select Change Volume Based on Time
 
 **Query**
 
@@ -63,7 +63,7 @@ _Discussion_:
   * I am not sure if this is desired, but you cannot see on first glance, where the _hierarchical_ stuff starts. This may be confusing to a RDBMS purist, at least it was for me at the beginning. But now I think this strikes the right mix between verbosity and elegance.
   * I assume we would need some good indexing, but this should be achievable. We would need to translate the relative index `rev.timestamp` to an record absolute index `$.mediawiki.page.revision.timestamp` . Unclear to me now is whether the index would point to the record, or would it point to some kind of record substructure?
 
-## Select Change Volume Aggregated on Time
+### Select Change Volume Aggregated on Time
 
 **Query**
 
@@ -84,7 +84,7 @@ _Discussion_:
   * I always considered mySQL confusing using implicit group by statements, as I prefer fail fast mechanisms. Hence I would opt for explicit `group by` operators.
   * I would not provide implicit nodes into the records, i.e. if you want some attribute of a timestamp, call a function and not expect an automatically added element. So we want `rev.timestamp.monthYear()` and not `rev.timestamp.monthYear`. This may be quite confusing, especially if we have heterogenous record structures. We might even go ahead and support namespaces for custom, experimental features like `rev.timestamp.custom.maya:doomsDay()`.
 
-## Select Change Volume Based on Contributor
+### Select Change Volume Based on Contributor
 
 **Query**
 

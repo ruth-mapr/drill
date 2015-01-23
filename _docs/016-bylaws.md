@@ -1,7 +1,7 @@
 ---
 title: "Project Bylaws"
 ---
-# Introduction
+## Introduction
 
 This document defines the bylaws under which the Apache Drill project
 operates. It defines the roles and responsibilities of the project, who may
@@ -19,13 +19,13 @@ development, please refer to the [Incubator
 project](http://incubator.apache.org/) for more information on how Apache
 projects operate.
 
-# Roles and Responsibilities
+## Roles and Responsibilities
 
 Apache projects define a set of roles with associated rights and
 responsibilities. These roles govern what tasks an individual may perform
 within the project. The roles are defined in the following sections.
 
-## Users
+### Users
 
 The most important participants in the project are people who use our
 software. The majority of our contributors start out as users and guide their
@@ -36,14 +36,14 @@ in the form of bug reports and feature suggestions. As well, users participate
 in the Apache community by helping other users on mailing lists and user
 support forums.
 
-## Contributors
+### Contributors
 
 All of the volunteers who are contributing time, code, documentation, or
 resources to the Drill Project. A contributor that makes sustained, welcome
 contributions to the project may be invited to become a committer, though the
 exact timing of such invitations depends on many factors.
 
-## Committers
+### Committers
 
 The project's committers are responsible for the project's technical
 management. Committers have access to a specified set of subproject's code
@@ -71,7 +71,7 @@ to become a member of the PMC. The form of contribution is not limited to
 code. It can also include code review, helping out users on the mailing lists,
 documentation, etc.
 
-## Project Management Committee
+### Project Management Committee
 
 The PMC is responsible to the board and the ASF for the management and
 oversight of the Apache Drill codebase. The responsibilities of the PMC
@@ -104,7 +104,7 @@ the chair resigns before the end of his or her term, the PMC votes to
 recommend a new chair using lazy consensus, but the decision must be ratified
 by the Apache board.
 
-# Decision Making
+## Decision Making
 
 Within the Drill project, different types of decisions require different forms
 of approval. For example, the previous section describes several decisions
@@ -112,7 +112,7 @@ which require 'lazy consensus' approval. This section defines how voting is
 performed, the types of approvals, and which types of decision require which
 type of approval.
 
-## Voting
+### Voting
 
 Decisions regarding the project are made by votes on the primary project
 development mailing list
@@ -138,14 +138,14 @@ sent when the commit is made. Note that this should be a rare occurrence. All
 efforts should be made to discuss issues when they are still patches before
 the code is committed.
 
-## Approvals
+### Approvals
 
 These are the types of approvals that can be sought. Different actions require
 different types of approvals.
 
 <table class="confluenceTable"><tbody><tr><td valign="top" class="confluenceTd"><p>Approval Type</p></td><td valign="top" class="confluenceTd"><p> </p></td></tr><tr><td valign="top" class="confluenceTd"><p>Consensus</p></td><td valign="top" class="confluenceTd"><p>For this to pass, all voters with binding votes must vote and there can be no binding vetoes (-1). Consensus votes are rarely required due to the impracticality of getting all eligible voters to cast a vote.</p></td></tr><tr><td valign="top" class="confluenceTd"><p>Lazy Consensus</p></td><td valign="top" class="confluenceTd"><p>Lazy consensus requires 3 binding +1 votes and no binding vetoes.</p></td></tr><tr><td valign="top" class="confluenceTd"><p>Lazy Majority</p></td><td valign="top" class="confluenceTd"><p>A lazy majority vote requires 3 binding +1 votes and more binding +1 votes that -1 votes.</p></td></tr><tr><td valign="top" class="confluenceTd"><p>Lazy Approval</p></td><td valign="top" class="confluenceTd"><p>An action with lazy approval is implicitly allowed unless a -1 vote is received, at which time, depending on the type of action, either lazy majority or lazy consensus approval must be obtained.</p></td></tr></tbody></table>  
   
-## Vetoes
+### Vetoes
 
 A valid, binding veto cannot be overruled. If a veto is cast, it must be
 accompanied by a valid reason explaining the reasons for the veto. The
@@ -157,7 +157,7 @@ If you disagree with a valid veto, you must lobby the person casting the veto
 to withdraw his or her veto. If a veto is not withdrawn, the action that has
 been vetoed must be reversed in a timely manner.
 
-## Actions
+### Actions
 
 This section describes the various actions which are undertaken within the
 project, the corresponding approval required for that action and those who
