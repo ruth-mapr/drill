@@ -64,7 +64,7 @@ Issue the `SHOW TABLES` command to view the tables in the sys database.
 
 Query the drillbits, version, and options tables in the sys database.
 
-###### Query the drillbits table.
+###Query the drillbits table.
 
     0: jdbc:drill:zk=10.10.100.113:5181> select * from drillbits;
     +------------------+------------+--------------+------------+---------+
@@ -95,7 +95,7 @@ Apache Drill.
 True means the Drillbit is connected to the session or client running the
 query. This Drillbit is the Foreman for the current session.  
 
-###### Query the version table.
+### Query the version table.
 
     0: jdbc:drill:zk=10.10.100.113:5181> select * from version;
     +------------+----------------+-------------+-------------+------------+
@@ -122,7 +122,7 @@ example.
   * build_time  
 The time that the release was built.
 
-###### Query the options table.
+### Query the options table.
 
 Drill provides system, session, and boot options that you can query.
 

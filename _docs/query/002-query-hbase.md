@@ -97,7 +97,7 @@ steps:
   
     a. Issue the following query to see the data in the “students” table:  
 
-               SELECT * FROM hbase.`students`;
+            SELECT * FROM hbase.`students`;
 
        The query returns binary results:
 
