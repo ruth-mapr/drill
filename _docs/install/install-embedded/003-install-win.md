@@ -30,6 +30,8 @@ Complete the following steps to install Drill:
   1. Create a `drill` directory on your `C:\` drive, (or in some other location if you prefer).
 
      **Example**
+     
+        C:\Drill
 
      Do not include spaces in your directory path. If you include spaces in the
 directory path, Drill fails to run.
@@ -42,8 +44,8 @@ directory path, Drill fails to run.
 
   4. Unzip the `TAR.GZ` file and the resulting `TAR` file.  
 
-    a. Right-click `apache-drill-<version>.tar.gz,` and select` 7-Zip>Extract Here`. The utility extracts the `apache-drill-<version>.tar` file.
-    b. Right-click `apache-drill-<version>.tar, `and select`` 7-Zip>Extract Here`. `The utility extracts the` apache-drill-<version> `folder.
+      a. Right-click `apache-drill-<version>.tar.gz,` and select` 7-Zip>Extract Here`. The utility extracts the `apache-drill-<version>.tar` file.  
+      b. Right-click `apache-drill-<version>.tar, `and select`` 7-Zip>Extract Here`. `The utility extracts the` apache-drill-<version> `folder.
   5. Open the `apache-drill-<version> `folder.
 
   6. Open the `bin` folder, and double-click on the `sqlline.bat` file. The Windows command prompt opens.

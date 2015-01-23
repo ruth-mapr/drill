@@ -15,7 +15,7 @@ steps:
   2. Issue the following commands to create a ‘students’ table and a ‘clicks’ table with column families in HBase:  
 
     
-      ``echo "create 'students','account','address'" | hbase shell``
+        ``echo "create 'students','account','address'" | hbase shell``
     
         ``echo "create 'clicks','clickinfo','iteminfo'" | hbase shell``
 
@@ -93,7 +93,8 @@ steps:
 
   5. Issue `exit` to leave the `hbase shell`.
   6. Start Drill. Refer to [Starting/Stopping Drill](/confluence/pages/viewpage.action?pageId=44994063) for instructions.
-  7. Use Drill to issue the following SQL queries on the “students” and “clicks” tables:
+  7. Use Drill to issue the following SQL queries on the “students” and “clicks” tables:  
+  
     a. Issue the following query to see the data in the “students” table:  
 
         ``SELECT * FROM hbase.`students`;``
@@ -122,10 +123,10 @@ some queries to get readable query results.
 
     b. Issue the following query, that includes the `CAST` function, to see the data in the “`students`” table:
 
-       `SELECT CAST(students.clickinfo.studentid as VarChar(20)),
-CAST(students.account.name as VarChar(20)), CAST (students.address.state as
-VarChar(20)), CAST (students.address.street as VarChar(20)), CAST
-(students.address.zipcode as VarChar(20)), FROM hbase.students;`
+           `SELECT CAST(students.clickinfo.studentid as VarChar(20)),
+           CAST(students.account.name as VarChar(20)), CAST (students.address.state as
+           VarChar(20)), CAST (students.address.street as VarChar(20)), CAST
+           (students.address.zipcode as VarChar(20)), FROM hbase.students;`
 
        **Note:** Use the following format when you query a column in an HBase table:   
        `tablename.columnfamilyname.columnname`  

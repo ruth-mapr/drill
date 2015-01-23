@@ -4,7 +4,6 @@ parent: "Architectural Overview"
 ---
 The following image represents components within each Drillbit:
 
-<!--![](../img/DrillbitModules.PNG?)-->
 ![drill query flow]({{ site.baseurl }}/docs/img/DrillbitModules.png)
 
 The following list describes the key components of a Drillbit:

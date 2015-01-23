@@ -13,7 +13,7 @@ using custom SerDes or InputFormat/OutputFormat, all nodes running Drillbits
 must have the SerDes or InputFormat/OutputFormat `JAR` files in the
 `<drill_installation_directory>/jars/3rdparty `folder.
 
-Hive Remote Metastore
+## Hive Remote Metastore
 
 In this configuration, the Hive metastore runs as a separate service outside
 of Hive. Drill communicates with the Hive metastore through Thrift. The
@@ -55,7 +55,7 @@ can issue Drill queries against it. For information about querying a Hive data
 source, refer to [Querying
 Hive](https://cwiki.apache.org/confluence/display/DRILL/Querying+Hive).
 
-### Hive Embedded Metastore
+## Hive Embedded Metastore
 
 In this configuration, the Hive metastore is embedded within the Drill
 process. Provide the metastore database configuration settings in the Drill
@@ -93,7 +93,7 @@ steps:
   
         export HADOOP_CLASSPATH=/<directory path>/hadoop/hadoop-0.20.2
 
-Once you have configured a storage plugin instance for the Hive, you can issue
+      Once you have configured a storage plugin instance for the Hive, you can issue
 Drill queries against it. For information about querying a Hive data source,
 refer to [Querying
 Hive](https://cwiki.apache.org/confluence/display/DRILL/Querying+Hive).

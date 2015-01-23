@@ -386,7 +386,6 @@ Now that you have an idea about what Drill can do, you might want to:
   * [Configure storage plugins to connect Drill to your data sources](https://cwiki.apache.org/confluence/display/DRILL/Connecting+to+Data+Sources).
   * Query [Hive](https://cwiki.apache.org/confluence/display/DRILL/Connecting+to+Data+Sources#ConnectingtoDataSources-QueryingHiveTables) and [HBase](https://cwiki.apache.org/confluence/display/DRILL/Connecting+to+Data+Sources#ConnectingtoDataSources-QueryingHiveTables) data.
   * [Query Complex Data](https://cwiki.apache.org/confluence/display/DRILL/Querying+Complex+Data)
-
   * [Query Plain Text Files](https://cwiki.apache.org/confluence/display/DRILL/Querying+Plain+Text+Files)
 
 # More Information

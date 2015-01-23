@@ -8,7 +8,7 @@ that you can query. Use SQL syntax to query the `region.parquet` and
 
 **Note:** Your Drill installation location may differ from the examples used here. The examples assume that Drill was installed in embedded mode on your machine following the [Apache Drill in 10 Minutes ](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+in+10+Minutes)tutorial. If you installed Drill in distributed mode, or your `sample-data` directory differs from the location used in the examples, make sure to change the `sample-data` directory to the correct location before you run the queries.
 
-#### Region File
+## Region File
 
 If you followed the Apache Drill in 10 Minutes instructions to install Drill
 in embedded mode, the path to the parquet file varies between operating
@@ -18,15 +18,15 @@ To view the data in the `region.parquet` file, issue the query appropriate for
 your operating system:
 
   * Linux  
-``SELECT * FROM dfs.`/opt/drill/apache-drill-0.4.0-incubating/sample-
+    ``SELECT * FROM dfs.`/opt/drill/apache-drill-0.4.0-incubating/sample-
 data/region.parquet`; ``
 
-   * Mac OS X  
-``SELECT * FROM dfs.`/Users/max/drill/apache-drill-0.4.0-incubating/sample-
+  * Mac OS X  
+    ``SELECT * FROM dfs.`/Users/max/drill/apache-drill-0.4.0-incubating/sample-
 data/region.parquet`;``
 
-   * Windows  
-``SELECT * FROM dfs.`C:\drill\apache-drill-0.4.0-incubating\sample-
+  * Windows  
+    ``SELECT * FROM dfs.`C:\drill\apache-drill-0.4.0-incubating\sample-
 data\region.parquet`;``
 
 The query returns the following results:
@@ -43,7 +43,7 @@ The query returns the following results:
     5 rows selected (0.165 seconds)
     0: jdbc:drill:zk=local>
 
-#### Nation File
+## Nation File
 
 If you followed the Apache Drill in 10 Minutes instructions to install Drill
 in embedded mode, the path to the parquet file varies between operating
