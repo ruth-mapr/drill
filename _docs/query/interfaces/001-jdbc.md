@@ -78,6 +78,7 @@ To define the Drill JDBC Driver, complete the following steps:
 1. In the SQuirreL toolbar, select **Drivers > New Driver**. The Add Driver dialog box appears.
   
   ![drill query flow]({{ site.baseurl }}/docs/img/40.png)
+  
 2. Enter the following information:
 
    <table class="confluenceTable"><tbody><tr><td valign="top"><strong>Option</strong></td><td valign="top"><strong>Description</strong></td></tr><tr><td valign="top">Name</td><td valign="top">Name for the Drill JDBC Driver</td></tr><tr><td valign="top">Example URL</td><td valign="top"><code>jdbc:drill:zk=&lt;<em>zookeeper_quorum</em>&gt;[;schema=&lt;<em>schema_to_use_as_default</em>&gt;]</code><strong>Example:</strong><code> jdbc:drill:zk=maprdemo:5181</code><strong>Note:</strong> The default ZooKeeper port is 2181. In a MapR cluster, the ZooKeeper port is 5181.</td></tr><tr><td valign="top">Website URL</td><td valign="top"><code>jdbc:drill:zk=&lt;<em>zookeeper_quorum</em>&gt;[;schema=&lt;<em>schema_to_use_as_default</em>&gt;]</code><strong>Example:</strong><code><code> jdbc:drill:zk=maprdemo:5181</code></code><strong>Note:</strong><span> The default ZooKeeper port is 2181. In a MapR cluster, the ZooKeeper port is 5181.</span></td></tr><tr><td valign="top">Extra Class Path</td><td valign="top">Click <strong>Add</strong> and navigate to the JDBC <code>JAR</code> file location in the Windows directory:<br /><code>&lt;windows_directory&gt;/jars/jdbc-driver/<span style="color: rgb(34,34,34);">drill-jdbc-all-0.6.0-</span><span style="color: rgb(34,34,34);">incubating.jar</span></code>Select the <code>JAR</code> file, click <strong>Open</strong>, and then click <strong>List Drivers</strong>.</td></tr><tr><td valign="top">Class Name</td><td valign="top">Select <code>org.apache.drill.jdbc.Driver</code> from the drop-down menu.</td></tr></tbody></table>  
@@ -94,23 +95,22 @@ To create an alias, complete the following steps:
 2. In the SQuirreL toolbar, select **Aliases >****New Alias**. The Add Alias dialog box appears.
     
     ![drill query flow]({{ site.baseurl }}/docs/img/19.png)
+    
 3. Enter the following information:
   
-     <table class="confluenceTable"><tbody><tr><td valign="top"><strong>Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td><td valign="top"><strong>Description</strong></td></tr><tr><td valign="top">Alias Name</td><td valign="top">A unique name for the Drill JDBC Driver alias.</td></tr><tr><td valign="top">Driver</td><td valign="top">Select the Drill JDBC Driver.</td></tr><tr><td valign="top">URL</td><td valign="top">Enter the connection URL with <span>the name of the Drill directory stored in ZooKeeper and the cluster ID:</span><code>jdbc:drill:zk=&lt;<em>zookeeper_quorum</em>&gt;/&lt;drill_directory_in_zookeeper&gt;/&lt;cluster_ID&gt;;schema=&lt;<em>schema_to_use_as_default</em>&gt;</code><strong>The following examples show URLs for Drill installed on a single node:</strong><br /><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.56:5181/drill/demo_mapr_com-drillbits;schema=hive<br /></span><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.24:2181/drill/drillbits1;schema=hive<br /> </span><div><strong>The following example shows a URL for Drill installed in distributed mode with a connection to a ZooKeeper quorum:</strong></div><div><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.30:5181,10.10.100.31:5181,10.10.100.32:5181/drill/drillbits1;schema=hive</span></div>    <div class="aui-message warning shadowed information-macro">
-                            <span class="aui-icon icon-warning"></span>
-                <div class="message-content">
-                            <ul><li style="list-style-type: none;background-image: none;"><ul><li>Including a default schema is optional.</li><li>The ZooKeeper port is 2181. In a MapR cluster, the ZooKeeper port is 5181.</li><li>The Drill directory stored in ZooKeeper is <code>/drill</code>. </li><li>The Drill default cluster ID is<code> drillbits1</code>.</li></ul></li></ul>
+     <table class="confluenceTable"><tbody><tr><td valign="top"><strong>Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td><td valign="top"><strong>Description</strong></td></tr><tr><td valign="top">Alias Name</td><td valign="top">A unique name for the Drill JDBC Driver alias.</td></tr><tr><td valign="top">Driver</td><td valign="top">Select the Drill JDBC Driver.</td></tr><tr><td valign="top">URL</td><td valign="top">Enter the connection URL with <span>the name of the Drill directory stored in ZooKeeper and the cluster ID:</span><code>jdbc:drill:zk=&lt;<em>zookeeper_quorum</em>&gt;/&lt;drill_directory_in_zookeeper&gt;/&lt;cluster_ID&gt;;schema=&lt;<em>schema_to_use_as_default</em>&gt;</code><strong>The following examples show URLs for Drill installed on a single node:</strong><br /><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.56:5181/drill/demo_mapr_com-drillbits;schema=hive<br /></span><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.24:2181/drill/drillbits1;schema=hive<br /> </span><div><strong>The following example shows a URL for Drill installed in distributed mode with a connection to a ZooKeeper quorum:</strong></div><div><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.30:5181,10.10.100.31:5181,10.10.100.32:5181/drill/drillbits1;schema=hive</span></div>    <div class="aui-message warning shadowed information-macro"><span class="aui-icon icon-warning"></span><div class="message-content"><ul><li style="list-style-type: none;background-image: none;"><ul><li>Including a default schema is optional.</li><li>The ZooKeeper port is 2181. In a MapR cluster, the ZooKeeper port is 5181.</li><li>The Drill directory stored in ZooKeeper is <code>/drill</code>. </li><li>The Drill default cluster ID is<code> drillbits1</code>.</li></ul></li></ul>
                     </div>
     </div>
 </td></tr><tr><td valign="top">User Name</td><td valign="top">admin</td></tr><tr><td valign="top">Password</td><td valign="top">admin</td></tr></tbody></table>
 
-  
 4. Click **Ok. **The Connect to: dialog box appears.  
 
    ![drill query flow]({{ site.baseurl }}/docs/img/30.png)
+   
 5. Click **Connect.** SQuirreL displays a message stating that the connection is successful.
   
-   ![drill query flow]({{ site.baseurl }}/docs/img/53.png)  
+   ![drill query flow]({{ site.baseurl }}/docs/img/53.png)
+     
 6. Click **OK**. SQuirreL displays a series of tabs.
 
 ## Step 4: Running a Drill Query from SQuirreL
@@ -122,13 +122,15 @@ SQuirreL with Drill.
 
 To query sample data with Squirrel, complete the following steps:
 
-  1. Click the SQL tab.
-  2. Enter the following query in the query box:   
-``SELECT * FROM cp.`employee.json`;``  
+1. Click the SQL tab.
+2. Enter the following query in the query box:   
+   
+        SELECT * FROM cp.`employee.json`;
+          
      Example:  
      ![drill query flow]({{ site.baseurl }}/docs/img/11.png)
 
-  3. Press **Ctrl+Enter** to run the query. The following query results display: 
+3. Press **Ctrl+Enter** to run the query. The following query results display: 
   
      ![drill query flow]({{ site.baseurl }}/docs/img/42.png) 
 

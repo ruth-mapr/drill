@@ -209,7 +209,7 @@ on data.
     +------------+------------+
     | true              | store.json.all_text_mode updated. |
 
-**4\. Explore the restaurant businesses in the data set**
+### **4\. Explore the restaurant businesses in the data set**
 
 #### **Number of restaurants in the data set**** **
 
@@ -276,7 +276,7 @@ on data.
     | Hair Salons | 901           |
     +------------+---------------+
 
-**5\. Explore the Yelp reviews dataset and combine with the businesses.**** **
+### **5\. Explore the Yelp reviews dataset and combine with the businesses.**** **
 
 #### **Take a look at the contents of the Yelp reviews dataset.**** **
 

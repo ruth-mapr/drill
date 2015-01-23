@@ -19,7 +19,7 @@ You can use the same SELECT syntax in the following commands:
 
 INSERT INTO SELECT is not yet supported.
 
-# Column Aliases
+## Column Aliases
 
 You can use named column aliases in the SELECT list to provide meaningful
 names for regular columns and computed columns, such as the results of
@@ -35,7 +35,7 @@ Because Drill works with schema-less data sources, you cannot use positional
 aliases (1, 2, etc.) to refer to SELECT list columns, except in the ORDER BY
 clause.
 
-# UNION ALL Set Operator
+## UNION ALL Set Operator
 
 Drill supports the UNION ALL set operator to combine two result sets. The
 distinct UNION operator is not yet supported.
@@ -43,7 +43,7 @@ distinct UNION operator is not yet supported.
 The EXCEPT, EXCEPT ALL, INTERSECT, and INTERSECT ALL operators are not yet
 supported.
 
-# Joins
+## Joins
 
 Drill supports ANSI standard joins in the FROM and WHERE clauses:
 
@@ -69,7 +69,7 @@ the same two tables as part of a conjunction:
 
 This restriction applies to both inner and outer joins.
 
-# Subqueries
+## Subqueries
 
 You can use the following subquery operators in Drill queries. These operators
 all return Boolean results.

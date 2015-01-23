@@ -14,7 +14,7 @@ the following pages in order:
   * [Lesson 3: Run Queries on Complex Data Types](/confluence/display/DRILL/Lesson+3%3A+Run+Queries+on+Complex+Data+Types)
   * [Summary](/confluence/display/DRILL/Summary)
 
-# About Apache Drill
+## About Apache Drill
 
 Drill is an Apache open-source SQL query engine for Big Data exploration.
 Drill is designed from the ground up to support high-performance analysis on
@@ -36,7 +36,7 @@ the following key features:
 
   * BI/SQL tool integration using standard JDBC/ODBC drivers
 
-# MapR Sandbox with Apache Drill
+## MapR Sandbox with Apache Drill
 
 MapR includes Apache Drill as part of the Hadoop distribution. The MapR
 Sandbox with Apache Drill is a fully functional single-node cluster that can

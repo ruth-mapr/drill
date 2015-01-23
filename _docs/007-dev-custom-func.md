@@ -10,14 +10,14 @@ calculations and transformations that built-in SQL operators and functions do
 not provide. Custom functions are called from within a SQL statement, like a
 regular function, and return a single value.
 
-### Simple Function
+## Simple Function
 
 A simple function operates on a single row and produces a single row as the
 output. When you include a simple function in a query, the function is called
 once for each row in the result set. Mathematical and string functions are
 examples of simple functions.
 
-### Aggregate Function
+## Aggregate Function
 
 Aggregate functions differ from simple functions in the number of rows that
 they accept as input. An aggregate function operates on multiple input rows
@@ -27,7 +27,7 @@ function in a query with a GROUP BY clause to produce a result set with a
 separate aggregate value for each combination of values from the GROUP BY
 clause.
 
-### Process
+## Process
 
 To develop custom functions that you can use in your Drill queries, you must
 complete the following tasks:

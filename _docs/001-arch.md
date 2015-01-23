@@ -7,7 +7,7 @@ Google’s Dremel, Drill is designed to scale to several thousands of nodes and
 query petabytes of data at interactive speeds that BI/Analytics environments
 require.
 
-### High-Level Architecture
+## High-Level Architecture
 
 Drill includes a distributed execution environment, purpose built for large-
 scale data processing. At the core of Apache Drill is the ‘Drillbit’ service,
@@ -24,7 +24,7 @@ Though Drill works in a Hadoop cluster environment, Drill is not tied to
 Hadoop and can run in any distributed cluster environment. The only pre-
 requisite for Drill is Zookeeper.
 
-### Query Flow in Drill
+## Query Flow in Drill
 
 The following image represents the flow of a Drill query:
  
@@ -39,7 +39,7 @@ The flow of a Drill query typically involves the following steps:
   5. The individual nodes finish their execution and return data to the driving Drillbit.
   6. The driving Drillbit returns results back to the client.
 
-### Drill Clients
+## Drill Clients
 
 You can access Drill through the following interfaces:
 

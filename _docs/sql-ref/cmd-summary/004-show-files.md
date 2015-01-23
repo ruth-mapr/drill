@@ -5,7 +5,7 @@ parent: "SQL Commands Summary"
 The SHOW FILES command provides a quick report of the file systems that are
 visible to Drill for query purposes. This command is unique to Apache Drill.
 
-# Syntax
+## Syntax
 
 The SHOW FILES command supports the following syntax.
 
@@ -21,7 +21,7 @@ The command returns standard Linux `stat` information for each file or
 directory, such as permissions, owner, and group values. This information is
 not specific to Drill.
 
-# Examples
+## Examples
 
 The following example returns information about directories and files in the
 local (`dfs`) file system.

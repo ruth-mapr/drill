@@ -26,7 +26,7 @@ conditions against the same data will return the same plan. However, if you
 change a configuration option, for example, or update the tables or files that
 you are selecting from, you are likely to see plan changes.
 
-# EXPLAIN Syntax
+## EXPLAIN Syntax
 
 The EXPLAIN command supports the following syntax:
 
@@ -44,7 +44,7 @@ physical and logical plans.
 These options return the physical and logical plan information, respectively.
 The default is physical (WITH IMPLEMENTATION).
 
-# EXPLAIN for Physical Plans
+## EXPLAIN for Physical Plans
 
 The EXPLAIN PLAN FOR <query> command returns the chosen physical execution
 plan for a query statement without running the query. You can use this command
@@ -113,7 +113,7 @@ for submitting the query via Drill APIs.
 	  },
 	....
 
-# Costing Information
+## Costing Information
 
 Add the INCLUDING ALL ATTRIBUTES option to the EXPLAIN command to see cost
 estimates for the query plan. For example:
@@ -133,7 +133,7 @@ estimates for the query plan. For example:
 	00-04            ProducerConsumer: rowcount = 1.0, cumulative cost = {1.0 rows, 1.0 cpu, 0.0 io, 0.0 network}, id = 3106
 	00-05              Scan(groupscan=[EasyGroupScan [selectionRoot=/Users/brumsby/drill/donuts.json, columns = null]]): rowcount = 1.0, cumulative cost = {0.0 rows, 0.0 cpu, 0.0 io, 0.0 network}, id = 3101
 
-# EXPLAIN for Logical Plans
+## EXPLAIN for Logical Plans
 
 To return the logical plan for a query (again, without actually running the
 query), use the EXPLAIN PLAN WITHOUT IMPLEMENTATION syntax:
