@@ -1,3 +1,8 @@
+---
+title: "Getting Started Tutorial"
+parent: "Query Data"
+---
+
 # Goal
 
 This tutorial covers how to query a file and a directory on your local file
