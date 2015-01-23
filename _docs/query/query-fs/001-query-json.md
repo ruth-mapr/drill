@@ -9,7 +9,7 @@ data. Use SQL syntax to query the sample `JSON` file.
 To view the data in the `employee.json` file, submit the following SQL query
 to Drill:
 
-        ``0: jdbc:drill:zk=local> SELECT * FROM cp.`employee.json`;``
+         0: jdbc:drill:zk=local> SELECT * FROM cp.`employee.json`;
 
 The query returns the following results:
 

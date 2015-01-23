@@ -39,7 +39,7 @@ Complete the following steps to install Drill on designated nodes:
   
         export HADOOP_HOME="~/hadoop/hadoop-0.20.2/"
 
-  4. In `drill-override.conf,`create a unique Drill `cluster ID`, and provide Zookeeper host names and port numbers to configure a connection to your Zookeeper quorum.
+  4. In `drill-override.conf,` create a unique Drill `cluster ID`, and provide Zookeeper host names and port numbers to configure a connection to your Zookeeper quorum.
 
     a. Edit `drill-override.conf `located in `~/drill/drill-<version>/conf/`.
 

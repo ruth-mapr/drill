@@ -89,7 +89,7 @@ steps:
 
   4. Issue the following command to verify that the data is in the `testdata.txt` file:  
     
-     `cat testdata.txt | hbase shell`
+         cat testdata.txt | hbase shell
 
   5. Issue `exit` to leave the `hbase shell`.
   6. Start Drill. Refer to [Starting/Stopping Drill](/confluence/pages/viewpage.action?pageId=44994063) for instructions.
@@ -97,7 +97,7 @@ steps:
   
     a. Issue the following query to see the data in the “students” table:  
 
-       `SELECT * FROM hbase.`students`;`
+               SELECT * FROM hbase.`students`;
 
        The query returns binary results:
 
@@ -149,10 +149,10 @@ Family](http://hbase.apache.org/book/columnfamily.html).
         
            Query finished, fetching results ...`
         
-           +---------+-----------+-------------------------------+-----------------------+----------+----------+`
-           | clickid | studentid | time                          | url                   | itemtype | quantity |`
-           +---------+-----------+-------------------------------+-----------------------+----------+----------+`
-           | click1  | student1  | 2014-01-01 12:01:01.000100000 | http://www.google.com | image    | 1        |`
-           | click3  | student2  | 2014-01-01 01:02:01.000100000 | http://www.google.com | text     | 2        |`
-           | click6  | student3  | 2013-02-01 12:01:01.000100000 | http://www.google.com | image    | 1        |`
-           +---------+-----------+-------------------------------+-----------------------+----------+----------+`
+           +---------+-----------+-------------------------------+-----------------------+----------+----------+
+           | clickid | studentid | time                          | url                   | itemtype | quantity |
+           +---------+-----------+-------------------------------+-----------------------+----------+----------+
+           | click1  | student1  | 2014-01-01 12:01:01.000100000 | http://www.google.com | image    | 1        |
+           | click3  | student2  | 2014-01-01 01:02:01.000100000 | http://www.google.com | text     | 2        |
+           | click6  | student3  | 2013-02-01 12:01:01.000100000 | http://www.google.com | image    | 1        |
+           +---------+-----------+-------------------------------+-----------------------+----------+----------+

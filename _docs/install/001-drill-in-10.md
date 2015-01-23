@@ -212,7 +212,7 @@ directory path, Drill fails to run.
   7. At the `sqlline>` prompt, type `!connect jdbc:drill:zk=local` and then press `Enter`.
   8. Enter the username and password.
     a. When prompted, enter the user name `admin` and then press Enter. 
-    b. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local> `displays in the prompt.
+    b. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local>` displays in the prompt.
 
 At this point, you can submit queries to Drill. Refer to the [Query Sample Dat
 a](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+in+10+Minute
@@ -316,14 +316,14 @@ To view the data in the `region.parquet` file, issue the query appropriate for
 your operating system:
 
 * Linux  
-`SELECT * FROM dfs.`/opt/drill/apache-drill-<version>/sample-
-data/region.parquet`; `
-* Mac OS X  
-`SELECT * FROM dfs.`/Users/max/drill/apache-drill-<version>/sample-
-data/region.parquet`;`
+
+        SELECT * FROM dfs.`/opt/drill/apache-drill-<version>/sample-data/region.parquet`;
+* Mac OS X
+  
+        SELECT * FROM dfs.`/Users/max/drill/apache-drill-<version>/sample-data/region.parquet`;
 * Windows  
-`SELECT * FROM dfs.`C:\drill\apache-drill-<version>\sample-
-data\region.parquet`;`
+        
+        SELECT * FROM dfs.`C:\drill\apache-drill-<version>\sample-data\region.parquet`;
 
 The query returns the following results:
 
@@ -352,17 +352,14 @@ your operating system:
 
 * Linux  
 
-      ``SELECT * FROM dfs.`/opt/drill/apache-drill-<version>/sample-
-data/nation.parquet`;``
+          SELECT * FROM dfs.`/opt/drill/apache-drill-<version>/sample-data/nation.parquet`;
 * Mac OS X
   
-      ``SELECT * FROM dfs.`/Users/max/drill/apache-drill-<version>/sample-
-data/nation.parquet`;``
+          SELECT * FROM dfs.`/Users/max/drill/apache-drill-<version>/sample-data/nation.parquet`;
 
 * Windows 
  
-      ``SELECT * FROM dfs.`C:\drill\apache-drill-<version>\sample-
-data\nation.parquet`;``
+          SELECT * FROM dfs.`C:\drill\apache-drill-<version>\sample-data\nation.parquet`;
 
 The query returns the following results:
 

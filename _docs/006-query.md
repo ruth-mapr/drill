@@ -6,8 +6,7 @@ registered with Drill. If you connected directly to a particular schema when
 you invoked SQLLine, you can issue SQL queries against that schema. If you did
 not indicate a schema when you invoked SQLLine, you can issue the `USE
 <schema>` statement to run your queries against a particular schema. After you
-issue the `USE` statement, you can use absolute notation, such as
-`schema.table.column`.
+issue the `USE` statement, you can use absolute notation, such as `schema.table.column`.
 
 Click on any of the following links for information about various data source
 queries and examples:

@@ -158,10 +158,7 @@ duplicate schemas for it in Hive!
 
 The products table has two column families.
 
-| Column Family    | Columns | 
-| -------------    | ------- |  
-| details          | name    |
-|category pricing  | price   |
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Column Family</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Columns</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">details</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">name</span></p><p><span style="color: rgb(0,0,0);">category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">pricing</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">price</span></p></td></tr></tbody></table>
   
 The products table contains 965 rows.
 
@@ -169,13 +166,7 @@ The products table contains 965 rows.
 
 The Customers table has three column families.
 
-Column Family|Columns  
--------------|-------  
-  address    | state  
-  loyalty    | agg_rev
-             | membership  
-  personal   | age
-             | gender  
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Column Family</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Columns</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">address</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">state</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">loyalty</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">agg_rev</span></p><p><span style="color: rgb(0,0,0);">membership</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">personal</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">age</span></p><p><span style="color: rgb(0,0,0);">gender</span></p></td></tr></tbody></table>  
   
 The customers table contains 993 rows.
 

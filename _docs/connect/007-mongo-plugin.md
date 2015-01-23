@@ -41,9 +41,9 @@ Complete the following steps to configure MongoDB as a data source for Drill:
   
         bin/sqlline -u jdbc:drill:zk=local -n admin -p admin
 
-     When Drill starts, the following prompt appears:  
-`0: jdbc:drill:zk=local>  
-`Do not enter any commands. You will return to the command prompt after
+     When Drill starts, the following prompt appears: `0: jdbc:drill:zk=local>`
+
+Do not enter any commands. You will return to the command prompt after
 completing the configuration in the Drill Web UI.
 
   2. Open a browser window, and navigate to the Drill Web UI at `http://localhost:8047`.
@@ -61,7 +61,7 @@ completing the configuration in the Drill Web UI.
 
      **Note:** 27017 is the default port for `mongodb` instances. 
 
-  6. Click **Enable **to enable the instance, and save the** **configuration.
+  6. Click **Enable** to enable the instance, and save the configuration.
   7. Navigate back to the Drill command line so you can query MongoDB.
 
 ## Querying MongoDB
@@ -112,7 +112,8 @@ Reference](https://cwiki.apache.org/confluence/display/DRILL/SQL+Reference).
 
 **Example 2: Aggregation**
 
-    0: jdbc:drill:zk=local> select state,city,avg(pop)     +------------+------------+------------+
+    0: jdbc:drill:zk=local> select state,city,avg(pop)
+    +------------+------------+------------+
     |   state    |    city    |   EXPR$2   |
     +------------+------------+------------+
     | MA         | AGAWAM     | 15338.0    |

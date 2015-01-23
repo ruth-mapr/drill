@@ -323,7 +323,7 @@ selectable “columns” in it.
 
 ## Query Across Data Sources
 
-Continue using dfs.views for this query.
+Continue using `dfs.views` for this query.
 
 ### Join the customers view and the orders table:
 

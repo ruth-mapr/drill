@@ -18,16 +18,16 @@ To view the data in the `region.parquet` file, issue the query appropriate for
 your operating system:
 
   * Linux  
-    ``SELECT * FROM dfs.`/opt/drill/apache-drill-0.4.0-incubating/sample-
-data/region.parquet`; ``
+    
+        SELECT * FROM dfs.`/opt/drill/apache-drill-0.4.0-incubating/sample-data/region.parquet`;
 
   * Mac OS X  
-    ``SELECT * FROM dfs.`/Users/max/drill/apache-drill-0.4.0-incubating/sample-
-data/region.parquet`;``
+        
+        SELECT * FROM dfs.`/Users/max/drill/apache-drill-0.4.0-incubating/sample-data/region.parquet`;
 
   * Windows  
-    ``SELECT * FROM dfs.`C:\drill\apache-drill-0.4.0-incubating\sample-
-data\region.parquet`;``
+    
+        SELECT * FROM dfs.`C:\drill\apache-drill-0.4.0-incubating\sample-data\region.parquet`;
 
 The query returns the following results:
 
@@ -53,16 +53,16 @@ To view the data in the `nation.parquet` file, issue the query appropriate for
 your operating system:
 
   * Linux  
-``SELECT * FROM dfs.`/opt/drill/apache-drill-0.4.0-incubating/sample-
-data/nation.parquet`; ``
+  
+        SELECT * FROM dfs.`/opt/drill/apache-drill-0.4.0-incubating/sample-data/nation.parquet`;
 
   * Mac OS X  
-``SELECT * FROM dfs.`/Users/max/drill/apache-drill-0.4.0-incubating/sample-
-data/nation.parquet`;``
+
+        SELECT * FROM dfs.`/Users/max/drill/apache-drill-0.4.0-incubating/sample-data/nation.parquet`;
 
   * Windows  
-``SELECT * FROM dfs.`C:\drill\apache-drill-0.4.0-incubating\sample-
-data\nation.parquet`;``
+
+        SELECT * FROM dfs.`C:\drill\apache-drill-0.4.0-incubating\sample-data\nation.parquet`;
 
 The query returns the following results:
 

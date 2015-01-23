@@ -44,7 +44,7 @@ records:
 Drill recognizes each row as an array of values and returns one column for
 each row.
 
-0: jdbc:drill:zk=local> select * from dfs.`/Users/brumsby/drill/plays.csv`;
+        0: jdbc:drill:zk=local> select * from dfs.`/Users/brumsby/drill/plays.csv`;
  
     +------------+
     |  columns   |
@@ -65,8 +65,7 @@ You can use the `COLUMNS[n]` syntax in the SELECT list to return these CSV
 rows in a more readable, column by column, format. (This syntax uses a zero-
 based index, so the first column is column `0`.)
 
-0: jdbc:drill:zk=local> select columns[0], columns[1] 
-from dfs.`/Users/brumsby/drill/plays.csv`;
+    0: jdbc:drill:zk=local> select columns[0], columns[1] from dfs.`/Users/brumsby/drill/plays.csv`;
  
     +------------+------------+
     |   EXPR$0   |   EXPR$1   |
@@ -104,8 +103,8 @@ You cannot refer to the aliases in subsequent clauses of the query. Use the
 original `columns[n]` syntax, as shown in the WHERE clause for the following
 example:
 
-0: jdbc:drill:zk=local> select columns[0] as `Year`, columns[1] as Play 
-from dfs.`/Users/brumsby/drill/plays.csv` where columns[0]>1599;
+    0: jdbc:drill:zk=local> select columns[0] as `Year`, columns[1] as Play 
+    from dfs.`/Users/brumsby/drill/plays.csv` where columns[0]>1599;
  
     +------------+------------+
     |    Year    |    Play    |

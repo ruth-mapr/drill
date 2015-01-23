@@ -13,7 +13,7 @@ plugin>.<workspace> or hdfs.logs.
 The following example shows a query on a file system database in a Hadoop
 distributed file system:
 
-       ``SELECT * FROM hdfs.logs.`AppServerLogs/20104/Jan/01/part0001.txt`;``
+       SELECT * FROM hdfs.logs.`AppServerLogs/20104/Jan/01/part0001.txt`;
 
 The default `dfs` storage plugin instance registered with Drill has a
 `default` workspace. If you query data in the `default` workspace, you do not

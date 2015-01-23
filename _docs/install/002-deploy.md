@@ -80,7 +80,7 @@ Complete the following steps to start Drill:
 
      If you cannot connect to Drill, invoke SQLLine with the ZooKeeper quorum:
 
-     `bin/sqlline -u jdbc:drill:zk=<zk1host>:<port>,<zk2host>:<port>,<zk3host>:<port>` 
+         bin/sqlline -u jdbc:drill:zk=<zk1host>:<port>,<zk2host>:<port>,<zk3host>:<port> 
 
   3. Issue the following query to Drill to verify that all Drillbits have joined the cluster:
   

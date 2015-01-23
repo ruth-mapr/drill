@@ -31,11 +31,11 @@ want to scale your environment.
 
 ### Step 2 : Open the Drill tar file
 
-`tar -xvf apache-drill-0.6.0-incubating.tar`
+    tar -xvf apache-drill-0.6.0-incubating.tar
 
 ### Step 3: Launch sqlline, a JDBC application that ships with Drill
 
-`bin/sqlline -u jdbc:drill:zk=local`
+    bin/sqlline -u jdbc:drill:zk=local
 
 That’s it! You are now ready explore the data.
 
@@ -48,11 +48,11 @@ analysis extremely easy.
 
 ### **1\. View the contents of the Yelp business data**
 
-`0: jdbc:drill:zk=local> !set maxwidth 10000`
+    0: jdbc:drill:zk=local> !set maxwidth 10000
 
-``0: jdbc:drill:zk=local> select * from
-dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-limit 1;``
+    0: jdbc:drill:zk=local> select * from
+        dfs.`/users/nrentachintala/Downloads/yelp/        yelp_academic_dataset_business.json`
+        limit 1;
 
     +-------------+--------------+------------+------------+------------+------------+--------------+------------+------------+------------+------------+------------+------------+------------+---------------+
     | business_id | full_address |   hours    |     open    | categories |            city    | review_count |        name   | longitude  |   state  |   stars          |  latitude  | attributes |          type    | neighborhoods |
@@ -68,9 +68,9 @@ limit 1;``
 
 #### Total reviews in the data set
 
-``0: jdbc:drill:zk=local> select sum(review_count) as totalreviews from
+    0: jdbc:drill:zk=local> select sum(review_count) as totalreviews from
 dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-;``
+;
 
     +--------------+
     | totalreviews |
@@ -80,9 +80,9 @@ dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
 
 #### Top states and cities in total number of reviews
 
-``0: jdbc:drill:zk=local> select state, city, count(*) totalreviews from
+    0: jdbc:drill:zk=local> select state, city, count(*) totalreviews from
 dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-group by state, city order by count(*) desc limit 10;``
+group by state, city order by count(*) desc limit 10;
 
     +------------+------------+--------------+
     |   state    |    city    | totalreviews |
@@ -101,7 +101,7 @@ group by state, city order by count(*) desc limit 10;``
 
 #### **Average number of reviews per business star rating**
 
-``0: jdbc:drill:zk=local> select stars,trunc(avg(review_count)) reviewsavg from
+    0: jdbc:drill:zk=local> select stars,trunc(avg(review_count)) reviewsavg from
 dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
 group by stars order by stars desc;``
 
@@ -121,9 +121,9 @@ group by stars order by stars desc;``
 
 #### **Top businesses with high review counts (> 1000)**
 
-``0: jdbc:drill:zk=local> select name, state, city, `review_count` from
-dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-where review_count > 1000 order by `review_count` desc limit 10;``
+    0: jdbc:drill:zk=local> select name, state, city, `review_count` from
+    dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
+    where review_count > 1000 order by `review_count` desc limit 10;
 
     +------------+------------+------------+----------------------------+
     |    name                |   state     |    city     | review_count |
@@ -142,11 +142,11 @@ where review_count > 1000 order by `review_count` desc limit 10;``
 
 #### **Saturday open and close times for a few businesses**
 
-``0: jdbc:drill:zk=local> select b.name, b.hours.Saturday.`open`,
-b.hours.Saturday.`close`  
-from
-dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-b limit 10;``
+    0: jdbc:drill:zk=local> select b.name, b.hours.Saturday.`open`,
+    b.hours.Saturday.`close`  
+    from
+    dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
+    b limit 10;
 
     +------------+------------+----------------------------+
     |    name                    |   EXPR$1   |   EXPR$2   |
