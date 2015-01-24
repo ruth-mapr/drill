@@ -56,7 +56,7 @@ You can create a storage plugin using the Apache Drill Web UI.
 Your custom plugin appears in the list and has two workspaces: the `ngram`
 workspace that you defined and a default workspace.
 
-## Connect to and Query a File[Connect to and Query a File](id:connecttoandqueryafile)
+## Connect to and Query a File
 
 When querying the same data source repeatedly, avoiding long path names is
 important. This exercise demonstrates how to simplify the query. Instead of
@@ -69,15 +69,13 @@ This syntax assumes you connected to a storage plugin that defines the
 location of the data. To query the data source while you _not_ connected to
 that storage plugin, include the plugin name:
 
-`<plugin name>.<workspace name>.`<location>``
+``<plugin name>.<workspace name>.`<location>```
 
 This exercise shows how to query Ngram data when you are, and when you are
 not, connected to `myplugin`.
 
   1. Connect to the ngram file through the custom storage plugin.  
-
      `USE myplugin;`
-
   2. Get data about "Zoological Journal of the Linnean" that appears more than 250 times a year in the books that Google scans. In the FROM clause, instead of using the full path to the file as you did in the last exercise, connect to the data using the storage plugin workspace name ngram.
   
          SELECT COLUMNS[0], 
@@ -89,7 +87,6 @@ not, connected to `myplugin`.
          LIMIT 10;
 
      The output consists of 5 rows of data.  
-
   3. Switch to the `dfs` storage plugin.
   
          0: jdbc:drill:zk=local> USE dfs;
@@ -99,7 +96,6 @@ not, connected to `myplugin`.
          | true       | Default schema changed to 'dfs' |
          +------------+------------+
          1 row selected (0.019 seconds)
-
   4. Query the TSV file again. Because you switched to `dfs`, Drill does not know the location of the file. To provide the information to Drill, preface the file name with the storage plugin and workspace names in the FROM clause.  
   
          SELECT COLUMNS[0], 
@@ -110,7 +106,7 @@ not, connected to `myplugin`.
            AND (columns[2] > 250)) 
          LIMIT 10;
 
-# Query Multiple Files in a Directory
+## Query Multiple Files in a Directory
 
 In this exercise, first you create a subdirectory in the `ngram` directory.
 Next, you download, unzip, and add an extension to a second Ngram file. You
@@ -121,17 +117,11 @@ the subdirectory.
   1. Download a second file of compressed Google Ngram data from this location:  
 <http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-
 2gram-20120701-ze.gz>
-
-  2. Unzip `googlebooks-eng-all-2gram-20120701-ze.gz` and move `googlebooks-eng-all-2gram-20120701-ze` to the `ngram/myfiles` subdirectory.
-  
-  3. Change the name of `googlebooks-eng-all-2gram-20120701-ze` to add a `.tsv` extension.
-    
+  2. Unzip `googlebooks-eng-all-2gram-20120701-ze.gz` and move `googlebooks-eng-all-2gram-20120701-ze` to the `ngram/myfiles` subdirectory. 
+  3. Change the name of `googlebooks-eng-all-2gram-20120701-ze` to add a `.tsv` extension.    
   4. Move the 5gram file you worked with earlier `googlebooks-eng-all-5gram-20120701-zo.tsv` from the `ngram` directory to the `ngram/myfiles` subdirectory.
-
-  5. At the SQLLine prompt, use the `myplugin.ngrams` workspace.
-  
+  5. At the SQLLine prompt, use the `myplugin.ngrams` workspace.  
           USE myplugin.ngram;
-
   6. Query the myfiles directory for the "Zoological Journal of the Linnean" or "zero temperatures" in books published in 1998.
   
           SELECT * 
@@ -149,5 +139,4 @@ The output lists ngrams from both files.
           | ["zero temperatures","1998","628","487"] |
           +------------+
           2 rows selected (5.316 seconds)
-          
-          Test [link](#connecttoandqueryafile)
+   
