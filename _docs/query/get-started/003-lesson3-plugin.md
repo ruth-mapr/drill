@@ -1,13 +1,11 @@
 ---
-title: "Lesson 3 Connect to Data Sources"
+title: "Lesson 3 Create a Storage Plugin"
 parent: "Getting Started Tutorial"
 ---
 The Drill default storage plugins support common file formats. If you need
-support for some other file format, create a custom storage plugin. You can
-also create a storage plugin to simplify queries. You query by simply using
-the workspace name instead of a long path name.
+support for some other file format, create a custom storage plugin. You can also create a storage plugin to simplify querying file having long path names. A workspace name replaces the long path name.
 
-This lesson covers how to create a storage plugin to simplify queries. First,
+This lesson covers how to create and use a storage plugin to simplify queries. First,
 you create the storage plugin in the Drill Web UI. Next, you connect to the
 file through the plugin to query a file, and then a directory, and finally you
 query multiple files in a directory.

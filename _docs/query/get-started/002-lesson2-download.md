@@ -1,5 +1,5 @@
 ---
-title: "Lesson 2 Connect to Data Sources"
+title: "Lesson 2 Query Plain Text"
 parent: "Getting Started Tutorial"
 ---
 The lesson shows you how to query a plain text file. Drill handles plain text
