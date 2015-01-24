@@ -18,14 +18,10 @@ You can create a storage plugin using the Apache Drill Web UI.
   2. Copy `googlebooks-eng-all-5gram-20120701-zo.tsv` to the `ngram` directory.
   3. Open the Drill Web UI by navigating to <http://localhost:8047/storage>.   
      To open the Drill Web UI, SQLLine must still be running.
-
   4. In New Storage Plugin, type `myplugin`.  
-  
      ![new plugin]({{ site.baseurl }}/docs/img/ngram_plugin.png)    
-
   5. Click **Create**.  
      The Configuration screen appears.
-
   6. Replace null with the following storage plugin definition, except on the location line, use the path to your `ngram` directory instead of the drilluser's path and give your workspace an arbitrary name, for example, ngram:
   
         {
@@ -52,25 +48,22 @@ You can create a storage plugin using the Apache Drill Web UI.
 
   7. Click **Create**.  
      The success message appears briefly.
-
   8. Click **Back**.  
      The new plugin appears in Enabled Storage Plugins.  
-
      ![new plugin]({{ site.baseurl }}/docs/img/ngram_plugin.png) 
-
   9. Go back to the SQLLine prompt in the CLI, and list the storage plugins. Press RETURN in the CLI to get a prompt if necessary.
 
 Your custom plugin appears in the list and has two workspaces: the `ngram`
 workspace that you defined and a default workspace.
 
-## Connect to and Query a File
+## Connect to and Query a File[Connect to and Query a File](id:connecttoandqueryafile)
 
 When querying the same data source repeatedly, avoiding long path names is
 important. This exercise demonstrates how to simplify the query. Instead of
 using the full path to the Ngram file, you use dot notation in the FROM
 clause.
 
-`<workspace name>.`<location>``
+``<workspace name>.`<location>```
 
 This syntax assumes you connected to a storage plugin that defines the
 location of the data. To query the data source while you _not_ connected to
@@ -156,3 +149,5 @@ The output lists ngrams from both files.
           | ["zero temperatures","1998","628","487"] |
           +------------+
           2 rows selected (5.316 seconds)
+          
+          Test [link](#connecttoandqueryafile)

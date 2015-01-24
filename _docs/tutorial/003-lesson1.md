@@ -158,7 +158,7 @@ duplicate schemas for it in Hive!
 
 The products table has two column families.
 
-<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Column Family</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Columns</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">details</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">name</span></p><p><span style="color: rgb(0,0,0);">category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">pricing</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">price</span></p></td></tr></tbody></table>
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">Column Family</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Columns</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">details</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">name</span><span style="color: rgb(0,0,0);">category</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">pricing</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">price</span></td></tr></tbody></table>
   
 The products table contains 965 rows.
 
@@ -166,7 +166,7 @@ The products table contains 965 rows.
 
 The Customers table has three column families.
 
-<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Column Family</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Columns</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">address</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">state</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">loyalty</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">agg_rev</span></p><p><span style="color: rgb(0,0,0);">membership</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">personal</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">age</span></p><p><span style="color: rgb(0,0,0);">gender</span></p></td></tr></tbody></table>  
+<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">Column Family</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Columns</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">address</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">state</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">loyalty</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">agg_rev</span><span style="color: rgb(0,0,0);">membership</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">personal</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">age</span><span style="color: rgb(0,0,0);">gender</span></td></tr></tbody></table>  
   
 The customers table contains 993 rows.
 
