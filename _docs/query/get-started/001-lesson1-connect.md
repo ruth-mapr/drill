@@ -12,7 +12,7 @@ To list the default storage plugins, use the SHOW DATABASES command.
 
   1. Issue the SHOW DATABASES command.
     
-        0: [jdbc:drill:zk=local](http://jdbcdrillzk=local)> SHOW DATABASES;  
+        0: jdbc:drill:zk=local> SHOW DATABASES;  
     
 
      The output lists the storage plugins, which you use as a SQL database, in

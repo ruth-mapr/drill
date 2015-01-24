@@ -367,7 +367,7 @@ number of rows in the table.
 Note that the table is stored in a file called `0_0_0.parquet`. This file is
 stored in the location defined by the dfs.clicks workspace:
 
-    "location": "http://demo.mapr.com/data/nested)"
+    "location": "http://demo.mapr.com/data/nested"
 
 with a subdirectory that has the same name as the table you created.
 

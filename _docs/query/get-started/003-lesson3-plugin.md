@@ -116,8 +116,7 @@ the subdirectory.
 
   1. Download a second file of compressed Google Ngram data from this location: 
   
-     http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-
-2gram-20120701-ze.gz
+     http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-2gram-20120701-ze.gz
   2. Unzip `googlebooks-eng-all-2gram-20120701-ze.gz` and move `googlebooks-eng-all-2gram-20120701-ze` to the `ngram/myfiles` subdirectory. 
   3. Change the name of `googlebooks-eng-all-2gram-20120701-ze` to add a `.tsv` extension.    
   4. Move the 5gram file you worked with earlier `googlebooks-eng-all-5gram-20120701-zo.tsv` from the `ngram` directory to the `ngram/myfiles` subdirectory.
