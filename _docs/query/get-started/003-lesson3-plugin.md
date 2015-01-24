@@ -114,13 +114,15 @@ move both Ngram TSV files to the subdirectory. Finally, using the custom
 plugin workspace, you query both files. In the FROM clause, simply reference
 the subdirectory.
 
-  1. Download a second file of compressed Google Ngram data from this location:  
-<http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-
-2gram-20120701-ze.gz>
+  1. Download a second file of compressed Google Ngram data from this location: 
+  
+     http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-
+2gram-20120701-ze.gz
   2. Unzip `googlebooks-eng-all-2gram-20120701-ze.gz` and move `googlebooks-eng-all-2gram-20120701-ze` to the `ngram/myfiles` subdirectory. 
   3. Change the name of `googlebooks-eng-all-2gram-20120701-ze` to add a `.tsv` extension.    
   4. Move the 5gram file you worked with earlier `googlebooks-eng-all-5gram-20120701-zo.tsv` from the `ngram` directory to the `ngram/myfiles` subdirectory.
-  5. At the SQLLine prompt, use the `myplugin.ngrams` workspace.  
+  5. At the SQLLine prompt, use the `myplugin.ngrams` workspace. 
+   
           USE myplugin.ngram;
   6. Query the myfiles directory for the "Zoological Journal of the Linnean" or "zero temperatures" in books published in 1998.
   
@@ -129,7 +131,6 @@ the subdirectory.
           WHERE (((COLUMNS[0] = 'Zoological Journal of the Linnean')
             OR (COLUMNS[0] = 'zero temperatures')) 
             AND (COLUMNS[1] = '1998'));
-
 The output lists ngrams from both files.
 
           +------------+
