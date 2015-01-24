@@ -26,7 +26,9 @@ This tutorial assumes that you installed Drill in [embedded
 mode](/confluence/display/DRILL/Installing+Drill+in+Embedded+Mode). Although
 you can step through the tutorial using the sandbox, using the Drill
 installation is more convenient in a few ways, for example, you can copy/paste
-commands from the tutorial to the Drill command line. The first few lessons
+commands from the tutorial to the Drill command line.   
+
+The first few lessons of the tutorial
 use a Google file of Ngram data that you download from the internet. The
 compressed Google Ngram files are 8 and 58MB. To expand the compressed files,
 you need an additional 448MB of free disk space for this exercise.

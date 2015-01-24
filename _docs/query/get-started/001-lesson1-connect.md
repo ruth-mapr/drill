@@ -1,6 +1,6 @@
 ---
 title: "Lesson 1 Connect to Data Sources"
-parent: "Query Data"
+parent: "Getting Started Tutorial"
 ---
 This lesson shows how to connect to default data sources that Drill installs
 and configures through storage plugins. You learn how to list the storage
