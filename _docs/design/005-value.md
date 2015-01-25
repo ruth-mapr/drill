@@ -91,7 +91,6 @@ INT4 values [1 .. 6]:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value1.png)
 
-
 Nullable Values
 
 Nullable values are represented by a vector of bit values. Each bit in the
@@ -101,10 +100,7 @@ buffer. The following illustrates a NullableValueVector of INT4 values 2, 3
 and 6:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value2.png)
-
-
   
-
 ### Repeated Values
 
 A repeated ValueVector is used for elements which can contain multiple values
@@ -115,7 +111,6 @@ illustrates three fields; one with two values, one with no values, and one
 with a single value:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value3.png)
-
 
 ValueVector Representation of the equivalent JSON:
 
@@ -147,7 +142,6 @@ objects, and one with a single object:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value5.png)
 
-
 ValueVector representation of the equivalent JSON:
 
 x: [ {name:’Sam’, age:1}, {name:’Max’, age:2} ]
@@ -165,7 +159,6 @@ table. The following illustrates a SelectionVector of INT4 (fixed width)
 values 2, 3 and 5 from the original vector of [1 .. 6]:
 
 ![drill query flow]({{ site.baseurl }}/docs/img/value6.png)
-
 
 The following illustrates the same ValueVector with nullable fields:
 

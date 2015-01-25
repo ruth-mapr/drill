@@ -17,13 +17,13 @@ parent: "Install Drill"
 
   
 
-# Objective
+## Objective
 
 Use Apache Drill to query sample data in 10 minutes. For simplicity, you’ll
 run Drill in _embedded_ mode rather than _distributed_ mode to try out Drill
 without having to perform any setup tasks.
 
-# A Few Bits About Apache Drill
+## A Few Bits About Apache Drill
 
 Drill is a clustered, powerful MPP (Massively Parallel Processing) query
 engine for Hadoop that can process petabytes of data, fast. Drill is useful
@@ -76,7 +76,7 @@ extend the layer to a broader array of use cases. Drill provides a built in
 classpath scanning and plugin concept to add additional storage plugins,
 functions, and operators with minimal configuration.
 
-# Process Overview
+## Process Overview
 
 Download the Apache Drill archive and extract the contents to a directory on
 your machine. The Apache Drill archive contains sample JSON and Parquet files
@@ -100,11 +100,11 @@ Run the following command to verify that the system meets the software
 prerequisite:
 <table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Command </strong></p></td><td class="confluenceTd"><p><strong>Example Output</strong></p></td></tr><tr><td class="confluenceTd"><p><code>java –version</code></p></td><td class="confluenceTd"><p><code>java version &quot;1.7.0_65&quot;</code><br /><code>Java(TM) SE Runtime Environment (build 1.7.0_65-b19)</code><br /><code>Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)</code></p></td></tr></tbody></table>
   
-# Install Drill
+## Install Drill
 
 You can install Drill on a machine running Linux, Mac OS X, or Windows.  
 
-## Installing Drill on Linux
+### Installing Drill on Linux
 
 Complete the following steps to install Drill:
 
@@ -127,10 +127,9 @@ Complete the following steps to install Drill:
   
         cd /opt/drill/apache-drill-<version>
 
-At this point, you can [start Drill](https://cwiki.apache.org/confluence/displ
-ay/DRILL/Apache+Drill+in+10+Minutes#ApacheDrillin10Minutes-StartDrill).
+At this point, you can [start Drill](/drill/docs/apache-drill-in-10-minutes/start-drill/).
 
-## Installing Drill on Mac OS X
+### Installing Drill on Mac OS X
 
 Complete the following steps to install Drill:
 
@@ -160,7 +159,7 @@ Complete the following steps to install Drill:
 At this point, you can [start Drill](https://cwiki.apache.org/confluence/displ
 ay/DRILL/Apache+Drill+in+10+Minutes#ApacheDrillin10Minutes-StartDrill).
 
-## Installing Drill on Windows
+### Installing Drill on Windows
 
 You can install Drill on Windows 7 or 8. To install Drill on Windows, you must
 have JDK 7, and you must set the `JAVA_HOME` path in the Windows Environment
@@ -218,7 +217,7 @@ At this point, you can submit queries to Drill. Refer to the [Query Sample Dat
 a](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+in+10+Minute
 s#ApacheDrillin10Minutes-QuerySampleData) section of this document.
 
-# Start Drill
+## Start Drill
 
 Launch SQLLine, the Drill shell, to start and run Drill in embedded mode.
 Launching SQLLine automatically starts a new Drillbit within the shell. In a
@@ -249,15 +248,13 @@ Issue the following command when you want to exit SQLLine:
     !quit
 
 
-# Query Sample Data
+## Query Sample Data
 
 Your Drill installation includes a `sample-date` directory with JSON and
 Parquet files that you can query. The local file system on your machine is
 configured as the `dfs` storage plugin instance by default when you install
 Drill in embedded mode. For more information about storage plugin
-configuration, refer to [Storage Plugin Registration](https://cwiki.apache.org
-/confluence/display/DRILL/Connecting+to+Data+Sources#ConnectingtoDataSources-
-StoragePluginRegistration).
+configuration, refer to [Storage Plugin Registration](/drill/docs/connect-to-data-sources/).
 
 Use SQL syntax to query the sample `JSON` and `Parquet` files in the `sample-
 data` directory on your local file system.
@@ -363,7 +360,7 @@ your operating system:
 
 The query returns the following results:
 
-# Summary
+## Summary
 
 Now you know a bit about Apache Drill. To summarize, you have completed the
 following tasks:
@@ -375,17 +372,17 @@ following tasks:
   * Queried the sample `region.parquet` file to view its data.
   * Queried the sample `nation.parquet` file to view its data.
 
-# Next Steps
+## Next Steps
 
 Now that you have an idea about what Drill can do, you might want to:
 
-  * [Deploy Drill in a clustered environment.](https://cwiki.apache.org/confluence/display/DRILL/Deploying+Apache+Drill+in+a+Clustered+Environment)
-  * [Configure storage plugins to connect Drill to your data sources](https://cwiki.apache.org/confluence/display/DRILL/Connecting+to+Data+Sources).
-  * Query [Hive](https://cwiki.apache.org/confluence/display/DRILL/Connecting+to+Data+Sources#ConnectingtoDataSources-QueryingHiveTables) and [HBase](https://cwiki.apache.org/confluence/display/DRILL/Connecting+to+Data+Sources#ConnectingtoDataSources-QueryingHiveTables) data.
-  * [Query Complex Data](https://cwiki.apache.org/confluence/display/DRILL/Querying+Complex+Data)
-  * [Query Plain Text Files](https://cwiki.apache.org/confluence/display/DRILL/Querying+Plain+Text+Files)
+  * [Deploy Drill in a clustered environment.](/drill/docs/deploying-apache-drill-in-a-clustered-environment)
+  * [Configure storage plugins to connect Drill to your data sources](/drill/docs/connect-to-data-sources).
+  * Query [Hive](/drill/docs/querying-hive) and [HBase](/drill/docs/registering-hbase) data.
+  * [Query Complex Data](/drill/docs/querying-complex-data)
+  * [Query Plain Text Files](/drill/docs/querying-plain-text-files)
 
-# More Information
+## More Information
 
-For more information about Apache Drill, go to [Apache Drill
-Wiki](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+Wiki).
+For more information about Apache Drill, explore the  [Apache Drill
+web site](http://drill.apache.org).

@@ -26,7 +26,7 @@ Before you can query MongoDB with Drill, you must have Drill and MongoDB
 installed on your machine. You may also want to import the MongoDB zip code
 data to run the example queries on your machine.
 
-  1. [Install Drill](https://cwiki.apache.org/confluence/display/DRILL/Installing+Drill+in+Embedded+Mode), if you do not already have it installed on your machine.
+  1. [Install Drill](/drill/docs/installing-drill-in-embedded-mode/), if you do not already have it installed on your machine.
   2. [Install MongoDB](http://docs.mongodb.org/manual/installation/), if you do not already have it installed on your machine.
   3. [Import the MongoDB zip code sample data set](http://docs.mongodb.org/manual/tutorial/aggregation-zip-code-data-set/). You can use Mongo Import to get the data. 
 
@@ -91,7 +91,7 @@ the `USE` command to change schema.
 The following example queries are included for reference. However, you can use
 the SQL power of Apache Drill directly on MongoDB. For more information about,
 refer to the [Apache Drill SQL
-Reference](https://cwiki.apache.org/confluence/display/DRILL/SQL+Reference).
+Reference](/drill/docs/sql-reference/).
 
 **Example 1: View mongo.zipdb Dataset**
 
@@ -167,4 +167,4 @@ Reference](https://cwiki.apache.org/confluence/display/DRILL/SQL+Reference).
 You can leverage the power of Apache Drill to query MongoDB through standard
 BI tools, such as Tableau and SQuirreL.
 
-For information about Drill ODBC and JDBC drivers, refer to [Drill Interfaces](https://cwiki.apache.org/confluence/display/DRILL/Drill+Interfaces).
+For information about Drill ODBC and JDBC drivers, refer to [Drill Interfaces](/drill/docs/drill-interfaces/).

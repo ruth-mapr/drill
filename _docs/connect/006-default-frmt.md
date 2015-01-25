@@ -30,9 +30,8 @@ Drill supports. Currently, Drill supports the following types:
 ## Defining a Default Input Format
 
 You define the default input format for a file system workspace through the
-Drill Web UI. You must have a defined workspace before you can define a
-default input format. For information about how to define a workspace, refer
-to [Workspaces](https://cwiki.apache.org/confluence/display/DRILL/Workspaces).
+Drill Web UI. You must have a [defined workspace](/drill/docs/workspaces/) before you can define a
+default input format.
 
 To define a default input format for a workspace, complete the following
 steps:
