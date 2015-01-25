@@ -9,7 +9,6 @@ source.
 The following image represents the storage plugin layer between Drill and a
 data source:
 
-<!--![](img/storageplugin.png)-->
 ![drill query flow]({{ site.baseurl }}/docs/img/storageplugin.png)
 
 Storage plugins provide the following information to Drill:
@@ -40,10 +39,3 @@ queries on the data or go through Hive, if you have metadata defined there.
 Drill integrates with the Hive metastore for metadata and also uses a Hive
 SerDe for the deserialization of records. Drill does not invoke the Hive
 execution engine for any requests.
-
-For information about how to connect Drill to your data sources, refer to
-storage plugin registration:
-
-  * [Storage Plugin Registration](/confluence/display/DRILL/Storage+Plugin+Registration)
-  * [MongoDB Plugin for Apache Drill](/confluence/display/DRILL/MongoDB+Plugin+for+Apache+Drill)
-  * [MapR-DB Plugin for Apache Drill](/confluence/display/DRILL/MapR-DB+Plugin+for+Apache+Drill)

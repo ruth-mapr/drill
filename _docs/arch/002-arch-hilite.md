@@ -8,8 +8,3 @@ the **Flexibility** of Hadoop/NoSQL systems. There are several core
 architectural elements in Apache Drill that make it a highly flexible and
 efficient query engine.
 
-Click on either of the following links to read more about Drill's performance
-and flexibility:
-
-  * [Flexibility](/confluence/display/DRILL/Flexibility)
-  * [Performance](/confluence/display/DRILL/Performance)

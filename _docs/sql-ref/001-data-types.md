@@ -50,7 +50,7 @@ luence/pages/viewpage.action?pageId=44304039).
   * NULL
   * TRUE
 
-# Complex Data Types
+## Complex Data Types
 
 Drill provides map and array data types to work with complex and nested data
 structures. For analysis of complex data, a more modern JSON-style approach to
@@ -88,9 +88,3 @@ types:
     </tr>
   </tbody></table>
 
-
-<!--| Data Type | Description | Example |  
-| --------- | ----------- | --------| 
-| Map       | A map is a set of name/value pairs. A value in an map can be a scalar type, such as string or int, or a map can be a complex type, such as an array or another map.| Map with scalar type values: "phoneNumber": { "areaCode": "622", "number": "1567845"} Map with complex type value :{ "citiesLived" : [ { "place" : "Los Angeles", "yearsLived" : [ "1989", "1993", "1998", "2002"] } ] } |
-|Array| An array is a repeated list of values. A value in an array can be a scalar type, such as string or int, or an array can be a complex type, such as a map or another array.| Array with scalar type values: "yearsLived": ["1990"", "1993", "1998", "2008"] Array with complex type value :"children" : [ { "age" : "10", "gender" : "Male", "name": "Earl" }, {"age" : "6", "gender": "Male", "name": "Sam"}, { "age" : "8", "gender" : "Male", "name" : "Kit" }] |
--->

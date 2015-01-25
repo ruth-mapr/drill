@@ -8,8 +8,6 @@ databases. In Drill, a file system database consists of a storage plugin name
 followed by an optional workspace name, for example <storage
 plugin>.<workspace> or hdfs.logs.
 
-  
-
 The following example shows a query on a file system database in a Hadoop
 distributed file system:
 

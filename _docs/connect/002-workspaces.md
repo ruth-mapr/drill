@@ -72,11 +72,3 @@ format to query a table in HBase:
 
 After you register a data source as a storage plugin instance with Drill, and
 optionally configure workspaces, you can query the data source.
-
-Click any of the following links to learn how to register a data source as a
-storage plugin instance:
-
-  * [Registering a File System](/confluence/display/DRILL/Registering+a+File+System)
-  * [Registering HBase](/confluence/display/DRILL/Registering+HBase)
-  * [Registering Hive](/confluence/display/DRILL/Registering+Hive)
-  * [Drill Default Input Format](/confluence/display/DRILL/Drill+Default+Input+Format)

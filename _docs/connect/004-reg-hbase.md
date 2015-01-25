@@ -29,6 +29,4 @@ To register HBase with Drill, complete the following steps:
   4. Click **Enable**.
 
 Once you have configured a storage plugin instance for the HBase, you can
-issue Drill queries against it. For information about querying an HBase data
-source, refer to [Querying
-HBase](https://cwiki.apache.org/confluence/display/DRILL/Querying+HBase).
+issue Drill queries against it.

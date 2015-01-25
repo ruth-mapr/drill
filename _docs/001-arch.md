@@ -48,9 +48,3 @@ You can access Drill through the following interfaces:
   * ODBC 
   * JDBC
   * C++ API
-
-Click on either of the following links to continue reading about Drill's
-architecture:
-
-  * [Core Modules within a Drillbit](http://drill.apache.org/docs/core-modules-within-a-drillbit)
-  * [Architectural Highlights](http://drill.apache.org/docs/architectural-highlights)

@@ -51,7 +51,7 @@ analysis extremely easy.
     0: jdbc:drill:zk=local> !set maxwidth 10000
 
     0: jdbc:drill:zk=local> select * from
-        dfs.`/users/nrentachintala/Downloads/yelp/        yelp_academic_dataset_business.json`
+        dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
         limit 1;
 
     +-------------+--------------+------------+------------+------------+------------+--------------+------------+------------+------------+------------+------------+------------+------------+---------------+
@@ -68,9 +68,8 @@ analysis extremely easy.
 
 #### Total reviews in the data set
 
-    0: jdbc:drill:zk=local> select sum(review_count) as totalreviews from
-dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-;
+    0: jdbc:drill:zk=local> select sum(review_count) as totalreviews 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`;
 
     +--------------+
     | totalreviews |
@@ -80,9 +79,9 @@ dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
 
 #### Top states and cities in total number of reviews
 
-    0: jdbc:drill:zk=local> select state, city, count(*) totalreviews from
-dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-group by state, city order by count(*) desc limit 10;
+    0: jdbc:drill:zk=local> select state, city, count(*) totalreviews 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json` 
+    group by state, city order by count(*) desc limit 10;
 
     +------------+------------+--------------+
     |   state    |    city    | totalreviews |
@@ -101,9 +100,9 @@ group by state, city order by count(*) desc limit 10;
 
 #### **Average number of reviews per business star rating**
 
-    0: jdbc:drill:zk=local> select stars,trunc(avg(review_count)) reviewsavg from
-dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
-group by stars order by stars desc;``
+    0: jdbc:drill:zk=local> select stars,trunc(avg(review_count)) reviewsavg 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`
+    group by stars order by stars desc;``
 
     +------------+------------+
     |   stars    | reviewsavg |
@@ -259,7 +258,9 @@ on data.
 
 #### **Top first categories in number of review counts**
 
-    0: jdbc:drill:zk=local> select categories[0], count(categories[0]) as categorycount from dfs.`/users/nrentachintala/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_business.json` group by categories[0] 
+    0: jdbc:drill:zk=local> select categories[0], count(categories[0]) as categorycount 
+    from dfs.`/users/nrentachintala/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_business.json` 
+    group by categories[0] 
     order by count(categories[0]) desc limit 10;
     +------------+---------------+
     |   EXPR$0   | categorycount |
@@ -280,7 +281,8 @@ on data.
 
 #### **Take a look at the contents of the Yelp reviews dataset.**** **
 
-    0: jdbc:drill:zk=local> select * from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` limit 1;
+    0: jdbc:drill:zk=local> select * 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` limit 1;
     +------------+------------+------------+------------+------------+------------+------------+-------------+
     |   votes          |  user_id   | review_id  |   stars    |            date    |    text           |          type    | business_id |
     +------------+------------+------------+------------+------------+------------+------------+-------------+
@@ -293,8 +295,12 @@ Note that we are combining the Yelp business data set that has the overall
 review_count to the Yelp review data, which holds additional details on each
 of the reviews themselves.
 
-    0: jdbc:drill:zk=local> Select b.name from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json` b where b.business_id in (SELECT r.business_id FROM dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` r
-    GROUP BY r.business_id having sum(r.votes.cool) > 2000 order by sum(r.votes.cool)  desc);
+    0: jdbc:drill:zk=local> Select b.name 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json` b 
+    where b.business_id in (SELECT r.business_id 
+    FROM dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` r
+    GROUP BY r.business_id having sum(r.votes.cool) > 2000 
+    order by sum(r.votes.cool)  desc);
     +------------+
     |    name         |
     +------------+
@@ -312,7 +318,10 @@ can use to create views (or you can can define your own workspaces on a local
 or distributed file system). If you want to persist the data physically
 instead of in a logical view, you can use CREATE TABLE AS SELECT syntax.
 
-    0: jdbc:drill:zk=local> create or replace view dfs.tmp.businessreviews as Select b.name,b.stars,b.state,b.city,r.votes.funny,r.votes.useful,r.votes.cool, r.`date` from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json` b , dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` r where r.business_id=b.business_id
+    0: jdbc:drill:zk=local> create or replace view dfs.tmp.businessreviews as 
+    Select b.name,b.stars,b.state,b.city,r.votes.funny,r.votes.useful,r.votes.cool, r.`date` 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json` b, dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` r 
+    where r.business_id=b.business_id
     +------------+------------+
     |     ok             |  summary   |
     +------------+------------+
@@ -346,7 +355,8 @@ data so you can apply even deeper SQL functionality. Here is a sample query:
 
 #### **Get a flattened list of categories for each business**
 
-    0: jdbc:drill:zk=local> select name, flatten(categories) as category from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`  limit 20;
+    0: jdbc:drill:zk=local> select name, flatten(categories) as category 
+    from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json`  limit 20;
     +------------+------------+
     |    name         |   category   |
     +------------+------------+
@@ -374,7 +384,10 @@ data so you can apply even deeper SQL functionality. Here is a sample query:
 
 **Top categories used in business reviews**
 
-    0: jdbc:drill:zk=local> select celltbl.catl, count(celltbl.catl) categorycnt from (select flatten(categories) catl from dfs.`/users/nrentachintala/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_business.json` )  celltbl group by celltbl.catl order by count(celltbl.catl) desc limit 10 ;
+    0: jdbc:drill:zk=local> select celltbl.catl, count(celltbl.catl) categorycnt 
+    from (select flatten(categories) catl from dfs.`/users/nrentachintala/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_business.json` ) celltbl 
+    group by celltbl.catl 
+    order by count(celltbl.catl) desc limit 10 ;
     +------------+-------------+
     |    catl    | categorycnt |
     +------------+-------------+

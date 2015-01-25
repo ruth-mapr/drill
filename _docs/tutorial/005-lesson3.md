@@ -190,7 +190,7 @@ shows how you to access this kind of data.
 
 ## Query Arrays
 
-Now use the [ n ] notation, where n is the position of the value in an array,
+Now use the [n] notation, where n is the position of the value in an array,
 starting from position 0 (not 1) for the first value. You can use this
 notation to write interesting queries against nested array data.
 

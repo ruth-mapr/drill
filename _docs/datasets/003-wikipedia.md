@@ -27,7 +27,6 @@ options. There are some limits like a maximum of 1000 revisions per export,
 but otherwise this should work out just fine.
 
 ![drill query flow]({{ site.baseurl }}/docs/img/Overview.png)
-<!--![](../img/Overview.png)-->
 
 The entities used in the query use cases.
 

@@ -15,7 +15,6 @@ You must have the following software installed on your machine to run Drill:
 
 <div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Software</strong></p></td><td class="confluenceTd"><p><strong>Description</strong></p></td></tr><tr><td class="confluenceTd"><p><a class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" rel="nofollow">Oracle JDK version 7</a></p></td><td class="confluenceTd"><p>A set of programming tools for developing Java applications.</p></td></tr></tbody></table></div>
 
-
 A set of programming tools for developing Java applications.  
   
 You can run the following command to verify that the system meets the software

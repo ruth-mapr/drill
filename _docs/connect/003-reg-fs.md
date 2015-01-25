@@ -64,7 +64,4 @@ name node and the port number.
   4. Click **Enable**.
 
 Once you have configured a storage plugin instance for the file system, you
-can issue Drill queries against it. For information about querying a file
-system, refer to [Querying a File System](https://cwiki.apache.org/confluence/
-display/DRILL/Connecting+to+Data+Sources#ConnectingtoDataSources-
-QueryingaFileSystem).
+can issue Drill queries against it.

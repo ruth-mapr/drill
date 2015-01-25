@@ -16,7 +16,7 @@ The JVM’s heap memory does not limit the amount of direct memory available in
 a Drillbit. The on-heap memory for Drill is only about 4-8G, which should
 suffice because Drill avoids having data sit in heap memory.
 
-#### Modifying Drillbit Memory
+## Modifying Drillbit Memory
 
 You can modify memory for each Drillbit node in your cluster. To modify the
 memory for a Drillbit, edit the `XX:MaxDirectMemorySize` parameter in the

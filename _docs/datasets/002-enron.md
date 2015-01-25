@@ -16,6 +16,4 @@ dump](ftp://ftp.isi.edu/sims/philpot/data/enron-mysqldump.sql.gz) (~177MB).
 
 ## The Queries
 
-Interesting queries, for example
-
-  * Via [Query Dataset for Email Search](https://dbappserv.cis.upenn.edu/spell/)
+Interesting queries, for example Via [Query Dataset for Email Search](https://dbappserv.cis.upenn.edu/spell/)

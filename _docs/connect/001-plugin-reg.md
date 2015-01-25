@@ -32,9 +32,4 @@ other instance `hdfsproduction`.
 The following example shows an HDFS data source registered in the Drill Web UI
 as a storage plugin instance of plugin type "`file"`:
 
-<!--![](../img/StoragePluginConfig.png)-->
 ![drill query flow]({{ site.baseurl }}/docs/img/StoragePluginConfig.png)
-
-Click the following link to learn about workspaces:
-
-  * [Workspaces](/confluence/display/DRILL/Workspaces)

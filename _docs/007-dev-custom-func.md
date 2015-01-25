@@ -35,12 +35,3 @@ complete the following tasks:
   1. Create a Java program that implements Drill’s simple or aggregate interface, and compile a sources and a classes JAR file.
   2. Add the sources and classes JAR files to Drill’s classpath.
   3. Add the name of the package that contains the classes to Drill’s main configuration file, drill-override.conf. 
-
-Click on one of the following links to learn how to create custom functions
-for Drill:
-
-  * [Developing a Simple Function](/confluence/display/DRILL/Developing+a+Simple+Function)
-  * [Developing an Aggregate Function](/confluence/display/DRILL/Developing+an+Aggregate+Function)
-  * [Adding Custom Functions to Drill](/confluence/display/DRILL/Adding+Custom+Functions+to+Drill)
-  * [Using Custom Functions in Queries](/confluence/display/DRILL/Using+Custom+Functions+in+Queries)
-  * [Custom Function Interfaces](/confluence/display/DRILL/Custom+Function+Interfaces)

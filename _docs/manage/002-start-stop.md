@@ -32,7 +32,7 @@ type:
   
 When SQLLine starts, the system displays the following prompt:
 
-`0: [jdbc:drill](http://jdbcdrill):schema=<database>;zk=<zkhost>:<port>>`
+`0: jdbc:drill]:schema=<database>;zk=<zkhost>:<port>`
 
 At this point, you can use Drill to query your data source or you can discover
 metadata.

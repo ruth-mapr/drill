@@ -32,13 +32,13 @@ When you add a JAR file to Drill, you must include a `drill-module.conf` file
 in the root directory of the JAR file that you add. The `drill-module.conf`
 file tells Drill to scan that JAR file or associated object and include it.
 
-#### Viewing Startup Options
+## Viewing Startup Options
 
 You can run the following query to see a list of Drill’s startup options:
 
     SELECT * FROM sys.options WHERE type='BOOT'
 
-#### Configuring Start-Up Options
+## Configuring Start-Up Options
 
 You can configure start-up options for each Drillbit in the `drill-
 override.conf` file located in Drill’s` /conf` directory.

@@ -8,17 +8,6 @@ not indicate a schema when you invoked SQLLine, you can issue the `USE
 <schema>` statement to run your queries against a particular schema. After you
 issue the `USE` statement, you can use absolute notation, such as `schema.table.column`.
 
-Click on any of the following links for information about various data source
-queries and examples:
-
-  * [Querying a File System](/confluence/display/DRILL/Querying+a+File+System)
-  * [Querying HBase](/confluence/display/DRILL/Querying+HBase)
-  * [Querying Hive](/confluence/display/DRILL/Querying+Hive)
-  * [Querying Complex Data](/confluence/display/DRILL/Querying+Complex+Data)
-  * [Querying the INFORMATION_SCHEMA](/confluence/display/DRILL/Querying+the+INFORMATION_SCHEMA)
-  * [Querying System Tables](/confluence/display/DRILL/Querying+System+Tables)
-  * [Drill Interfaces](/confluence/display/DRILL/Drill+Interfaces)
-
 You may need to use casting functions in some queries. For example, you may
 have to cast a string `"100"` to an integer in order to apply a math function
 or an aggregate function.
@@ -39,7 +28,7 @@ a query.
 Remember the following tips when querying data with Drill:
 
   * Include a semicolon at the end of SQL statements, except when you issue a command with an exclamation point `(!).   
-`Example: `!set maxwidth 10000`
+    `Example: `!set maxwidth 10000`
 
   * Use backticks around file and directory names that contain special characters and also around reserved words when you query a file system .   
 The following special characters require backticks:
@@ -50,6 +39,7 @@ The following special characters require backticks:
 
 Example: ``SELECT * FROM dfs.default.`sample_data/my_sample.json`; ``
 
-  * `CAST` data to `VARCHAR` if an expression in a query returns `VARBINARY` as the result type in order to view the `VARBINARY` types as readable data. If you do not use the `CAST` function, Drill returns the results as byte data.  
-Example: `CAST (VARBINARY_expr as VARCHAR(50))`
+  * `CAST` data to `VARCHAR` if an expression in a query returns `VARBINARY` as the result type in order to view the `VARBINARY` types as readable data. If you do not use the `CAST` function, Drill returns the results as byte data.
+    
+    Example: `CAST (VARBINARY_expr as VARCHAR(50))`
 

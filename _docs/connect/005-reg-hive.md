@@ -51,9 +51,7 @@ To register a remote Hive metastore with Drill, complete the following steps:
   6. Verify that `HADOOP_CLASSPATH` is set in `drill-env.sh`. If you need to set the classpath, add the following line to `drill-env.sh`.
 
 Once you have configured a storage plugin instance for a Hive data source, you
-can issue Drill queries against it. For information about querying a Hive data
-source, refer to [Querying
-Hive](https://cwiki.apache.org/confluence/display/DRILL/Querying+Hive).
+can [query Hive tables](({{ site.baseurl }}/docs/querying-hive)).
 
 ## Hive Embedded Metastore
 
@@ -69,7 +67,7 @@ MetastoreAdmin](/confluence/display/Hive/AdminManual+MetastoreAdmin).
 To register an embedded Hive metastore with Drill, complete the following
 steps:
 
-  1. Navigate to `[http://localhost:8047](http://localhost:8047/), `and select the **Storage** tab
+  1. Navigate to `[http://localhost:8047](http://localhost:8047/)`, and select the **Storage** tab
 
   2. In the disabled storage plugins section, click **Update** next to `hive` instance.
 
@@ -92,8 +90,3 @@ steps:
   5. Verify that `HADOOP_CLASSPATH` is set in `drill-env.sh`. If you need to set the classpath, add the following line to `drill-env.sh`.
   
         export HADOOP_CLASSPATH=/<directory path>/hadoop/hadoop-0.20.2
-
-      Once you have configured a storage plugin instance for the Hive, you can issue
-Drill queries against it. For information about querying a Hive data source,
-refer to [Querying
-Hive](https://cwiki.apache.org/confluence/display/DRILL/Querying+Hive).
