@@ -11,7 +11,7 @@ metastore connection information.
 Currently, Drill only works with Hive version 0.12. To access Hive tables
 using custom SerDes or InputFormat/OutputFormat, all nodes running Drillbits
 must have the SerDes or InputFormat/OutputFormat `JAR` files in the
-`<drill_installation_directory>/jars/3rdparty `folder.
+`<drill_installation_directory>/jars/3rdparty` folder.
 
 ## Hive Remote Metastore
 
@@ -51,7 +51,7 @@ To register a remote Hive metastore with Drill, complete the following steps:
   6. Verify that `HADOOP_CLASSPATH` is set in `drill-env.sh`. If you need to set the classpath, add the following line to `drill-env.sh`.
 
 Once you have configured a storage plugin instance for a Hive data source, you
-can [query Hive tables](({{ site.baseurl }}/docs/querying-hive)).
+can [query Hive tables](querying-hive).
 
 ## Hive Embedded Metastore
 
