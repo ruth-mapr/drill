@@ -20,21 +20,17 @@ You can use the following SQL data types in your Drill queries:
   * DATE
   * INTERVAL
     * Interval Year (stores year and month)
-
     * Interval Day (stores day, hour, minute, seconds, and milliseconds)
   * TIME
   * TIMESTAMP
 
-Refer to [Supported Date/Time Data Type formats](https://cwiki.apache.org/conf
-luence/pages/viewpage.action?pageId=44304039).
+Refer to [Supported Date/Time Data Type formats](/drill/docs/supported-date-time-data-type-formats/).
 
 #### Integer
 
   * BIGINT
-
   * INT
   * SMALLINT
-
   * TINYINT
 
 #### Numeric Types

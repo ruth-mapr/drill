@@ -5,6 +5,6 @@ parent: "SQL Reference"
 This section contains descriptions of SQL functions that you can use to
 analyze nested data:
 
-  * [FLATTEN Function](/confluence/display/DRILL/FLATTEN+Function)
-  * [KVGEN Function](/confluence/display/DRILL/KVGEN+Function)
-  * [REPEATED_COUNT Function](/confluence/display/DRILL/REPEATED_COUNT+Function)
+  * [FLATTEN Function](/drill/docs/flatten-function)
+  * [KVGEN Function](/drill/docs/kvgen-function)
+  * [REPEATED_COUNT Function](/drill/docs/repeated-count-function)

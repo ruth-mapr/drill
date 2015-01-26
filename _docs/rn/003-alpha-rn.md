@@ -31,14 +31,9 @@ will be correct in a future milestone release.
 
   * All tables are exposed as a single map field that contains
   * Drill Alpha doesn't support implicit or explicit casts outside those required above.
-  * Drill Alpha does not include, there are currently a couple of differences for how to write a query in In order to query against
-
-UDFs
-
+  * Drill Alpha does not include, there are currently a couple of differences for how to write a query in order to query against UDFs
   * Drill currently supports simple and aggregate functions using scalar, repeated and
-  * Nested data support incomplete. Drill Alpha supports nested data structures as well repeated fields. However,
-  * asd
-
+  * Nested data support incomplete. Drill Alpha supports nested data structures as well repeated fields. 
 
 
 

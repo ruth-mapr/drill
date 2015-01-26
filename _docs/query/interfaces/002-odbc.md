@@ -14,10 +14,5 @@ the two components work together.
 
 You can access the latest Drill ODBC drivers in the following location:
 
-<http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc/>
+<http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc>
 
-Refer to the following documents for driver installation and configuration
-information, as well as examples for connecting to BI tools:
-
-  * [Using the MapR ODBC Driver on Windows](/confluence/display/DRILL/Using+the+MapR+ODBC+Driver+on+Windows)
-  * [Using the MapR Drill ODBC Driver on Linux and Mac OS X](/confluence/display/DRILL/Using+the+MapR+Drill+ODBC+Driver+on+Linux+and+Mac+OS+X)
