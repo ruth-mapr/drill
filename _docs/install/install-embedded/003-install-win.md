@@ -38,14 +38,12 @@ directory path, Drill fails to run.
      [http://www.apache.org/dyn/closer.cgi/drill/drill-0.7.0/apache-drill-0.7.0.tar.gz](http://www.apache.org/dyn/closer.cgi/drill/drill-0.7.0/apache-drill-0.7.0.tar.gz)
   3. Move the `apache-drill-<version>.tar.gz` file to the `drill` directory that you created on your `C:\` drive.
   4. Unzip the `TAR.GZ` file and the resulting `TAR` file.  
-
      1. Right-click `apache-drill-<version>.tar.gz,` and select `7-Zip>Extract Here`. The utility extracts the `apache-drill-<version>.tar` file.  
      2. Right-click `apache-drill-<version>.tar,` and select `7-Zip>Extract Here`. The utility extracts the `apache-drill-<version>` folder.
   5. Open the `apache-drill-<version>` folder.
   6. Open the `bin` folder, and double-click on the `sqlline.bat` file. The Windows command prompt opens.
   7. At the `sqlline>` prompt, type `!connect jdbc:drill:zk=local` and then press `Enter`.
-  8. Enter the username and password.
-  
+  8. Enter the username and password. 
      1. When prompted, enter the user name `admin` and then press Enter. 
      2. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local>` displays in the prompt.
 
