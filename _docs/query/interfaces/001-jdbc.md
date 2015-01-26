@@ -98,7 +98,41 @@ To create an alias, complete the following steps:
     
 3. Enter the following information:
   
-     <table><tbody><tr><td valign="top" width="30%"><strong>Option</strong></td><td valign="top" width="70%"><strong>Description</strong></td></tr><tr><td valign="top">Alias Name</td><td valign="top">A unique name for the Drill JDBC Driver alias.</td></tr><tr><td valign="top">Driver</td><td valign="top">Select the Drill JDBC Driver.</td></tr><tr><td valign="top">URL</td><td valign="top">Enter the connection URL with the name of the Drill directory stored in ZooKeeper and the cluster ID:<code>jdbc:drill:zk=&lt;<em>zookeeper_quorum</em>&gt;/&lt;drill_directory_in_zookeeper&gt;/&lt;cluster_ID&gt;;schema=&lt;<em>schema_to_use_as_default</em>&gt;</code><em>The following examples show URLs for Drill installed on a single node:</em><br /><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.56:5181/drill/demo_mapr_com-drillbits;schema=hive<br /></span><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.24:2181/drill/drillbits1;schema=hive<br /> </span><div><em>The following example shows a URL for Drill installed in distributed mode with a connection to a ZooKeeper quorum:</em></div><div><span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.30:5181,10.10.100.31:5181,10.10.100.32:5181/drill/drillbits1;schema=hive</span></div>    <div class="aui-message warning shadowed information-macro"><span class="aui-icon icon-warning"></span><div class="message-content"><ul><li style="list-style-type: none;background-image: none;"><ul><li>Including a default schema is optional.</li><li>The ZooKeeper port is 2181. In a MapR cluster, the ZooKeeper port is 5181.</li><li>The Drill directory stored in ZooKeeper is <code>/drill</code>. </li><li>The Drill default cluster ID is<code> drillbits1</code>.</li></ul></li></ul></div></div></td></tr><tr><td valign="top">User Name</td><td valign="top">admin</td></tr><tr><td valign="top">Password</td><td valign="top">admin</td></tr></tbody></table>
+     <table><tbody><tr>
+     <td valign="top" width="30%"><strong>Option</strong></td>
+     <td valign="top" width="70%"><strong>Description</strong></td>
+     </tr>
+     <tr>
+     <td valign="top">Alias Name</td>
+     <td valign="top">A unique name for the Drill JDBC Driver alias.</td>
+     </tr>
+     <tr>
+     <td valign="top">Driver</td>
+     <td valign="top">Select the Drill JDBC Driver.</td>
+     </tr>
+     <tr>
+     <td valign="top">URL</td>
+     <td valign="top">Enter the connection URL with the name of the Drill directory stored in ZooKeeper and the cluster ID:
+       <code>jdbc:drill:zk=&lt;<em>zookeeper_quorum</em>&gt;/&lt;drill_directory_in_zookeeper&gt;/&lt;cluster_ID&gt;;schema=&lt;<em>schema_to_use_as_default</em>&gt;</code>
+       <em>The following examples show URLs for Drill installed on a single node:</em><br />
+       <span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.56:5181/drill/demo_mapr_com-drillbits;schema=hive<br /></span>
+       <span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.24:2181/drill/drillbits1;schema=hive<br /> </span>
+       <em>The following example shows a URL for Drill installed in distributed mode with a connection to a ZooKeeper quorum:</em>
+       <span style="font-family: monospace;font-size: 14.0px;line-height: 1.4285715;background-color: transparent;">jdbc:drill:zk=10.10.100.30:5181,10.10.100.31:5181,10.10.100.32:5181/drill/drillbits1;schema=hive</span>
+          <ul>
+          <li>Including a default schema is optional.</li>
+          <li>The ZooKeeper port is 2181. In a MapR cluster, the ZooKeeper port is 5181.</li>
+          <li>The Drill directory stored in ZooKeeper is <code>/drill</code>.</li>
+          <li>The Drill default cluster ID is<code> drillbits1</code>.</li>
+          </ul>
+     </td></tr><tr>
+     <td valign="top">User Name</td>
+     <td valign="top">admin</td>
+     </tr>
+     <tr>
+     <td valign="top">Password</td>
+     <td valign="top">admin</td>
+     </tr></tbody></table>
 4. Click **Ok. **The Connect to: dialog box appears.  
 
     ![drill query flow]({{ site.baseurl }}/docs/img/30.png)
