@@ -1,5 +1,5 @@
 ---
-title: "Lesson 2 Query Plain Text"
+title: "Lesson 2: Query Plain Text"
 parent: "Getting Started Tutorial"
 ---
 The lesson shows you how to query a plain text file. Drill handles plain text
@@ -42,7 +42,7 @@ path and name of the file in backticks.
 
   1. Download the compressed Google Ngram data from this location:  
     
-     http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-2gram-20120701-zo.gz)
+     http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-5gram-20120701-zo.gz)
 
   2. Unzip the file.  
      A file named googlebooks-eng-all-5gram-20120701-zo appears.

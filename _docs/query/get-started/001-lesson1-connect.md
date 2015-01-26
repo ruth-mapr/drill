@@ -1,5 +1,5 @@
 ---
-title: "Lesson 1 Connect to Data Sources"
+title: "Lesson 1: Connect to Data Sources"
 parent: "Getting Started Tutorial"
 ---
 This lesson shows how to connect to default data sources that Drill installs
@@ -13,7 +13,6 @@ To list the default storage plugins, use the SHOW DATABASES command.
   1. Issue the SHOW DATABASES command.
     
         0: jdbc:drill:zk=local> SHOW DATABASES;  
-    
 
      The output lists the storage plugins, which you use as a SQL database, in
 <database>.<workspace> format.
@@ -32,10 +31,10 @@ To list the default storage plugins, use the SHOW DATABASES command.
 
   2. Take a look at the list of storage plugins and workspaces that Drill recognizes.
 
-     * `dfs` is the storage plugin for connecting to the [file system](/confluence/display/DRILL/Querying+a+File+System) data source on your machine.
+     * `dfs` is the storage plugin for connecting to the [file system](/drill/docs/querying-a-file-system) data source on your machine.
      * `cp` is a storage plugin for connecting to a JAR data source used with MapR.
-     * `sys` is a storage plugin for connecting to Drill [system tables](/confluence/display/DRILL/Querying+System+Tables).
-     * [INFORMATION_SCHEMA](/confluence/display/DRILL/Querying+the+INFORMATION_SCHEMA) is a storage plugin for connecting to an ANSI standard set of metadata tables.
+     * `sys` is a storage plugin for connecting to Drill [system tables](/drill/docs/querying-system-tables).
+     * [INFORMATION_SCHEMA](/drill/docs/querying-the-information-schema) is a storage plugin for connecting to an ANSI standard set of metadata tables.
 
 ## List Tables
 

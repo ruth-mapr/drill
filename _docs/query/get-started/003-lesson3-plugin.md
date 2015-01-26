@@ -1,5 +1,5 @@
 ---
-title: "Lesson 3 Create a Storage Plugin"
+title: "Lesson 3: Create a Storage Plugin"
 parent: "Getting Started Tutorial"
 ---
 The Drill default storage plugins support common file formats. If you need
