@@ -161,7 +161,7 @@ analysis extremely easy.
     | Spartan Animal Hospital    | 07:30      | 18:00      |
     +------------+------------+----------------------------+
 
-** **Note how Drill can traverse and refer through multiple levels of nesting.
+Note how Drill can traverse and refer through multiple levels of nesting.
 
 ### **3\. Get the amenities of each business in the data set**
 
@@ -209,7 +209,7 @@ on data.
 
 ### **4\. Explore the restaurant businesses in the data set**
 
-#### **Number of restaurants in the data set**** **
+#### **Number of restaurants in the data set**
 
     0: jdbc:drill:zk=local> select count(*) as TotalRestaurants from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_business.json` where true=repeated_contains(categories,'Restaurants');
     +------------------+
@@ -276,9 +276,9 @@ on data.
     | Hair Salons | 901           |
     +------------+---------------+
 
-### **5\. Explore the Yelp reviews dataset and combine with the businesses.**** **
+### **5\. Explore the Yelp reviews dataset and combine with the businesses.**
 
-#### **Take a look at the contents of the Yelp reviews dataset.**** **
+#### **Take a look at the contents of the Yelp reviews dataset.**
 
     0: jdbc:drill:zk=local> select * 
     from dfs.`/users/nrentachintala/Downloads/yelp/yelp_academic_dataset_review.json` limit 1;
@@ -407,6 +407,6 @@ To learn more about Drill, please refer to the following resources:
 
   * Download Drill here:<http://incubator.apache.org/drill/download/>
   * 10 reasons we think Drill is cool:<http://incubator.apache.org/drill/why-drill/>
-  * A simple 10-minute tutorial:</drill/docs/apache-drill-in-10-minutes>
-  * A more comprehensive tutorial:</drill/docs/apache-drill-tutorial>
+  * [A simple 10-minute tutorial](/drill/docs/apache-drill-in-10-minutes>)
+  * [A more comprehensive tutorial](/drill/docs/apache-drill-tutorial)
 

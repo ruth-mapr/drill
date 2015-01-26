@@ -380,7 +380,7 @@ workspace, so the query specifies the full path to the file:
     dfs.`/mapr/demo.mapr.com/data/nested/clicks/clicks.json`
 
 
-# What's Next
+## What's Next
 
 Go to [Lesson 3: Run Queries on Complex Data Types](/drill/docs/lession-3-run-queries-on-complex-data-types). 
 
