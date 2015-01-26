@@ -19,47 +19,45 @@ the following steps:
   3. In the Configuration window, provide the following configuration information for the type of file system that you are configuring as a data source.
      1. Local file system example:
 
-        {
-          "type": "file",
-          "enabled": true,
-          "connection": "file:///",
-          "workspaces": {
-            "root": {
-              "location": "/user/max/donuts",
-              "writable": false,
-              "storageformat": null
-            }
-          },
-          "formats" : {
-            "json" : {
-              "type" : "json"
-            }
-          }
-        }
-
+            {
+              "type": "file",
+              "enabled": true,
+              "connection": "file:///",
+              "workspaces": {
+                "root": {
+                  "location": "/user/max/donuts",
+                  "writable": false,
+                  "storageformat": null
+                 }
+              },
+                 "formats" : {
+                   "json" : {
+                     "type" : "json"
+                   }
+                 }
+              }
      2. Distributed file system example:
     
-        {
-          "type" : "file",
-          "enabled" : true,
-          "connection" : "hdfs://10.10.30.156:8020/",
-          "workspaces" : {
-            "root : {
-              "location" : "/user/root/drill",
-              "writable" : true,
-              "storageformat" : "null"
+            {
+              "type" : "file",
+              "enabled" : true,
+              "connection" : "hdfs://10.10.30.156:8020/",
+              "workspaces" : {
+                "root : {
+                  "location" : "/user/root/drill",
+                  "writable" : true,
+                  "storageformat" : "null"
+                }
+              },
+              "formats" : {
+                "json" : {
+                  "type" : "json"
+                }
+              }
             }
-          },
-          "formats" : {
-            "json" : {
-              "type" : "json"
-            }
-          }
-        }
 
       To connect to a Hadoop file system, you must include the IP address of the
 name node and the port number.
-
   4. Click **Enable**.
 
 Once you have configured a storage plugin instance for the file system, you
