@@ -66,9 +66,8 @@ Complete the following steps to start Drill:
   
         bin/sqlline -u jdbc:drill:
      When connected, the Drill prompt appears.  
-     Example:
+     Example: `0: jdbc:drill:zk=<zk1host>:<port>>`
      
-      `0: jdbc:drill:zk=<zk1host>:<port>>`
      If you cannot connect to Drill, invoke SQLLine with the ZooKeeper quorum:
 
          bin/sqlline -u jdbc:drill:zk=<zk1host>:<port>,<zk2host>:<port>,<zk3host>:<port>
