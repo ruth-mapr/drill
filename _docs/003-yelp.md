@@ -25,8 +25,7 @@ example is downloadable from [Yelp](http://www.yelp.com/dataset_challenge)
 
 [http://incubator.apache.org/drill/download/](http://incubator.apache.org/drill/download/)
 
-You can also [deploy Drill in clustered mode](https://cwiki.apache.org/conflue
-nce/display/DRILL/Deploying+Apache+Drill+in+a+Clustered+Environment) if you
+You can also [deploy Drill in clustered mode](/drill/docs/deploying-apache-drill-in-a-clustered-environment) if you
 want to scale your environment.
 
 ### Step 2 : Open the Drill tar file
@@ -338,8 +337,7 @@ Let’s get the total number of records from the view.
     +------------+
 
 In addition to these queries, you can get many more deeper insights using
-Drill’s [SQL functionality](https://cwiki.apache.org/confluence/display/DRILL/
-SQL+Reference). If you are not comfortable with writing queries manually, you
+Drill’s [SQL functionality](/drill/docs/sql-reference/). If you are not comfortable with writing queries manually, you
 can use a BI/Analytics tools such as Tableau/MicroStrategy to query raw
 files/Hive/HBase data or Drill-created views directly using Drill ODBC/JDBC
 drivers.
@@ -409,6 +407,6 @@ To learn more about Drill, please refer to the following resources:
 
   * Download Drill here:<http://incubator.apache.org/drill/download/>
   * 10 reasons we think Drill is cool:<http://incubator.apache.org/drill/why-drill/>
-  * A simple 10-minute tutorial:<https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+in+10+Minutes>
-  * A more comprehensive tutorial:<https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+Tutorial>
+  * A simple 10-minute tutorial:</drill/docs/apache-drill-in-10-minutes>
+  * A more comprehensive tutorial:</drill/docs/apache-drill-tutorial>
 

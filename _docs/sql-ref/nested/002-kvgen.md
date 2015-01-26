@@ -146,5 +146,5 @@ distinct rows:
 	+------------+
 	9 rows selected (0.151 seconds)
 
-See the description of [FLATTEN](/confluence/display/DRILL/FLATTEN+Function)
+See the description of [FLATTEN](/drill/docs/flatten-function)
 for an example of a query against the flattened data.

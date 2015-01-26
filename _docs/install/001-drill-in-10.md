@@ -211,8 +211,7 @@ directory path, Drill fails to run.
     b. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local>` displays in the prompt.
 
 At this point, you can submit queries to Drill. Refer to the [Query Sample Dat
-a](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+in+10+Minute
-s#ApacheDrillin10Minutes-QuerySampleData) section of this document.
+a](/drill/docs/apache-drill-in-10-minutes#query-sample-data) section of this document.
 
 ## Start Drill
 

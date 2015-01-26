@@ -168,9 +168,8 @@ The default value, which is of the double, float, or long double data type;
 otherwise, null.
 
 For information about how to configure Drill system and session options, see[
-Planning and Execution Options](https://cwiki.apache.org/confluence/display/DR
-ILL/Planning+and+Execution+Options).
+Planning and Execution Options](/drill/docs/planning-and-execution-options).
 
 For information about how to configure Drill start-up options, see[ Start-Up
-Options](https://cwiki.apache.org/confluence/display/DRILL/Start-Up+Options).
+Options](/drill/docs/start-up-options).
 

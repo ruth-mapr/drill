@@ -1,5 +1,5 @@
 ---
-title: "Compiling Drill From source"
+title: "Drill Patch Review Tool"
 parent: "Develop Drill"
 ---
   * Drill JIRA and Reviewboard script
@@ -21,8 +21,8 @@ parent: "Develop Drill"
 
 #### 1\. Setup
 
-  1. Follow instructions [here](https://cwiki.apache.org/confluence/display/DRILL/Drill+Patch+Review+Tool#Drillpatchreviewtool-JIRAcommandlinetool) to setup the jira-python package
-  2. Follow instructions [here](https://cwiki.apache.org/confluence/display/DRILL/Drill+Patch+Review+Tool#Drillpatchreviewtool-Reviewboard) to setup the reviewboard python tools
+  1. Follow instructions [here](/drill/docs/drill-patch-review-tool#jira-command-line-tool) to setup the jira-python package
+  2. Follow instructions [here](/drill/docs/drill-patch-review-tool#reviewboard) to setup the reviewboard python tools
   3. Install the argparse module 
   
         On Linux -> sudo yum install python-argparse

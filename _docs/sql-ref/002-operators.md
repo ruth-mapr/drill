@@ -60,8 +60,7 @@ You can use the following subquery operators in your Drill queries:
   * EXISTS
   * IN
 
-See [SELECT Statements](https://cwiki.apache.org/confluence/display/DRILL/SELE
-CT+Statements).
+See [SELECT Statements](/drill/docs/select-statements).
 
 ## String Operators
 
