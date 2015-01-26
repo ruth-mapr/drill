@@ -77,7 +77,7 @@ To define the Drill JDBC Driver, complete the following steps:
 
 1. In the SQuirreL toolbar, select **Drivers > New Driver**. The Add Driver dialog box appears.
   
-    ![drill query flow]({{ site.baseurl }}/docs/img/40.png)  
+    ![drill query flow]({{ site.baseurl }}/docs/img/40.png)
 
 2. Enter the following information:
 
