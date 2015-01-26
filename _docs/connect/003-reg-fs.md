@@ -15,11 +15,10 @@ To register a local or a distributed file system with Apache Drill, complete
 the following steps:
 
   1. Navigate to `[http://localhost:8047](http://localhost:8047/)`, and select the **Storage** tab.
-  2. In the New Storage Plugin window, enter a unique name and then click **Create**. 
-  3. In the Configuration window, provide the following configuration information for the type of file system that you are configuring as a data source.  
-  
-    a. Local file system example:
-          
+  2. In the New Storage Plugin window, enter a unique name and then click **Create**.
+  3. In the Configuration window, provide the following configuration information for the type of file system that you are configuring as a data source.
+     1. Local file system example:
+
         {
           "type": "file",
           "enabled": true,
@@ -38,7 +37,7 @@ the following steps:
           }
         }
 
-    b. Distributed file system example:
+     2. Distributed file system example:
     
         {
           "type" : "file",
