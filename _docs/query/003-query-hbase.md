@@ -94,9 +94,7 @@ steps:
      1. Issue the following query to see the data in the “students” table:  
 
             SELECT * FROM hbase.`students`;
-
         The query returns binary results:
-
         
             Query finished, fetching results ...
             +----------+----------+----------+-----------+----------+----------+----------+-----------+
@@ -136,11 +134,11 @@ Family](http://hbase.apache.org/book/columnfamily.html).
             | student4 | Mary  | CA    | 56 Southern Pkwy | 12345   |`
             +----------+-------+-------+------------------+---------+`
 
-       3. Issue the following query on the “clicks” table to find out which students clicked on google.com:
+     3. Issue the following query on the “clicks” table to find out which students clicked on google.com:
         
               SELECT CAST(clicks.clickinfo.studentid as VarChar(200)), CAST(clicks.clickinfo.url as VarChar(200)) FROM hbase.`clicks` WHERE URL LIKE '%google%';  
 
-          The query returns the data:
+        The query returns the data:
         
             Query finished, fetching results ...`
         
