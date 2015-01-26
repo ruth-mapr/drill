@@ -60,7 +60,6 @@ To install and start SQuirreL, complete the following steps:
 
   1. Download the SQuirreL JAR file for Windows from the following location:  
 <http://www.squirrelsql.org/#installation>
-
   2. Double-click the SQuirreL `JAR` file. The SQuirreL installation wizard walks you through the installation process.
   3. When installation completes, navigate to the SQuirreL installation folder and then double-click `squirrel-sql.bat` to start SQuirreL.
 

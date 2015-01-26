@@ -78,19 +78,15 @@ Query the drillbits, version, and options tables in the sys database.
 
   * host   
 The name of the node running the Drillbit service.
-
   * user-port  
 The user port address, used between nodes in a cluster for connecting to
 external clients and for the Drill Web UI.  
-
   * control_port  
 The control port address, used between nodes for multi-node installation of
 Apache Drill.
-
   * data_port  
 The data port address, used between nodes for multi-node installation of
 Apache Drill.
-
   * current  
 True means the Drillbit is connected to the session or client running the
 query. This Drillbit is the Foreman for the current session.  
@@ -104,21 +100,16 @@ query. This Drillbit is the Foreman for the current session.
     | 108d29fce3d8465d619d45db5f6f433ca3d97619 | DRILL-1635: Additional fix for validation exceptions. | 14.11.2014 @ 02:32:47 UTC | Unknown    | 14.11.2014 @ 03:56:07 UTC |
     +------------+----------------+-------------+-------------+------------+
     1 row selected (0.144 seconds)
-
   * commit_id  
 The github id of the release you are running. For example, <https://github.com
 /apache/drill/commit/e3ab2c1760ad34bda80141e2c3108f7eda7c9104>
-
   * commit_message  
 The message explaining the change.
-
   * commit_time  
 The date and time of the change.
-
   * build_email  
 The email address of the person who made the change, which is unknown in this
 example.
-
   * build_time  
 The time that the release was built.
 
@@ -144,25 +135,18 @@ The following example shows a query on the system options:
     | planner.enable_mergejoin | BOOLEAN    | SYSTEM    | null      | null      | true      | null       |
     +------------+------------+------------+------------+------------+------------+------------+
     10 rows selected (0.334 seconds)  
-
   * name  
 The name of the option.
-
   * kind  
 The data type of the option value.
-
   * type  
 The type of options in the output: system, session, or boot.
-
   * num_val  
 The default value, which is of the long or int data type; otherwise, null.
-
   * string_val  
 The default value, which is a string; otherwise, null.
-
   * bool_val  
 The default value, which is true or false; otherwise, null.
-
   * float_val  
 The default value, which is of the double, float, or long double data type;
 otherwise, null.
