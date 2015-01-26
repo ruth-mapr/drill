@@ -112,7 +112,7 @@ Complete the following steps to install Drill:
   2. Issue the following command to create a new directory to which you can extract the contents of the Drill `tar.gz` file:
   
         sudo mkdir -p /opt/drill
-  3. Navigate to the directory where you downloaded the Drill `tar.gz` file.  
+  3. Navigate to the directory where you downloaded the Drill `tar.gz` file.
   4. Issue the following command to extract the contents of the Drill `tar.gz` file:
   
         sudo tar -xvzf apache-drill-<version>.tar.gz -C /opt/drill
@@ -143,7 +143,7 @@ Complete the following steps to install Drill:
   
         cd /Users/max/drill/apache-drill-<version>
 
-At this point, you can [start Drill](http://kristinehahn.github.io/drill/docs/apache-drill-in-10-minutes/#start-drill).
+At this point, you can [start Drill](/drill/docs/apache-drill-in-10-minutes/#start-drill).
 
 ### Installing Drill on Windows
 
