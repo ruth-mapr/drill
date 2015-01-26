@@ -11,12 +11,12 @@ steps:
   1. Issue the following command to start the HBase shell:
   
         hbase shell
-  2. Issue the following commands to create a ‘students’ table and a ‘clicks’ table with column families in HBase:  
+  2. Issue the following commands to create a ‘students’ table and a ‘clicks’ table with column families in HBase:
     
         echo "create 'students','account','address'" | hbase shell
     
         echo "create 'clicks','clickinfo','iteminfo'" | hbase shell
-  3. Issue the following command with the provided data to create a `testdata.txt` file:  
+  3. Issue the following command with the provided data to create a `testdata.txt` file:
 
         cat > testdata.txt
 
@@ -87,16 +87,15 @@ steps:
   4. Issue the following command to verify that the data is in the `testdata.txt` file:  
     
          cat testdata.txt | hbase shell
-
   5. Issue `exit` to leave the `hbase shell`.
   6. Start Drill. Refer to [Starting/Stopping Drill](/confluence/pages/viewpage.action?pageId=44994063) for instructions.
   7. Use Drill to issue the following SQL queries on the “students” and “clicks” tables:  
   
-    a. Issue the following query to see the data in the “students” table:  
+     1. Issue the following query to see the data in the “students” table:  
 
             SELECT * FROM hbase.`students`;
 
-       The query returns binary results:
+        The query returns binary results:
 
         
             Query finished, fetching results ...
@@ -108,21 +107,21 @@ steps:
             | [B@349aaf0b | [B@175a1628 | [B@1b64a812 | [B@6d5643ca |[B@147db06f |
             | [B@3a7cbada | [B@52cf5c35 | [B@2baec60c | [B@5f4c543b |[B@2ec515d6 |
 
-       Since Drill does not require metadata, you must use the SQL `CAST` function in
+        Since Drill does not require metadata, you must use the SQL `CAST` function in
 some queries to get readable query results.
 
-    b. Issue the following query, that includes the `CAST` function, to see the data in the “`students`” table:
+     2. Issue the following query, that includes the `CAST` function, to see the data in the “`students`” table:
 
-           SELECT CAST(students.clickinfo.studentid as VarChar(20)),
-           CAST(students.account.name as VarChar(20)), CAST (students.address.state as
-           VarChar(20)), CAST (students.address.street as VarChar(20)), CAST
-           (students.address.zipcode as VarChar(20)), FROM hbase.students;
+            SELECT CAST(students.clickinfo.studentid as VarChar(20)),
+            CAST(students.account.name as VarChar(20)), CAST (students.address.state as
+            VarChar(20)), CAST (students.address.street as VarChar(20)), CAST
+            (students.address.zipcode as VarChar(20)), FROM hbase.students;
 
-       **Note:** Use the following format when you query a column in an HBase table:
+        **Note:** Use the following format when you query a column in an HBase table:
           
-           tablename.columnfamilyname.columnname
+             tablename.columnfamilyname.columnname
             
-       For more information about column families, refer to [5.6. Column
+        For more information about column families, refer to [5.6. Column
 Family](http://hbase.apache.org/book/columnfamily.html).
 
        The query returns the data:
@@ -138,18 +137,18 @@ Family](http://hbase.apache.org/book/columnfamily.html).
            | student4 | Mary  | CA    | 56 Southern Pkwy | 12345   |`
            +----------+-------+-------+------------------+---------+`
 
-    c. Issue the following query on the “clicks” table to find out which students clicked on google.com:
+       3. Issue the following query on the “clicks” table to find out which students clicked on google.com:
         
-          SELECT CAST(clicks.clickinfo.studentid as VarChar(200)), CAST(clicks.clickinfo.url as VarChar(200)) FROM hbase.`clicks` WHERE URL LIKE '%google%';  
+              SELECT CAST(clicks.clickinfo.studentid as VarChar(200)), CAST(clicks.clickinfo.url as VarChar(200)) FROM hbase.`clicks` WHERE URL LIKE '%google%';  
 
-       The query returns the data:
+          The query returns the data:
         
-           Query finished, fetching results ...`
+            Query finished, fetching results ...`
         
-           +---------+-----------+-------------------------------+-----------------------+----------+----------+
-           | clickid | studentid | time                          | url                   | itemtype | quantity |
-           +---------+-----------+-------------------------------+-----------------------+----------+----------+
-           | click1  | student1  | 2014-01-01 12:01:01.000100000 | http://www.google.com | image    | 1        |
-           | click3  | student2  | 2014-01-01 01:02:01.000100000 | http://www.google.com | text     | 2        |
-           | click6  | student3  | 2013-02-01 12:01:01.000100000 | http://www.google.com | image    | 1        |
-           +---------+-----------+-------------------------------+-----------------------+----------+----------+
+            +---------+-----------+-------------------------------+-----------------------+----------+----------+
+            | clickid | studentid | time                          | url                   | itemtype | quantity |
+            +---------+-----------+-------------------------------+-----------------------+----------+----------+
+            | click1  | student1  | 2014-01-01 12:01:01.000100000 | http://www.google.com | image    | 1        |
+            | click3  | student2  | 2014-01-01 01:02:01.000100000 | http://www.google.com | text     | 2        |
+            | click6  | student3  | 2013-02-01 12:01:01.000100000 | http://www.google.com | image    | 1        |
+            +---------+-----------+-------------------------------+-----------------------+----------+----------+
