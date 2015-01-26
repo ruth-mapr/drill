@@ -16,7 +16,7 @@ distributed file system:
 The default `dfs` storage plugin instance registered with Drill has a
 `default` workspace. If you query data in the `default` workspace, you do not
 need to include the workspace in the query. Refer to
-[Workspaces](https://cwiki.apache.org/confluence/display/DRILL/Workspaces) for
+[Workspaces](/drill/docs/workspaces) for
 more information.
 
 Drill supports the following file types:
@@ -33,10 +33,3 @@ The extensions for these file types must match the configuration settings for
 your registered storage plugins. For example, PSV files may be defined with a
 `.tbl` extension, while CSV files are defined with a `.csv` extension.
 
-Click on any of the following links for more information about querying
-various file types:
-
-  * [Querying JSON Files](/confluence/display/DRILL/Querying+JSON+Files)
-  * [Querying Parquet Files](/confluence/display/DRILL/Querying+Parquet+Files)
-  * [Querying Plain Text Files](/confluence/display/DRILL/Querying+Plain+Text+Files)
-  * [Querying Directories](/confluence/display/DRILL/Querying+Directories)

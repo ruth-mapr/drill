@@ -27,5 +27,5 @@ env.sh`.
 
 After you edit `<drill_installation_directory>/conf/drill-env.sh`, [restart
 the Drillbit
-](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=44994063)on
+](http://kristinehahn.github.io/drill/docs/starting-stopping-drill#starting-a-drillbit)on
 the node.

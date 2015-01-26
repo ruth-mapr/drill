@@ -35,25 +35,21 @@ Complete the following steps to install Drill:
 
      Do not include spaces in your directory path. If you include spaces in the
 directory path, Drill fails to run.
-
   2. Click the following link to download the latest, stable version of Apache Drill:
   
      [http://www.apache.org/dyn/closer.cgi/drill/drill-0.7.0/apache-drill-0.7.0.tar.gz](http://www.apache.org/dyn/closer.cgi/drill/drill-0.7.0/apache-drill-0.7.0.tar.gz)
-
   3. Move the `apache-drill-<version>.tar.gz` file to the `drill` directory that you created on your `C:\` drive.
-
   4. Unzip the `TAR.GZ` file and the resulting `TAR` file.  
 
       a. Right-click `apache-drill-<version>.tar.gz,` and select `7-Zip>Extract Here`. The utility extracts the `apache-drill-<version>.tar` file.  
       b. Right-click `apache-drill-<version>.tar,` and select `7-Zip>Extract Here`. The utility extracts the `apache-drill-<version>` folder.
   5. Open the `apache-drill-<version>` folder.
-
   6. Open the `bin` folder, and double-click on the `sqlline.bat` file. The Windows command prompt opens.
   7. At the `sqlline>` prompt, type `!connect jdbc:drill:zk=local` and then press `Enter`.
   8. Enter the username and password.
+  
     a. When prompted, enter the user name `admin` and then press Enter. 
     b. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local>` displays in the prompt.
 
 At this point, you can submit queries to Drill. Refer to the [Query Sample Dat
-a](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+in+10+Minute
-s#ApacheDrillin10Minutes-QuerySampleData) section of this document.
+a](/drill/docs/apache-drill-in-10-minutes#query-sampledata) section of this document.

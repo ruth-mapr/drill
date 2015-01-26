@@ -2,7 +2,7 @@
 title: "Deploying Apache Drill in a Clustered Environment"
 parent: "Install Drill"
 ---
-# Overview
+## Overview
 
 To run Drill in a clustered environment, complete the following steps:
 
@@ -11,7 +11,7 @@ To run Drill in a clustered environment, complete the following steps:
   3. Connect Drill to your data sources. 
   4. Start Drill.
 
-## Prerequisites
+### Prerequisites
 
 Before you install Apache Drill on nodes in your cluster, you must have the
 following software and services installed:
@@ -21,7 +21,7 @@ following software and services installed:
   * Configured and running Hadoop cluster (Recommended)
   * DNS (Recommended)
 
-## Installing Drill
+### Installing Drill
 
 Complete the following steps to install Drill on designated nodes:
 
@@ -54,14 +54,14 @@ Complete the following steps to install Drill on designated nodes:
       functions: ["org.apache.drill.expr.fn.impl", "org.apache.drill.udfs"]
     }
 
-## Connecting Drill to Data Sources
+### Connecting Drill to Data Sources
 
 You can connect Drill to various types of data sources. Refer to [Connect
 Apache Drill to Data Sources](https://cwiki.apache.org/confluence/display/DRIL
 L/Connecting+to+Data+Sources) to get configuration instructions for the
 particular type of data source that you want to connect to Drill.
 
-## Starting Drill
+### Starting Drill
 
 Complete the following steps to start Drill:
 
@@ -97,6 +97,4 @@ Drill provides a list of Drillbits that have joined.
 **Example**
 
 Now you can query data with Drill. The Drill installation includes sample data
-that you can query. Refer to [Query Sample Data](https://cwiki.apache.org/conf
-luence/display/DRILL/Apache+Drill+in+10+Minutes#ApacheDrillin10Minutes-
-QuerySampleData).
+that you can query. Refer to [Query Sample Data](/drill/docs/sample-datasets).

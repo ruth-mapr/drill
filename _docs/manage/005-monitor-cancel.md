@@ -19,12 +19,11 @@ Drill.
   2. Select **Profiles** in the toolbar. A list of running and completed queries appears. Drill assigns a query ID to each query and lists the Foreman node. The Foreman is the Drillbit node that receives the query from the client or application. The Foreman drives the entire query.
 ![drill query flow]({{ site.baseurl }}/docs/img/51.png)  
 
-
   3. Click the **Query ID** for the query that you want to monitor or cancel. The Query and Planning window appears.  
 ![drill query flow]({{ site.baseurl }}/docs/img/4.png)
 
   4. Select **Edit Query**.
-  5. Click **Cancel query **to cancel the** **query. The following message appears:
+  5. Click **Cancel query **to cancel the** query. The following message appears:
   ![drill query flow]({{ site.baseurl }}/docs/img/46.png)  
 
   6. Optionally, you can re-run the query to see a query summary in this window.

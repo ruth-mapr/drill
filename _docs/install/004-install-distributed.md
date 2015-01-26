@@ -29,16 +29,13 @@ Complete the following steps to install Drill on designated nodes:
   1. Download the Drill tarball.
   
         curl http://www.apache.org/dyn/closer.cgi/drill/drill-0.7.0/apache-drill-0.7.0.tar.gz
-
   2. Issue the following command to create a Drill installation directory and then explode the tarball to the directory:
   
         mkdir /opt/drill
         tar xzf apache-drill-<version>.tar.gz --strip=1 -C /opt/drill
-
   3. If you are using external JAR files, edit `drill-env.sh, `located in `/opt/drill/conf/`, and define `HADOOP_HOME:`
   
         export HADOOP_HOME="~/hadoop/hadoop-0.20.2/"
-
   4. In `drill-override.conf,` create a unique Drill `cluster ID`, and provide Zookeeper host names and port numbers to configure a connection to your Zookeeper quorum.
 
     a. Edit `drill-override.conf `located in `~/drill/drill-<version>/conf/`.
@@ -56,6 +53,5 @@ Complete the following steps to install Drill on designated nodes:
          }
 
 You can connect Drill to various types of data sources. Refer to [Connect
-Apache Drill to Data Sources](https://cwiki.apache.org/confluence/display/DRIL
-L/Connecting+to+Data+Sources) to get configuration instructions for the
+Apache Drill to Data Sources](/drill/docs/connect-to-data-sources) to get configuration instructions for the
 particular type of data source that you want to connect to Drill.

@@ -13,17 +13,13 @@ running Linux, Mac OS X, or Windows.
 
 You must have the following software installed on your machine to run Drill:
 
-<div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Software</strong></p></td><td class="confluenceTd"><p><strong>Description</strong></p></td></tr><tr><td class="confluenceTd"><p><a class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" rel="nofollow">Oracle JDK version 7</a></p></td><td class="confluenceTd"><p>A set of programming tools for developing Java applications.</p></td></tr></tbody></table></div>
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><strong>Software</strong></td><td class="confluenceTd"><strong>Description</strong></td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" rel="nofollow">Oracle JDK version 7</a></td><td class="confluenceTd">A set of programming tools for developing Java applications.</td></tr></tbody></table></div>
 
 A set of programming tools for developing Java applications.  
   
 You can run the following command to verify that the system meets the software
 prerequisite:
 
-<div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Command</strong></p></td><td class="confluenceTd"><p><strong>Example Output</strong></p></td></tr><tr><td class="confluenceTd"><p><code>java –version</code></p></td><td class="confluenceTd"><p><code>java version &quot;1.7.0_65&quot;</code><br /><code>Java(TM) SE Runtime Environment (build 1.7.0_65-b19)</code><br /><code>Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)</code></p></td></tr></tbody></table></div>
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><strong>Command</strong></td><td class="confluenceTd"><strong>Example Output</strong></td></tr><tr><td class="confluenceTd"><code>java –version</code></td><td class="confluenceTd"><code>java version &quot;1.7.0_65&quot;</code><br /><code>Java(TM) SE Runtime Environment (build 1.7.0_65-b19)</code><br /><code>Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)</code></td></tr></tbody></table></div>
 
-Click on the installation link appropriate for your operating system:
-
-  * [Installing Drill on Linux](/confluence/display/DRILL/Installing+Drill+on+Linux)
-  * [Installing Drill on Mac OS X](/confluence/display/DRILL/Installing+Drill+on+Mac+OS+X)
-  * [Installing Drill on Windows](/confluence/display/DRILL/Installing+Drill+on+Windows)
+Follow installation instructions in this documentation for your particular operating system.

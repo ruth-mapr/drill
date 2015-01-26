@@ -8,22 +8,21 @@ parent: "Query Data"
 This tutorial covers how to query a file and a directory on your local file
 system. Files and directories are like standard SQL tables to Drill. If you
 install Drill in [embedded
-mode](/confluence/display/DRILL/Installing+Drill+in+Embedded+Mode), the
-installer registers and configures your file system as the `dfs` [storage
-plugin](/confluence/display/DRILL/Getting+to+Know+the+Drill+Setup) instance.
-You can query these types of files using `dfs`:
+mode](/drill/docs/installing-drill-in-embedded-mode), the
+installer registers and configures your file system as the `dfs` instance.
+You can query these types of files using the default `dfs` storage plugin:
 
   * Plain text files, such as comma-separated values (CSV) or tab-separated values (TSV) files
   * JSON files
   * Parquet files
 
-In this tutorial, you query plain text files and you create a custom storage
+In this tutorial, you query plain text files using the `dfs` storage plugin. You also create a custom storage
 plugin to simplify querying plain text files.
 
 ## Prerequisites
 
 This tutorial assumes that you installed Drill in [embedded
-mode](/confluence/display/DRILL/Installing+Drill+in+Embedded+Mode). Although
+mode](/drill/docs/installing-drill-in-embedded-mode). Although
 you can step through the tutorial using the sandbox, using the Drill
 installation is more convenient in a few ways, for example, you can copy/paste
 commands from the tutorial to the Drill command line.   
@@ -38,7 +37,7 @@ interface (CLI) on Linux, Mac OS X, or Windows.
 
 ### Start Drill (Linux or Mac OS X)
 
-To [start Drill](/confluence/pages/viewpage.action?pageId=44994063) on Linux
+To [start Drill](/drill/docs/starting-stopping-drill) on Linux
 or Mac OS X, use the SQLLine command.
 
   1. Open a terminal.

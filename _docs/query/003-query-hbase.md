@@ -11,14 +11,11 @@ steps:
   1. Issue the following command to start the HBase shell:
   
         hbase shell
-
   2. Issue the following commands to create a ‘students’ table and a ‘clicks’ table with column families in HBase:  
-
     
         echo "create 'students','account','address'" | hbase shell
     
         echo "create 'clicks','clickinfo','iteminfo'" | hbase shell
-
   3. Issue the following command with the provided data to create a `testdata.txt` file:  
 
         cat > testdata.txt

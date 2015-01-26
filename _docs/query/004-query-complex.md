@@ -54,10 +54,3 @@ Drill Web UI (`dfs` storage plugin configuration):
       "type" : "json"
     }
 
-Click on any of the following links to see examples of complex queries:
-
-  * [Sample Data: Donuts](/confluence/display/DRILL/Sample+Data%3A+Donuts)
-  * [Query 1: Selecting Flat Data](/confluence/display/DRILL/Query+1%3A+Selecting+Flat+Data)
-  * [Query 2: Using Standard SQL Functions, Clauses, and Joins](/confluence/display/DRILL/Query+2%3A+Using+Standard+SQL+Functions%2C+Clauses%2C+and+Joins)
-  * [Query 3: Selecting Nested Data for a Column](/confluence/display/DRILL/Query+3%3A+Selecting+Nested+Data+for+a+Column)
-  * [Query 4: Selecting Multiple Columns Within Nested Data](/confluence/display/DRILL/Query+4%3A+Selecting+Multiple+Columns+Within+Nested+Data)
