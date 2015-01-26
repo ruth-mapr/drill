@@ -41,13 +41,12 @@ To [start Drill](/drill/docs/starting-stopping-drill) on Linux
 or Mac OS X, use the SQLLine command.
 
   1. Open a terminal.
-  2. Navigate to the Drill installation directory.  
+  2. Navigate to the Drill installation directory.
   
-     Example: `$ cd ~/apache-drill-<version>`  
+     Example: `$ cd ~/apache-drill-<version>`
+  3. Issue the following command:
   
-  3. Issue the following command:  
-  
-        $ bin/sqlline -u jdbc:drill:zk=local  
+        $ bin/sqlline -u jdbc:drill:zk=local
      The Drill prompt appears: `0: jdbc:drill:zk=local`
 
 ### Start Drill (Windows)
@@ -56,9 +55,8 @@ To [start Drill](/confluence/pages/viewpage.action?pageId=44994063) on
 Windows, use the SQLLine command.
 
   1. Open the `apache-drill-<version>` folder.
-
   2. Open the `bin` folder, and double-click on the `sqlline.bat` file. The Windows command prompt opens.
-  3. At the `sqlline>` prompt, issue the following command, and then press **Enter**:  
+  3. At the `sqlline>` prompt, issue the following command, and then press **Enter**:
   
         !connect jdbc:drill:zk=local  
      The following prompt appears: `0: jdbc:drill:zk=local`
@@ -77,8 +75,8 @@ these steps:
   1. Issue a CTRL Z to exit SQLLine.
   2. Search for the Drill process ID.
   
-        $ ps auwx | grep drill   
+        $ ps auwx | grep drill
   3. Kill the process using the process number in the grep output. For example:
-  
+
         $ sudo kill -9 2674
 

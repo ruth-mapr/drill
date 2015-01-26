@@ -13,7 +13,6 @@ To list the default storage plugins, use the SHOW DATABASES command.
   1. Issue the SHOW DATABASES command.
     
         0: jdbc:drill:zk=local> SHOW DATABASES;  
-
      The output lists the storage plugins, which you use as a SQL database, in
 <database>.<workspace> format.
 
@@ -31,10 +30,10 @@ To list the default storage plugins, use the SHOW DATABASES command.
 
   2. Take a look at the list of storage plugins and workspaces that Drill recognizes.
 
-     * `dfs` is the storage plugin for connecting to the [file system](/drill/docs/querying-a-file-system) data source on your machine.
-     * `cp` is a storage plugin for connecting to a JAR data source used with MapR.
-     * `sys` is a storage plugin for connecting to Drill [system tables](/drill/docs/querying-system-tables).
-     * [INFORMATION_SCHEMA](/drill/docs/querying-the-information-schema) is a storage plugin for connecting to an ANSI standard set of metadata tables.
+* `dfs` is the storage plugin for connecting to the [file system](/drill/docs/querying-a-file-system) data source on your machine.
+* `cp` is a storage plugin for connecting to a JAR data source used with MapR.
+* `sys` is a storage plugin for connecting to Drill [system tables](/drill/docs/querying-system-tables).
+* [INFORMATION_SCHEMA](/drill/docs/querying-the-information-schema) is a storage plugin for connecting to an ANSI standard set of metadata tables.
 
 ## List Tables
 
@@ -51,7 +50,6 @@ list available tables.
           | true       | Default schema changed to 'sys' |
           +------------+------------+
           1 row selected (0.034 seconds) 
-
   2. List the tables in `sys`.
   
           SHOW TABLES;
@@ -64,7 +62,6 @@ list available tables.
           | sys          | version    |
           | sys          | options    |
           +--------------+------------+
-
   3. Select the INFORMATION_SCHEMA storage plugin.
   
           0: jdbc:drill:zk=local> USE INFORMATION_SCHEMA;
@@ -75,7 +72,6 @@ list available tables.
           | true       | Default schema changed to 'INFORMATION_SCHEMA' |
           +------------+------------+
           1 row selected (0.023 seconds)
-
   4. List the tables in INFORMATION_SCHEMA.
 
           0: jdbc:drill:zk=local> SHOW TABLES;  
