@@ -99,8 +99,8 @@ To create an alias, complete the following steps:
 3. Enter the following information:
   
      <table style='table-layout:fixed;width:100%'><tbody><tr>
-     <td valign="top" width="25%"><strong>Option</strong></td>
-     <td valign="top" style='width: 300px;'><strong>Description</strong></td>
+     <td valign="top" width="10%"><strong>Option</strong></td>
+     <td valign="top" style='width: 500px;'><strong>Description</strong></td>
      </tr>
      <tr>
      <td valign="top">Alias Name</td>
