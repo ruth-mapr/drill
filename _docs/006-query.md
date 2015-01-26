@@ -29,17 +29,13 @@ Remember the following tips when querying data with Drill:
 
   * Include a semicolon at the end of SQL statements, except when you issue a command with an exclamation point `(!).   
     `Example: `!set maxwidth 10000`
-
-  * Use backticks around file and directory names that contain special characters and also around reserved words when you query a file system .   
-The following special characters require backticks:
+  * Use backticks around file and directory names that contain special characters and also around reserved words when you query a file system.   
+    The following special characters require backticks:
 
     * . (period)
     * / (forward slash)
     * _ (underscore)
-
-Example: ``SELECT * FROM dfs.default.`sample_data/my_sample.json`; ``
-
-  * `CAST` data to `VARCHAR` if an expression in a query returns `VARBINARY` as the result type in order to view the `VARBINARY` types as readable data. If you do not use the `CAST` function, Drill returns the results as byte data.
-    
-    Example: `CAST (VARBINARY_expr as VARCHAR(50))`
+    Example: ``SELECT * FROM dfs.default.`sample_data/my_sample.json`; ``
+  * `CAST` data to `VARCHAR` if an expression in a query returns `VARBINARY` as the result type in order to view the `VARBINARY` types as readable data. If you do not use the `CAST` function, Drill returns the results as byte data.    
+     Example: `CAST (VARBINARY_expr as VARCHAR(50))`
 

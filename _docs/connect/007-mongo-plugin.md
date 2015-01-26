@@ -2,7 +2,7 @@
 title: "MongoDB Plugin for Apache Drill"
 parent: "Connect to Data Sources"
 ---
-# Overview
+## Overview
 
 You can leverage the power of Apache Drill to query data without any upfront
 schema definitions. Drill enables you to create an architecture that works
