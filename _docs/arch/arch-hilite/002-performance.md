@@ -32,7 +32,7 @@ Record Batches. Record Batches are arrays of values from many different
 records. The technical basis for efficiency of vectorized processing is modern
 chip technology with deep-pipelined CPU designs. Keeping all pipelines full to
 achieve efficiency near peak performance is something impossible to achieve in
-traditional database engines, primarily due to code complexity**.**
+traditional database engines, primarily due to code complexity.
 
 **_Runtime compilation_**
 

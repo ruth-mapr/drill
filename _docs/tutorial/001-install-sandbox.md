@@ -2,49 +2,32 @@
 title: "Installing the Apache Drill Sandbox"
 parent: "Apache Drill Tutorial"
 ---
-This tutorial uses the MapR Sandbox, which is a Hadoop environment pre-configured with Apache Drill.
+## Prerequisites
 
-To complete the tutorial on the MapR Sandbox with Apache Drill, work through
-the following pages in order:
+The MapR Sandbox with Apache Drill runs on VMware Player and VirtualBox, free
+desktop applications that you can use to run a virtual machine on a Windows,
+Mac, or Linux PC. Before you install the MapR Sandbox with Apache Drill,
+verify that the host system meets the following prerequisites:
 
-  * [Installing the Apache Drill Sandbox](/drill/docs/installing-the-apache-drill-sandbox)
-  * [Getting to Know the Drill Setup](/drill/docs/getting-to-know-the-drill-sandbox)
-  * [Lesson 1: Learn About the Data Set](/drill/docs/lession-1-learn-about-the-data-set)
-  * [Lesson 2: Run Queries with ANSI SQL](/drill/docs/lession-2-run-queries-with-ansi-sql)
-  * [Lesson 3: Run Queries on Complex Data Types](/drill/docs/lession-3-run-queries-on-complex-data-types)
-  * [Summary](/drill/docs/summary)
+  * VMware Player or VirtualBox is installed.
+  * At least 20 GB free hard disk space, at least 4 physical cores, and 8 GB of RAM is available. Performance increases with more RAM and free hard disk space.
+  * Uses one of the following 64-bit x86 architectures:
+    * A 1.3 GHz or faster AMD CPU with segment-limit support in long mode
+    * A 1.3 GHz or faster Intel CPU with VT-x support
+  * If you have an Intel CPU with VT-x support, verify that VT-x support is enabled in the host system BIOS. The BIOS settings that must be enabled for VT-x support vary depending on the system vendor. See the VMware knowledge base article at <http://kb.vmware.com/kb/1003944> for information about how to determine if VT-x support is enabled.
 
-## About Apache Drill
+### VM Player Downloads
 
-Drill is an Apache open-source SQL query engine for Big Data exploration.
-Drill is designed from the ground up to support high-performance analysis on
-the semi-structured and rapidly evolving data coming from modern Big Data
-applications, while still providing the familiarity and ecosystem of ANSI SQL,
-the industry-standard query language. Drill provides plug-and-play integration
-with existing Apache Hive and Apache HBase deployments.Apache Drill 0.5 offers
-the following key features:
+For Linux, Mac, or Windows, download the free [VMware Player](https://my.vmwar
+e.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0) or
+[VirtualBox](https://www.virtualbox.org/wiki/Downloads). Optionally, you can
+purchase [VMware Fusion](http://www.vmware.com/products/fusion/) for Mac.
 
-  * Low-latency SQL queries
-  * Dynamic queries on self-describing data in files (such as JSON, Parquet, text) and MapR-DB/HBase tables, without requiring metadata definitions in the Hive metastore.
-  * ANSI SQL
-  * Nested data support
-  * Integration with Apache Hive (queries on Hive tables and views, support for all Hive file formats and Hive UDFs)
-  * BI/SQL tool integration using standard JDBC/ODBC drivers
+### VM Player Installation
 
-## MapR Sandbox with Apache Drill
+The following list provides links to the virtual machine installation
+instructions:
 
-MapR includes Apache Drill as part of the Hadoop distribution. The MapR
-Sandbox with Apache Drill is a fully functional single-node cluster that can
-be used to get an overview on Apache Drill in a Hadoop environment. Business
-and technical analysts, product managers, and developers can use the sandbox
-environment to get a feel for the power and capabilities of Apache Drill by
-performing various types of queries. Once you get a flavor for the technology,
-refer to the [Apache Drill web site](http://incubator.apache.org/drill/) and
-[Apache Drill documentation
-](/drill/docs)for more
-details.
+  * To install the VMware Player, see the [VMware documentation](http://www.vmware.com/support/pubs/player_pubs.html). Use of VMware Player is subject to the VMware Player end user license terms. VMware does not provide support for VMware Player. For self-help resources, see the [VMware Player FAQ](http://www.vmware.com/products/player/faqs.html).
+  * To install VirtualBox, see the [Oracle VM VirtualBox User Manual](http://dlc.sun.com.edgesuite.net/virtualbox/4.3.4/UserManual.pdf). By downloading VirtualBox, you agree to the terms and conditions of the respective license.
 
-Note that Hadoop is not a prerequisite for Drill and users can start ramping
-up with Drill by running SQL queries directly on the local file system. Refer
-to [Apache Drill in 10 minutes](/drill/docs/apache-drill-in-10-minutes) for an introduction to using Drill in local
-(embedded) mode.

@@ -25,15 +25,10 @@ with existing Apache Hive and Apache HBase deployments.Apache Drill 0.5 offers
 the following key features:
 
   * Low-latency SQL queries
-
   * Dynamic queries on self-describing data in files (such as JSON, Parquet, text) and MapR-DB/HBase tables, without requiring metadata definitions in the Hive metastore.
-
   * ANSI SQL
-
   * Nested data support
-
   * Integration with Apache Hive (queries on Hive tables and views, support for all Hive file formats and Hive UDFs)
-
   * BI/SQL tool integration using standard JDBC/ODBC drivers
 
 ## MapR Sandbox with Apache Drill
