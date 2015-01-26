@@ -30,8 +30,7 @@ Set](/drill/docs/lession-1-learn-about-the-data-set)
 
 A storage plugin configuration for MapR-DB in the sandbox. Drill uses a single
 storage plugin for connecting to HBase as well as MapR-DB, which is an
-enterprise grade in-Hadoop NoSQL database. See the [Apache Drill
-Wiki](/drill/docs/registering-hbase) for
+enterprise grade in-Hadoop NoSQL database. In addition to the following brief example, see the [Registering HBase](/drill/docs/registering-hbase) for more
 information on how to configure Drill to query HBase.
 
     {

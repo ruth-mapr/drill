@@ -13,9 +13,7 @@ format.
 The data set for the tutorial consists of:
 
   * Transactional data: stored as a Hive table
-
   * Product catalog and master customer data: stored as MapR-DB tables
-
   * Clickstream and logs data: stored in the MapR file system as JSON files
 
 ## Queries in This Lesson
@@ -158,7 +156,22 @@ duplicate schemas for it in Hive!
 
 The products table has two column families.
 
-<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">Column Family</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Columns</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">details</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">name</span><span style="color: rgb(0,0,0);">category</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">pricing</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">price</span></td></tr></tbody></table>
+<table>
+<tbody>
+ <tr>
+  <td>Column Family</td>
+  <td>Columns</td>
+</tr>
+<tr>
+  <td>details</td>
+  <td>namecategory</td>
+</tr>
+<tr>
+  <td>pricing</td>
+  <td>price</td>
+</tr>
+</tbody>
+</table>
   
 The products table contains 965 rows.
 
@@ -166,7 +179,26 @@ The products table contains 965 rows.
 
 The Customers table has three column families.
 
-<table class="confluenceTable"><colgroup><col /><col /></colgroup><tbody><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">Column Family</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Columns</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">address</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">state</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">loyalty</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">agg_rev</span><span style="color: rgb(0,0,0);">membership</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0,0,0);">personal</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">age</span><span style="color: rgb(0,0,0);">gender</span></td></tr></tbody></table>  
+<table>
+<tbody>
+<tr>
+  <td>Column Family</td>
+  <td ></td>
+</tr>
+<tr>
+  <td>address</td>
+  <td>state</td>
+</tr>
+<tr>
+  <td>loyalty</td>
+  <td>agg_revmembership</td>
+</tr>
+<tr>
+  <td>personal</td>
+  <td>agegender</td>
+</tr>
+</tbody>
+</table>  
   
 The customers table contains 993 rows.
 
