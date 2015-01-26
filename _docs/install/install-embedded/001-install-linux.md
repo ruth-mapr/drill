@@ -11,12 +11,12 @@ Linux:
   2. Issue the following command to create a new directory to which you can extract the contents of the Drill `tar.gz` file:
   
         sudo mkdir -p /opt/drill
-  3. Navigate to the directory where you downloaded the Drill `tar.gz` file.  
+  3. Navigate to the directory where you downloaded the Drill `tar.gz` file.
   4. Issue the following command to extract the contents of the Drill `tar.gz` file to the directory you created:
   
         sudo tar -xvzf apache-drill-<version>.tar.gz -C /opt/drill
   5. Issue the following command to navigate to the Drill installation directory:
 
-        cd /opt/drill/apache-drill-<version>        
+        cd /opt/drill/apache-drill-<version>
 At this point, you can [invoke
 SQLLine](/drill/docs/starting-stopping-drill) to run Drill.
