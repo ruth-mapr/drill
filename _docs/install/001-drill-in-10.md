@@ -189,8 +189,8 @@ directory path, Drill fails to run.
   6. Open the `bin` folder, and double-click on the `sqlline.bat` file. The Windows command prompt opens.
   7. At the `sqlline>` prompt, type `!connect jdbc:drill:zk=local` and then press `Enter`.
   8. Enter the username and password.
-    a. When prompted, enter the user name `admin` and then press Enter.
-    b. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local>` displays in the prompt.
+     a. When prompted, enter the user name `admin` and then press Enter.
+     b. When prompted, enter the password `admin` and then press Enter. The cursor blinks for a few seconds and then `0: jdbc:drill:zk=local>` displays in the prompt.
 
 At this point, you can submit queries to Drill. Refer to the [Query Sample Dat
 a](/drill/docs/apache-drill-in-10-minutes#query-sample-data) section of this document.
