@@ -124,18 +124,17 @@ some queries to get readable query results.
         For more information about column families, refer to [5.6. Column
 Family](http://hbase.apache.org/book/columnfamily.html).
 
-       The query returns the data:
+        The query returns the data:
 
-        
-           Query finished, fetching results ...
-           +----------+-------+-------+------------------+---------+`
-           | studentid | name  | state | street           | zipcode |`
-           +----------+-------+-------+------------------+---------+`
-           | student1 | Alice | CA    | 123 Ballmer Av   | 12345   |`
-           | student2 | Bob   | CA    | 1 Infinite Loop  | 12345   |`
-           | student3 | Frank | CA    | 435 Walker Ct    | 12345   |`
-           | student4 | Mary  | CA    | 56 Southern Pkwy | 12345   |`
-           +----------+-------+-------+------------------+---------+`
+            Query finished, fetching results ...
+            +----------+-------+-------+------------------+---------+`
+            | studentid | name  | state | street           | zipcode |`
+            +----------+-------+-------+------------------+---------+`
+            | student1 | Alice | CA    | 123 Ballmer Av   | 12345   |`
+            | student2 | Bob   | CA    | 1 Infinite Loop  | 12345   |`
+            | student3 | Frank | CA    | 435 Walker Ct    | 12345   |`
+            | student4 | Mary  | CA    | 56 Southern Pkwy | 12345   |`
+            +----------+-------+-------+------------------+---------+`
 
        3. Issue the following query on the “clicks” table to find out which students clicked on google.com:
         
