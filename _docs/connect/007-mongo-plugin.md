@@ -38,14 +38,12 @@ UI to connect to Drill. Drill must be running in order to access the Web UI.
 Complete the following steps to configure MongoDB as a data source for Drill:
 
   1. Navigate to `<drill_installation_directory>/drill-<version>,` and enter the following command to invoke SQLLine and start Drill:
-  
-        bin/sqlline -u jdbc:drill:zk=local -n admin -p admin
 
+        bin/sqlline -u jdbc:drill:zk=local -n admin -p admin
      When Drill starts, the following prompt appears: `0: jdbc:drill:zk=local>`
 
-Do not enter any commands. You will return to the command prompt after
+     Do not enter any commands. You will return to the command prompt after
 completing the configuration in the Drill Web UI.
-
   2. Open a browser window, and navigate to the Drill Web UI at `http://localhost:8047`.
   3. In the navigation bar, click **Storage**.
   4. Under Disabled Storage Plugins, select **Update** next to the `mongo` instance if the instance exists. If the instance does not exist, create an instance for MongoDB.
@@ -60,7 +58,6 @@ completing the configuration in the Drill Web UI.
         }
 
      **Note:** 27017 is the default port for `mongodb` instances. 
-
   6. Click **Enable** to enable the instance, and save the configuration.
   7. Navigate back to the Drill command line so you can query MongoDB.
 

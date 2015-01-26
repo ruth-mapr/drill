@@ -25,14 +25,11 @@ in the Drill Web UI to configure a connection to Drill.
 
 To register a remote Hive metastore with Drill, complete the following steps:
 
-  1. Issue the following command to start the Hive metastore service on the system specified in the `hive.metastore.uris`:  
+  1. Issue the following command to start the Hive metastore service on the system specified in the `hive.metastore.uris`:
 
-    
         hive --service metastore
-
   2. Navigate to [http://localhost:8047](http://localhost:8047/), and select the **Storage** tab.
   3. In the disabled storage plugins section, click **Update** next to the `hive` instance.
-
   4. In the configuration window, add the `Thrift URI` and port to `hive.metastore.uris`.
 
      **Example**
@@ -45,9 +42,7 @@ To register a remote Hive metastore with Drill, complete the following steps:
             "hive.metastore.sasl.enabled": "false"
           }
         }       
-
   5. Click **Enable**.
-
   6. Verify that `HADOOP_CLASSPATH` is set in `drill-env.sh`. If you need to set the classpath, add the following line to `drill-env.sh`.
 
 Once you have configured a storage plugin instance for a Hive data source, you
@@ -59,7 +54,7 @@ In this configuration, the Hive metastore is embedded within the Drill
 process. Provide the metastore database configuration settings in the Drill
 Web UI. Before you register Hive, verify that the driver you use to connect to
 the Hive metastore is in the Drill classpath located in `/<drill installation
-dirctory>/lib/. `If the driver is not there, copy the driver to `/<drill
+dirctory>/lib/.` If the driver is not there, copy the driver to `/<drill
 installation directory>/lib` on the Drill node. For more information about
 storage types and configurations, refer to [AdminManual
 MetastoreAdmin](/confluence/display/Hive/AdminManual+MetastoreAdmin).
@@ -68,9 +63,7 @@ To register an embedded Hive metastore with Drill, complete the following
 steps:
 
   1. Navigate to `[http://localhost:8047](http://localhost:8047/)`, and select the **Storage** tab
-
   2. In the disabled storage plugins section, click **Update** next to `hive` instance.
-
   3. In the configuration window, add the database configuration settings.
 
      **Example**
@@ -84,9 +77,7 @@ steps:
             "fs.default.name": "file:///",   
           }
         }
-
   4. Click** Enable.**
-
   5. Verify that `HADOOP_CLASSPATH` is set in `drill-env.sh`. If you need to set the classpath, add the following line to `drill-env.sh`.
   
         export HADOOP_CLASSPATH=/<directory path>/hadoop/hadoop-0.20.2
