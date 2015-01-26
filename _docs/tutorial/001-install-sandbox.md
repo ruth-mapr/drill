@@ -7,12 +7,12 @@ This tutorial uses the MapR Sandbox, which is a Hadoop environment pre-configure
 To complete the tutorial on the MapR Sandbox with Apache Drill, work through
 the following pages in order:
 
-  * [Installing the Apache Drill Sandbox](/confluence/display/DRILL/Installing+the+Apache+Drill+Sandbox)
-  * [Getting to Know the Drill Setup](/confluence/display/DRILL/Getting+to+Know+the+Drill+Setup)
-  * [Lesson 1: Learn About the Data Set](/confluence/display/DRILL/Lesson+1%3A+Learn+About+the+Data+Set)
-  * [Lesson 2: Run Queries with ANSI SQL](/confluence/display/DRILL/Lesson+2%3A+Run+Queries+with+ANSI+SQL)
-  * [Lesson 3: Run Queries on Complex Data Types](/confluence/display/DRILL/Lesson+3%3A+Run+Queries+on+Complex+Data+Types)
-  * [Summary](/confluence/display/DRILL/Summary)
+  * [Installing the Apache Drill Sandbox](/drill/docs/installing-the-apache-drill-sandbox)
+  * [Getting to Know the Drill Setup](/drill/docs/getting-to-know-the-drill-sandbox)
+  * [Lesson 1: Learn About the Data Set](/drill/docs/lession-1-learn-about-the-data-set)
+  * [Lesson 2: Run Queries with ANSI SQL](/drill/docs/lession-2-run-queries-with-ansi-sql)
+  * [Lesson 3: Run Queries on Complex Data Types](/drill/docs/lession-3-run-queries-on-complex-data-types)
+  * [Summary](/drill/docs/summary)
 
 ## About Apache Drill
 
@@ -25,15 +25,10 @@ with existing Apache Hive and Apache HBase deployments.Apache Drill 0.5 offers
 the following key features:
 
   * Low-latency SQL queries
-
   * Dynamic queries on self-describing data in files (such as JSON, Parquet, text) and MapR-DB/HBase tables, without requiring metadata definitions in the Hive metastore.
-
   * ANSI SQL
-
   * Nested data support
-
   * Integration with Apache Hive (queries on Hive tables and views, support for all Hive file formats and Hive UDFs)
-
   * BI/SQL tool integration using standard JDBC/ODBC drivers
 
 ## MapR Sandbox with Apache Drill
@@ -46,11 +41,10 @@ environment to get a feel for the power and capabilities of Apache Drill by
 performing various types of queries. Once you get a flavor for the technology,
 refer to the [Apache Drill web site](http://incubator.apache.org/drill/) and
 [Apache Drill documentation
-](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+Wiki)for more
+](/drill/docs)for more
 details.
 
 Note that Hadoop is not a prerequisite for Drill and users can start ramping
 up with Drill by running SQL queries directly on the local file system. Refer
-to [Apache Drill in 10 minutes](https://cwiki.apache.org/confluence/display/DR
-ILL/Apache+Drill+in+10+Minutes) for an introduction to using Drill in local
+to [Apache Drill in 10 minutes](/drill/docs/apache-drill-in-10-minutes) for an introduction to using Drill in local
 (embedded) mode.

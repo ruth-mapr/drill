@@ -42,8 +42,8 @@ Drill.
     a. To navigate to the MapR Sandbox with Apache Drill, enter the provided URL in your browser's address bar.  
     b. To login to the virtual machine and access the command line, press Alt+F2 on Windows or Option+F5 on Mac. When prompted, enter `mapr` as the login and password.
 
-# What's Next
+## What's Next
 
 After downloading and installing the sandbox, continue with the tutorial by
 [Getting to Know the Drill
-Setup](/confluence/display/DRILL/Getting+to+Know+the+Drill+Setup).
+Setup](/drill/docs/getting-to-know-the-drill-sandbox).

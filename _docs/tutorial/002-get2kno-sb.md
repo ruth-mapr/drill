@@ -19,7 +19,7 @@ Take a look at the pre-configured storage plugins by opening the Drill Web UI.
 
 Feel free to skip this section and jump directly to the queries: [Lesson 1:
 Learn About the Data
-Set](/confluence/display/DRILL/Lesson+1%3A+Learn+About+the+Data+Set)
+Set](/drill/docs/lession-1-learn-about-the-data-set)
 
   * Launch a web browser and go to: `http://<IP address of the sandbox>:8047`
   * Go to the Storage tab
@@ -31,7 +31,7 @@ Set](/confluence/display/DRILL/Lesson+1%3A+Learn+About+the+Data+Set)
 A storage plugin configuration for MapR-DB in the sandbox. Drill uses a single
 storage plugin for connecting to HBase as well as MapR-DB, which is an
 enterprise grade in-Hadoop NoSQL database. See the [Apache Drill
-Wiki](https://cwiki.apache.org/confluence/display/DRILL/Registering+HBase) for
+Wiki](/drill/docs/registering-hbase) for
 information on how to configure Drill to query HBase.
 
     {
@@ -231,5 +231,5 @@ Apache Drill as you work through the tutorial.
 # What's Next
 
 Start running queries by going to [Lesson 1: Learn About the Data
-Set](/confluence/display/DRILL/Lesson+1%3A+Learn+About+the+Data+Set).
+Set](/drill/docs/lession-1-learn-about-the-data-set).
 

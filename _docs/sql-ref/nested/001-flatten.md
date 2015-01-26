@@ -85,5 +85,5 @@ the categories array, then run a COUNT function on the flattened result:
     +---------------|------------+
 
 A common use case for FLATTEN is its use in conjunction with the
-[KVGEN](/confluence/display/DRILL/KVGEN+Function) function.
+[KVGEN](/drill/docs/flatten-function) function.
 

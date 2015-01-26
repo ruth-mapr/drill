@@ -339,9 +339,7 @@ one file, logs data is stored as partitioned directories on the file system.
 The logs directory has three subdirectories:
 
   * 2012
-
   * 2013
-
   * 2014
 
 Each of these year directories fans out to a set of numbered month
@@ -395,7 +393,7 @@ subdirectories to return the total number of rows in those files.
 # What's Next
 
 Go to [Lesson 2: Run Queries with ANSI
-SQL](/confluence/display/DRILL/Lesson+2%3A+Run+Queries+with+ANSI+SQL).
+SQL](/drill/docs/lession-2-run-queries-with-ansi-sql).
 
 
 

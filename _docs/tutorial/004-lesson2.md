@@ -18,11 +18,8 @@ also how you can combine data from different data sources in a single SELECT
 statement.
 
   * Show an aggregate query on a single file or table. Use GROUP BY, WHERE, HAVING, and ORDER BY clauses.
-
   * Perform joins between Hive, MapR-DB, and file system data sources.
-
   * Use table and column aliases.
-
   * Create a Drill view.
 
 ## Aggregation
@@ -385,8 +382,7 @@ workspace, so the query specifies the full path to the file:
 
 # What's Next
 
-Go to [Lesson 3: Run Queries on Complex Data Types](/confluence/display/DRILL/
-Lesson+3%3A+Run+Queries+on+Complex+Data+Types). 
+Go to [Lesson 3: Run Queries on Complex Data Types](/drill/docs/lession-3-run-queries-on-complex-data-types). 
 
 
 

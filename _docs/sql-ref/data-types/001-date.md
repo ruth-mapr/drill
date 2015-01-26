@@ -77,7 +77,7 @@ Drill supports the `time` data type in the following format:
 
     HH:mm:ss.SSS (hour:minute:sec.milliseconds)
 
-The following table provides some examples for the` time` data type:
+The following table provides some examples for the `time` data type:
 
 <table><tbody><tr>
   <th>Use</th>
@@ -108,7 +108,7 @@ supports the `interval` data type in the following format:
 
     P [qty] Y [qty] M
 
-The following table provides examples for `interval year `data type:
+The following table provides examples for `interval year` data type:
 
 <table ><tbody><tr>
 <th>Use</th>
@@ -139,7 +139,7 @@ The following table provides examples for `interval day` data type:
   
 ## Literal
 
-The following table provides a list of` date/time` literals that Drill
+The following table provides a list of `date/time` literals that Drill
 supports with examples of each:
 
 <div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Format</th><th colspan="1" class="confluenceTh">Interpretation</th><th class="confluenceTh">Example</th></tr><tr><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">interval '1 10:20:30.123' day to second</span></code></td><td colspan="1" valign="top"><code>1 day, 10 hours, 20 minutes, 30 seconds, and 123 thousandths of a second</code></td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select interval '1 10:20:30.123' day to second from dfs.`/tmp/input.json`;</span></code></td></tr><tr><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">interval '1 10' day to hour</span></code></td><td colspan="1" valign="top"><code>1 day 10 hours</code></td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select interval '1 10' day to hour from dfs.`/tmp/input.json`;</span></code></td></tr><tr><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">interval '10' day</span></code></td><td colspan="1" valign="top"><code>10 days</code></td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select interval '10' day from dfs.`/tmp/input.json`;</span></code></td></tr><tr><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">interval '10' hour</span></code></td><td colspan="1" valign="top"><code>10 hours</code></td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select interval '10' hour from dfs.`/tmp/input.json`;</span></code></td></tr><tr><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">interval '10.999' second</span></code></td><td colspan="1" valign="top"><code>10.999 seconds</code></td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select interval '10.999' second from dfs.`/tmp/input.json`; </span></code></td></tr></tbody></table></div>
