@@ -16,12 +16,12 @@ The following list describes the key components of a Drillbit:
     * Interfaces for Drill to read from and write to data sources
     * Location of data and a set of optimization rules to help with efficient and faster execution of Drill queries on a specific data source 
 
-In the context of Hadoop, Drill provides storage plugins for files and
+    In the context of Hadoop, Drill provides storage plugins for files and
 HBase/M7. Drill also integrates with Hive as a storage plugin since Hive
 provides a metadata abstraction layer on top of files, HBase/M7, and provides
 libraries to read data and operate on these sources (Serdes and UDFs).
 
-When users query files and HBase/M7 with Drill, they can do it directly or go
+    When users query files and HBase/M7 with Drill, they can do it directly or go
 through Hive if they have metadata defined there. Drill integration with Hive
 is only for metadata. Drill does not invoke the Hive execution engine for any
 requests.
