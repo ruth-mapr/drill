@@ -35,6 +35,7 @@ In this example, we are connecting to a Zookeeper Quorum.
   6. In the **Schema** field, select the Hive schema.
      In this example, the Hive schema is named hive.default.
      ![]({{ site.baseurl }}/docs/img/Hive_DSN.png)
+     
   7. Click **OK** to create the DSN and return to the ODBC Data Source Administrator window.
   8. Click **OK** to close the ODBC Data Source Administrator.
 
