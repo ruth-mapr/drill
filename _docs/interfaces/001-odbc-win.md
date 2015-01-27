@@ -17,14 +17,13 @@ that is self-describing, such as HBase, Parquet, JSON, CSV, and TSV.
 Complete the following steps to connect to a Drill data source from a BI tool
 using ODBC:
 
-  * [Step 1. Install the MapR Drill ODBC Driver](/confluence/display/DRILL/Step+1.+Install+the+MapR+Drill+ODBC+Driver)
-  * [Step 2. Configure ODBC Connections to Drill Data Sources](/confluence/display/DRILL/Step+2.+Configure+ODBC+Connections+to+Drill+Data+Sources)
-  * [Step 3. Connect to Drill Data Sources from a BI Tool](/confluence/display/DRILL/Step+3.+Connect+to+Drill+Data+Sources+from+a+BI+Tool)
+  * [Step 1. Install the MapR Drill ODBC Driver](/drill/docs/step-1-install-the-mapr-drill-odbc-driver)
+  * [Step 2. Configure ODBC Connections to Drill Data Sources](/drill/docs/step-2-configure-odbc-connections-to-drill-data-sources)
+  * [Step 3. Connect to Drill Data Sources from a BI Tool](/drill/docs/step-3-connect-to-drill-data-sources-from-a-bi-tool)
 
 For examples of how you can use the MapR Drill ODBC Driver to connect to Drill
 Data Sources from BI tools, see [Step 3. Connect to Drill Data Sources from a
-BI Tool](/confluence/display/DRILL/Step+3.+Connect+to+Drill+Data+Sources+from+
-a+BI+Tool). While the documentation includes examples for Tableau, you can use
+BI Tool](/drill/docs/step-3-connect-to-drill-data-sources-from-a-bi-tool). While the documentation includes examples for Tableau, you can use
 this driver with any BI tool that works with ODBC, such as Excel,
 MicroStrategy, and Toad.
 
@@ -35,5 +34,5 @@ access data from a Hive table:
 
 The following components provide applications access to Drill data sources:
 
-<div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Component</th><th class="confluenceTh">Role</th></tr><tr><td class="confluenceTd">Drillbit</td><td class="confluenceTd">Accepts queries from clients, executes queries against Drill data sources, and returns the query results. </td></tr><tr><td class="confluenceTd">ODBC Data Source Administrator</td><td class="confluenceTd">The ODBC Data Source Administrator enables the creation of DSNs to Apache Drill data sources.<br /> In the figure above, the ODBC Data Source Administrator was used to create <code>Hive-DrillDataSources</code>.</td></tr><tr><td class="confluenceTd">ODBC DSN</td><td class="confluenceTd"><p>Provides applications information about how to connect to the Drill Source.</p>In the figure above, the <code>Hive-DrillDataSources</code> is a DSN that provides connection information to the Hive tables.</td></tr><tr><td colspan="1" class="confluenceTd">BI Tool</td><td colspan="1" class="confluenceTd"><p>Accesses Drill data sources using the connection information from the ODBC DSN.</p>In the figure above, the BI tool uses <code>Hive-DrillDataSources</code> to access the <code>hive_student</code> table.</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Component</th><th class="confluenceTh">Role</th></tr><tr><td valign="top">Drillbit</td><td valign="top">Accepts queries from clients, executes queries against Drill data sources, and returns the query results. </td></tr><tr><td valign="top">ODBC Data Source Administrator</td><td valign="top">The ODBC Data Source Administrator enables the creation of DSNs to Apache Drill data sources.<br /> In the figure above, the ODBC Data Source Administrator was used to create <code>Hive-DrillDataSources</code>.</td></tr><tr><td valign="top">ODBC DSN</td><td valign="top"><p>Provides applications information about how to connect to the Drill Source.</p>In the figure above, the <code>Hive-DrillDataSources</code> is a DSN that provides connection information to the Hive tables.</td></tr><tr><td colspan="1" valign="top">BI Tool</td><td colspan="1" valign="top"><p>Accesses Drill data sources using the connection information from the ODBC DSN.</p>In the figure above, the BI tool uses <code>Hive-DrillDataSources</code> to access the <code>hive_student</code> table.</td></tr></tbody></table></div>
 

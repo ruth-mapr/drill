@@ -17,19 +17,18 @@ requirements:
     * Windows® Server 2008 R2
   * .NET Framework 2.0 is required to run the Drill Explorer application.
   * 60 MB of available disk space
-  * The client must be able to resolve the actual hostname of the Drill node(s) with the IP(s). Verify that a DNS entry was created on the client machine for the Drill node(s). If not, create the following entry for the Drill node(s) in the `%WINDIR%\system32\drivers\etc\hosts` file:   
-<drill-machine-IP> <drill-machine-hostname>  
-Example: `127.0.1.1 apachedemo`
+  * The client must be able to resolve the actual hostname of the Drill node(s) with the IP(s). Verify that a DNS entry was created on the client machine for the Drill node(s). If not, create the following entry for the Drill node(s) in the `%WINDIR%\system32\drivers\etc\hosts` file:
+    
+        <drill-machine-IP> <drill-machine-hostname>  
+    Example: `127.0.1.1 apachedemo`
 
 To install the driver, you need Administrator privileges on the computer.
 
 ## Installing the Driver
 
   1. Download the installer that corresponds to the bitness of the client application from which you want to create an ODBC connection:
-
-    * [MapRDrillODBC32.msi](http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc/MapRDrillODBC32.msi) (32-bit)
-    * [MapRDrillODBC64.msi](http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc/MapRDrillODBC64.msi) (64-bit)
-
+     * [MapRDrillODBC32.msi](http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc/MapRDrillODBC32.msi) (32-bit)
+     * [MapRDrillODBC64.msi](http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc/MapRDrillODBC64.msi) (64-bit)
   2. Double-click the installer from the location where you downloaded it.
   3. Click **Next.**
   4. Select the check box to accept the terms of the License Agreement and click **Next**.
@@ -38,7 +37,7 @@ To install the driver, you need Administrator privileges on the computer.
   7. When the installation completes, click **Finish**.
   8. To verify the installation, click **Start > All Programs > MapR Drill ODBC Driver 1.0 (32|64-bit) > (32|64-bit) ODBC Administrator**. Then, click the **Drivers** tab and verify that the MapR Drill ODBC Driver appears in the list of drivers that are installed on the computer.
 
-The Tableau Data-connection Customization (TDC) File
+## The Tableau Data-connection Customization (TDC) File
 
 The MapR Drill ODBC Driver includes a file named `MapRDrillODBC.TDC`. The TDC
 file includes customizations that improve ODBC configuration and performance
@@ -55,6 +54,5 @@ driver.
   2. When the installation completes, press any key to continue.   
 For example, you can press the SPACEBAR key.
 
-#### What's Next? Go to [Step 2. Configure ODBC Connections to Drill Data Sour
-ces](/confluence/display/DRILL/Step+2.+Configure+ODBC+Connections+to+Drill+Data+Sources).
+#### What's Next? Go to [Step 2. Configure ODBC Connections to Drill Data Sources](/confluence/display/DRILL/Step+2.+Configure+ODBC+Connections+to+Drill+Data+Sources).
 

@@ -1,5 +1,5 @@
 ---
-title: "Drill Interfaces"
+title: "Drill ODBC and JDBC Interfaces"
 ---
 You can connect to Apache Drill through the following interfaces:
 
@@ -11,7 +11,7 @@ You can connect to Apache Drill through the following interfaces:
 
 *Apache Drill does not have an open source ODBC driver. However, MapR provides an ODBC driver that you can use to connect to Apache Drill from BI tools. 
 
-# Using ODBC to Access Apache Drill from BI Tools
+## Using ODBC to Access Apache Drill from BI Tools
 
 MapR provides ODBC drivers for Windows, Mac OS X, and Linux. It is recommended
 that you install the latest version of Apache Drill with the latest version of
@@ -27,7 +27,7 @@ You can access the latest Drill ODBC drivers in the following location:
 
 <http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc>
 
-# Using JDBC to Access Apache Drill from SQuirrel
+## Using JDBC to Access Apache Drill from SQuirrel
 
 You can connect to Drill through a JDBC client tool, such as SQuirreL, on
 Windows, Linux, and Mac OS X systems, to access all of your data sources
@@ -48,7 +48,7 @@ For information about how to use SQuirreL, refer to the [SQuirreL Quick
 Start](http://squirrel-sql.sourceforge.net/user-manual/quick_start.html)
 guide.
 
-## Prerequisites
+### Prerequisites
 
   * SQuirreL requires JRE 7
   * Drill installed in distributed mode on one or multiple nodes in a cluster. Refer to the [Install Drill](/drill/docs/install-drill/) documentation for more information.
@@ -61,7 +61,7 @@ If a DNS entry does not exist, create the entry for the Drill node(s).
 <drill-machine-IP> <drill-machine-hostname>
     Example: `127.0.1.1 maprdemo`
 
-## Step 1: Getting the Drill JDBC Driver
+### Step 1: Getting the Drill JDBC Driver
 
 The Drill JDBC Driver `JAR` file must exist in a directory on your Windows
 machine in order to configure the driver in the SQuirreL client.
@@ -81,7 +81,7 @@ you can locate the driver in the following directory:
 
     <windows_directory>\apache-drill-<version>\jars\jdbc-driver\drill-jdbc-all-0.7.0-SNAPSHOT.jar
 
-## Step 2: Installing and Starting SQuirreL
+### Step 2: Installing and Starting SQuirreL
 
 To install and start SQuirreL, complete the following steps:
 
@@ -90,14 +90,14 @@ To install and start SQuirreL, complete the following steps:
   2. Double-click the SQuirreL `JAR` file. The SQuirreL installation wizard walks you through the installation process.
   3. When installation completes, navigate to the SQuirreL installation folder and then double-click `squirrel-sql.bat` to start SQuirreL.
 
-## Step 3: Adding the Drill JDBC Driver to SQuirreL
+### Step 3: Adding the Drill JDBC Driver to SQuirreL
 
 To add the Drill JDBC Driver to SQuirreL, define the driver and create a
 database alias. The alias is a specific instance of the driver configuration.
 SQuirreL uses the driver definition and alias to connect to Drill so you can
 access data sources that you have registered with Drill.
 
-### A. Define the Driver
+#### A. Define the Driver
 
 To define the Drill JDBC Driver, complete the following steps:
 
@@ -113,7 +113,7 @@ To define the Drill JDBC Driver, complete the following steps:
 
    ![drill query flow]({{ site.baseurl }}/docs/img/52.png)
 
-### B. Create an Alias
+#### B. Create an Alias
 
 To create an alias, complete the following steps:
 
@@ -169,7 +169,7 @@ To create an alias, complete the following steps:
      
 6. Click **OK**. SQuirreL displays a series of tabs.
 
-## Step 4: Running a Drill Query from SQuirreL
+### Step 4: Running a Drill Query from SQuirreL
 
 Once you have SQuirreL successfully connected to your cluster through the
 Drill JDBC Driver, you can issue queries from the SQuirreL client. You can run
