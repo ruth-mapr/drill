@@ -9,8 +9,7 @@ Examples of self-describing data include HBase, Parquet, JSON, CSV,and TSV.
 In some cases, you may want to use Drill Explorer to explore that data or to
 create a view before you connect to the data from a BI tool. For more
 information about Drill Explorer, see [Using Drill Explorer to Browse Data and
-Create Views](/confluence/display/DRILL/Using+Drill+Explorer+to+Browse+Data+an
-d+Create+Views).
+Create Views](/drill/docs/using-drill-explorer-to-browse-data-and-create-views).
 
 In an ODBC-compliant BI tool, use the ODBC DSN to create an ODBC connection
 with one of the methods applicable to the data source type:
