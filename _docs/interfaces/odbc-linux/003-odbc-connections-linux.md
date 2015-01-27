@@ -115,7 +115,7 @@ following steps:
 For details on the configuration options available for controlling the
 behavior of DSNs using Simba ODBC Driver for Apache Drill, see [Driver
 Configuration
-Options](/confluence/display/DRILL/Driver+Configuration+Options).
+Options](/drill/docs/driver-configuration-options).
 
 ## Step 3: (Optional) Define the ODBC Driver in `odbcinst.ini`
 
@@ -175,6 +175,5 @@ named `DYLD_LIBRARY_PATH`.
 
 ### Next Step
 
-Refer to [Testing the ODBC Connection on Linux and Mac OS X](/confluence/displ
-ay/DRILL/Testing+the+ODBC+Connection+on+Linux+and+Mac+OS+X).
+Refer to [Testing the ODBC Connection on Linux and Mac OS X](/drill/docs/testing-the-odbc-connection-on-linux-and-mac-os-x).
 
