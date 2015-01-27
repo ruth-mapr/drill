@@ -4,7 +4,7 @@ parent: "Using the MapR ODBC Driver on Windows"
 ---
 Drill Explorer is a simple user interface that is embedded within the ODBC
 DSN. Drill Explorer enables users to understand the metadata and data before
-visualizing the data in a BI tool.** **Use Drill Explorer to browse Drill data
+visualizing the data in a BI tool. Use Drill Explorer to browse Drill data
 sources, preview the results of a SQL query, and create a view that you can
 query.
 
