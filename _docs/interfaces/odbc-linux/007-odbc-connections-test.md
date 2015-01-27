@@ -9,7 +9,7 @@ with your driver manager installation.
 For example, the iODBC driver manager includes simple utilities called
 `iodbctest` and `iodbctestw`. You can use either one of these utilities to
 establish a test connection with your driver and your DSN. Use `iodbctest` to
-test how your driver works with an ANSI application. Use` iodbctestw` to test
+test how your driver works with an ANSI application. Use `iodbctestw` to test
 how your driver works with a Unicode application.
 
 **Note:** There are 32-bit and 64-bit installations of the iODBC driver manager available. If you have only one or the other installed, then the appropriate version of iodbctest (or iodbctestw) is available. However, if you have both 32- and 64-bit versions installed, then you need to be careful that you are running the version from the correct installation directory.
@@ -26,8 +26,10 @@ manager:
   2. If you do not remember the DSN name, type a question mark (?) to see a list of DSNs.
   3. If you are connecting directly to a Drillbit, type an ODBC connection string using the following format:
 
-     `DRIVER=MapR Drill ODBC Driver;ConnectionType=Direct;Host=_HostName_;Port=_PortNumber_`
+     `DRIVER=MapR Drill ODBC Driver;ConnectionType=Direct;Host=HostName;Port=PortNumber`
+     
      OR
+     
      If you are connecting to a ZooKeeper cluster, type an ODBC connection string
 using the following format:
 

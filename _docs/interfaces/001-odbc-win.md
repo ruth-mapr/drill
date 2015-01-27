@@ -17,7 +17,7 @@ that is self-describing, such as HBase, Parquet, JSON, CSV, and TSV.
 Complete the following steps to connect to a Drill data source from a BI tool
 using ODBC:
 
-  * [Step 1. Install the MapR Drill ODBC Driver](/drill/docs/step-1-install-the-mapr-drill-odbc-driver)
+  * [Step 1. Install the MapR Drill ODBC Driver](/drill/docs/step-1-install-the-mapr-drill-odbc-driver-on-windows)
   * [Step 2. Configure ODBC Connections to Drill Data Sources](/drill/docs/step-2-configure-odbc-connections-to-drill-data-sources)
   * [Step 3. Connect to Drill Data Sources from a BI Tool](/drill/docs/step-3-connect-to-drill-data-sources-from-a-bi-tool)
 

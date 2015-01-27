@@ -159,11 +159,11 @@ To create an alias, complete the following steps:
      <td valign="top">Password</td>
      <td valign="top">admin</td>
      </tr></tbody></table>
-4. Click **Ok. **The Connect to: dialog box appears.  
+4. Click **Ok**. The Connect to: dialog box appears.  
 
     ![drill query flow]({{ site.baseurl }}/docs/img/30.png)
    
-5. Click **Connect.** SQuirreL displays a message stating that the connection is successful.
+5. Click **Connect**. SQuirreL displays a message stating that the connection is successful.
   
     ![drill query flow]({{ site.baseurl }}/docs/img/53.png)
      
