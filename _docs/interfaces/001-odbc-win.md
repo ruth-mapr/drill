@@ -1,6 +1,6 @@
 ---
 title: "Using the MapR ODBC Driver on Windows"
-parent: "Drill Interfaces"
+parent: "ODBC/JDBC Interfaces"
 ---
 The MapR Drill ODBC driver provides BI tools access to Drill’s flexible query
 capabilities so that users can quickly explore various data sources. The MapR

@@ -1,6 +1,6 @@
 ---
 title: "Using the MapR ODBC Driver on Linux and Mac OS X"
-parent: "Drill Interfaces"
+parent: "ODBC/JDBC Interfaces"
 ---
 The MapR Drill ODBC driver provides BI tools access to Drill’s flexible query
 capabilities so you can quickly explore various data sources. Once you install

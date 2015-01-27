@@ -164,4 +164,4 @@ Reference](/drill/docs/sql-reference).
 You can leverage the power of Apache Drill to query MongoDB through standard
 BI tools, such as Tableau and SQuirreL.
 
-For information about Drill ODBC and JDBC drivers, refer to [Drill Interfaces](/drill/docs/drill-interfaces).
+For information about Drill ODBC and JDBC drivers, refer to [Drill Interfaces](/drill/docs/odbc-jdbc-interfaces).
