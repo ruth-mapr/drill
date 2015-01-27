@@ -7,14 +7,12 @@ sources. Each example in this section takes you through the steps to create a
 DSN to a Drill data source and then access the data in Tableau 8.1.
 
 This section includes the following examples:
-
   * Connecting to a Hive table
   * Using a view to connect to Hbase table data
   * Using custom SQL to connect to data in a Parquet file
-
 The steps and results of these examples assume pre-configured schemas and
 source data. You configure schemas as storage plugin instances on the Storage
-tab of the Drill Web UI. For more information, see the [Apache Drill Wiki documentation](/drill/docs).
+tab of the [Drill Web UI](/drill/docs/getting-to-know-the-drill-sandbox#storage-plugins-overview).
 
 ## Example: Connect to a Hive Table in Tableau
 
@@ -111,7 +109,8 @@ users can use SQL tab to type in SQL manually to explore the data and save the
 SQL query as a view.
   6. Select the schema that you want to create a view for.
     
-      ![]({{ site.baseurl }}/docs/img/Hbase_Browse.png)   
+      ![]({{ site.baseurl }}/docs/img/Hbase_Browse.png)
+         
      Drill Explorer displays the metadata and column families for the selected
 HBase table.
   7. To create a view of the HBase table, click the **SQL** tab.  
