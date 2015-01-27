@@ -170,8 +170,7 @@ workspace view.
 
 For example, you can visualize the data in this way:
 
-![]({{ site.baseurl }}/docs/img/VoterContributions_hbase
-view.png)
+![]({{ site.baseurl }}/docs/img/VoterContributions_hbaseview.png)
 
 ## Option 2. Using Custom SQL to Access Self-Describing Data
 
