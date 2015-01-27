@@ -21,8 +21,7 @@ The ODBC Data Source Administrator window appears.
 
      To launch the 32-bit version of the ODBC driver on a 64-bit machine, run:
 `C:\WINDOWS\SysWOW64\odbcad32.exe`.
-  2. Click the **System DSN** tab to create a system DSN or click the **User DSN** tab to create a user DSN. A system DSN is available for all users who log in to the machine. A user DSN
-is available to the user who creates the DSN.
+  2. Click the **System DSN** tab to create a system DSN or click the **User DSN** tab to create a user DSN. A system DSN is available for all users who log in to the machine. A user DSN is available to the user who creates the DSN.
   3. Click **Add**.
   4. Select **MapR Drill ODBC Driver** and click **Finish**.  
      The _MapR Drill ODBC Driver DSN Setup_ window appears.
@@ -102,8 +101,7 @@ Separate each advanced property using a semicolon.
 For example, the following Advanced Properties string excludes the schemas
 named test and abc; sets the timeout to 30 seconds; and, sets the time zone to
 Coordinated Universal Time:  
-`HandshakeTimeout=30;QueryTimeout=30;TimestampTZDisplayTimezone=utc;ExcludedSc
-hemas=test,abc`
+`HandshakeTimeout=30;QueryTimeout=30;TimestampTZDisplayTimezone=utc;ExcludedSchemas=test,abc`
 
 ### Logging Options
 

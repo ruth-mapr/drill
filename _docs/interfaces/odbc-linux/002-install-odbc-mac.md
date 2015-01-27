@@ -24,7 +24,7 @@ Verify that your system meets the following prerequisites before you start.
   * 100 MB of available disk space
   * iODBC 3.52.7 or above
   * The client must be able to resolve the actual hostname of the Drill node(s) with the IP(s). Verify that a DNS entry was created on the client machine for the Drill node(s).   
-If not, create the following entry in` /etc/hosts` for the Drill node(s):  
+If not, create the following entry in `/etc/hosts` for the Drill node(s):  
 `<drill-machine-IP> <drill-machine-hostname>`  
 Example: `127.0.1.1 apachedemo`
 
@@ -40,7 +40,7 @@ Click the following link to download the driver:
 
 To install the driver, complete the following steps:
 
-  1. Double-click `MapRDrillODBC.dmg ` to mount the disk image.
+  1. Double-click `MapRDrillODBC.dmg` to mount the disk image.
   2. Double-click `MapRDrillODBC.pkg` to run the Installer.
   3. Follow the instructions in the Installer to complete the installation process.
   4. When the installation completes, click **Close.**

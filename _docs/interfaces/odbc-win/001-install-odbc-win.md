@@ -1,5 +1,5 @@
 ---
-title: "Step 1. Install the MapR Drill ODBC Driver"
+title: "Step 1. Install the MapR Drill ODBC Driver on Windows"
 parent: "Using the MapR ODBC Driver on Windows"
 ---
 The MapR Drill ODBC Driver installer is available for 32-bit and 64-bit
@@ -19,7 +19,7 @@ requirements:
   * 60 MB of available disk space
   * The client must be able to resolve the actual hostname of the Drill node(s) with the IP(s). Verify that a DNS entry was created on the client machine for the Drill node(s). If not, create the following entry for the Drill node(s) in the `%WINDIR%\system32\drivers\etc\hosts` file:
     
-        <drill-machine-IP> <drill-machine-hostname>  
+    `<drill-machine-IP> <drill-machine-hostname>`  
     Example: `127.0.1.1 apachedemo`
 
 To install the driver, you need Administrator privileges on the computer.

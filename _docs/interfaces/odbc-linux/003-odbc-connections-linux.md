@@ -37,7 +37,7 @@ directory that you can use as a reference.
 
 The sample files appear in the directory listings by default because the
 filenames do not begin with a (.) Filenames that begin with a (.) are hidden.
-If the default location is used for `odbc.ini `and `odbcinst.ini`, file names
+If the default location is used for `odbc.ini` and `odbcinst.ini`, file names
 must begin with a period (.). For `mapr.drillodbc.ini`, the file name must
 begin with a (.) and must reside in your home directory.
 
@@ -52,15 +52,15 @@ files.
 You must set the following environment variables to point to the` odbc.ini`
 and `mapr.drillodbc.ini `configuration files, respectively:
 
-  * `ODBCINI `(point to `odbc.ini`)
-  * `MAPRDRILLINI `(point to `mapr.drillodbc.ini`)
+  * `ODBCINI` (point to `odbc.ini`)
+  * `MAPRDRILLINI` (point to `mapr.drillodbc.ini`)
 
 For example, if you are using the 32-bit driver and the files are in the
 default install directory, set the environment variables as follows:
 
 **Note:** You do not need to set these variables for the Mac OS X version of the driver.
 
-## Step 2: Define the ODBC Data Sources in o`dbc.ini`
+## Step 2: Define the ODBC Data Sources in `odbc.ini`
 
 Define the ODBC data sources in the `odbc.ini` configuration file. This file
 is divided into sections.
@@ -160,19 +160,18 @@ file. This configures the driver so it works with your ODBC driver manager.
 
 ### Configuring mapr.drillodbc.ini
 
-To configure the MapR Drill ODBC Driver in the `mapr.drillodbc.ini
-`configuration file, complete the following steps:
+To configure the MapR Drill ODBC Driver in the `mapr.drillodbc.ini` configuration file, complete the following steps:
 
   1. Open the `mapr.drillodbc.ini` configuration file in a text editor.
   2. Edit the DriverManagerEncoding setting. The value is typically UTF-16 or UTF-32, but depends on the driver manger used. iODBC uses UTF-32 and unixODBC uses UTF-16. Review your ODBC Driver Manager documentation for the correct setting.
-  3. Edit the `ODBCInstLib` setting. The value is the name of the `ODBCInst` shared library for the ODBC driver manager that you use. The configuration file defaults to the shared library for`iODBC`. In Linux, the shared library name for iODBC is `libiodbcinst.so`. In Mac OS X, the shared library name for `iODBC` is `libiodbcinst.dylib.`
+  3. Edit the `ODBCInstLib` setting. The value is the name of the `ODBCInst` shared library for the ODBC driver manager that you use. The configuration file defaults to the shared library for`iODBC`. In Linux, the shared library name for iODBC is `libiodbcinst.so`. In Mac OS X, the shared library name for `iODBC` is `libiodbcinst.dylib`.
      **Note:**Review your ODBC Driver Manager documentation for the correct
 setting. Specify an absolute or relative filename for the library. If you use
 the relative file name, include the path to the library in the library path
 environment variable. In Linux, the library path environment variable is named
-`LD_LIBRARY_PATH``.` In Mac OS X, the library path environment variable is
+`LD_LIBRARY_PATH`. In Mac OS X, the library path environment variable is
 named `DYLD_LIBRARY_PATH`.
-  4. `Save the `mapr.drillodbc.ini` configuration file.`
+  4. Save the `mapr.drillodbc.ini` configuration file.
 
 ### Next Step
 
