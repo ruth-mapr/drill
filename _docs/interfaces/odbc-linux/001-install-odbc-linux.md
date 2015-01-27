@@ -23,25 +23,19 @@ Verify that your system meets the system requirements before you start.
 **System Requirements**
 
   * One of the following distributions (32- and 64-bit editions are supported):
-
     * Red Hat® Enterprise Linux® (RHEL) 5.0/6.0
-
     * CentOS 5.0/6.0
-
     * SUSE Linux Enterprise Server (SLES) 11
-
   * 90 MB of available disk space.
   * An installed ODBC driver manager:
-
     * iODBC 3.52.7 or above  
-_OR _
-
+      OR 
     * unixODBC 2.2.12 or above
-
   * The client must be able to resolve the actual hostname of the Drill node(s) with the IP(s). Verify that a DNS entry was created on the client machine for the Drill node(s).   
 If not, create the following entry in `/etc/hosts` for the Drill node(s):  
-`<drill-machine-IP> <drill-machine-hostname>`  
-Example: `127.0.1.1 apachedemo`
+
+    `<drill-machine-IP> <drill-machine-hostname>`  
+    Example: `127.0.1.1 apachedemo`
 
 To install the driver, you need Administrator privileges on the computer.
 
@@ -74,7 +68,7 @@ If the package manager in your Linux distribution cannot resolve the
 dependencies automatically when installing the driver, download and manually
 install the packages.
 
-The following table provides a list of the** **MapR Drill ODBC Driver file
+The following table provides a list of the MapR Drill ODBC Driver file
 locations and descriptions:
 
 File| Description  

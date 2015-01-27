@@ -28,8 +28,6 @@ If not, create the following entry in` /etc/hosts` for the Drill node(s):
 `<drill-machine-IP> <drill-machine-hostname>`  
 Example: `127.0.1.1 apachedemo`
 
-Icon
-
 To install the driver, you need Administrator privileges on the computer.
 
 ## Step 1: Downloading the MapR Drill ODBC Driver
@@ -57,7 +55,6 @@ To install the driver, complete the following steps:
 
 The DYLD_LIBRARY_PATH environment variable must include paths to the following
 libraries:
-
   * Installed ODBC driver manager libraries
   * Installed MapR Drill ODBC Driver for Drill shared libraries
 
@@ -70,5 +67,4 @@ c/lib/universal`
 #### Next Step
 
 Complete the steps listed in [Configuring ODBC Connections for Linux and Mac
-OS X](https://cwiki.apache.org/confluence/display/DRILL/Configuring+ODBC+Conne
-ctions+for+Linux+and+Mac+OS+X).
+OS X](https://cwiki.apache.org/confluence/display/DRILL/Configuring+ODBC+Connections+for+Linux+and+Mac+OS+X).

@@ -26,34 +26,24 @@ of custom queries and save the results as a view.
   1. To launch the ODBC Administrator, click** Start > All Programs > MapR Drill ODBC Driver 1.0 (32|64-bit) > (32|64-bit) ODBC Administrator.**
   2. Click the **User DSN** tab or the **System DSN** tab and then select the DSN that corresponds to the Drill data source that you want to explore.
   3. Click **Configure**.  
-The _MapR Drill ODBC Driver DSN Setup_ dialog appears.
-
+     The _MapR Drill ODBC Driver DSN Setup_ dialog appears.
   4. Click **Drill Explorer**.
   5. In the **Schemas** section on the **Browse** tab, navigate to the the data source that you want to create a view for.  
-After you select a data souce, the metadata and data displays on the Browse
-tab and the SQL that is used to access the data displays on the SQL tab.
-
+     After you select a data souce, the metadata and data displays on the Browse tab and the SQL that is used to access the data displays on the SQL tab.
   6. Click the **SQL** tab.
   7. In the **View Definition SQL** field, enter the SQL query that you want to create a view for.
   8. Click **Preview**.   
-If the results are not as expected, you can edit the SQL query and click
+      If the results are not as expected, you can edit the SQL query and click
 Preview again.
-
   9. Click **Create As**.  
-The _Create As_ dialog displays.
-
+     The _Create As_ dialog displays.
   10. In the **Schema** field, select the schema where you want to save the view.
-
-As of 0.4.0, you can only save views to file-based schemas.
-
+      As of 0.4.0, you can only save views to file-based schemas.
   11. In the **View Name** field, enter a descriptive name for the view.
-
-As of 0.4.0, do not include spaces in the view name.
-
+      As of 0.4.0, do not include spaces in the view name.
   12. Click **Save**.   
-The status and any error message associated with the view creation displays in
+      The status and any error message associated with the view creation displays in
 the Create As dialog. When a view saves successfully, the Save button changes
 to a Close button.
-
   13. Click **Close**.
 
