@@ -26,16 +26,13 @@ manager:
   2. If you do not remember the DSN name, type a question mark (?) to see a list of DSNs.
   3. If you are connecting directly to a Drillbit, type an ODBC connection string using the following format:
 
-`DRIVER=MapR Drill ODBC
-Driver;ConnectionType=Direct;Host=_HostName_;Port=_PortNumber_`
-
-_OR_
-
-If you are connecting to a ZooKeeper cluster, type an ODBC connection string
+     `DRIVER=MapR Drill ODBC Driver;ConnectionType=Direct;Host=_HostName_;Port=_PortNumber_`
+     OR
+     If you are connecting to a ZooKeeper cluster, type an ODBC connection string
 using the following format:
 
-`DRIVER=MapR Drill ODBC Driver;ConnectionType=ZooKeeper;ZKQuorum=Server1:Port1
+     `DRIVER=MapR Drill ODBC Driver;ConnectionType=ZooKeeper;ZKQuorum=Server1:Port1
 ,Server2:Port2;ZKClusterID=DrillbitName`
 
-If the connection is successful, the `SQL>` prompt appears.
+     If the connection is successful, the `SQL>` prompt appears.
 

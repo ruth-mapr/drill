@@ -58,7 +58,7 @@ and `mapr.drillodbc.ini `configuration files, respectively:
 For example, if you are using the 32-bit driver and the files are in the
 default install directory, set the environment variables as follows:
 
-**Note: **You do not need to set these variables for the Mac OS X version of the driver.
+**Note:** You do not need to set these variables for the Mac OS X version of the driver.
 
 ## Step 2: Define the ODBC Data Sources in o`dbc.ini`
 
@@ -71,15 +71,36 @@ Section| Description
 ---|---  
 [ODBC]| (Optional) Controls the global ODBC configuration.  
 [ODBC Data Sources]| (Required) Lists DSNs and associates them with a driver.  
-User Defined|
-
-(Required) A section that you create. It must have the same name  
-as the data source specified in the `[ODBC Data Sources]` section.  
-This is required to configure the data source.  
+User Defined|(Required) A section that you create. It must have the same name as the data source specified in the `[ODBC Data Sources]` section.  This is required to configure the data source.  
   
 You can see the required sections in the following example `odbc.ini` file:
 
 **Example**
+          
+    [ODBC]
+    # Specify any global ODBC configuration here such as ODBC tracing.
+  
+    [ODBC Data Sources]
+    Sample MapR Drill DSN=MapR Drill ODBC Driver
+  
+    [Sample MapR Drill DSN]
+    # Description: DSN Description.
+    # This key is not necessary and is only to give a description of the data source.
+    Description=MapR Drill ODBC Driver DSN
+    # Driver: The location where the ODBC driver is installed to.
+    Driver=/opt/mapr/drillodbc/lib/universal/libmaprdrillodbc.dylib
+  
+    # Values for ConnectionType, AdvancedProperties, Catalog, Schema should be set here.
+    # If ConnectionType is Direct, include Host and Port. If ConnectionType is ZooKeeper, include ZKQuorum and ZKClusterID
+    # They can also be specified in the connection string.
+    ConnectionType=Zookeeper
+    HOST=[HOST]
+    PORT=[PORT]
+    ZKQuorum=
+    ZKClusterID=
+    AdvancedProperties={HandshakeTimeout=5;QueryTimeout=180;TimestampTZDisplayTimeout=utc;ExcludedSchemas=sys,INFORMATION_SCHEMA}
+    Catalog=DRILL
+    Schema=
 
 ### Configuring odbc.ini
 
@@ -108,14 +129,20 @@ The following table provides information about each of the sections:
 
 Section| Description  
 ---|---  
-[ODBC Drivers]| This section lists the names of all the installed ODBC
-drivers.  
+[ODBC Drivers]| This section lists the names of all the installed ODBC drivers.  
 User Defined|  A section having the same name as the driver name specified  
 in the [ODBC Drivers] section lists driver attributes and values.  
   
 You can see the sections in the following example `odbcinst.ini` file:
 
 **Example**
+
+    [ODBC Drivers]
+    MapR Drill ODBC Driver=Installed
+   
+    [MapR Drill ODBC Driver]
+    Description=MapR Drill ODBC Driver
+    Driver=/opt/mapr/drillodbc/lib/universal/libmaprdrillodbc.dylib
 
 ### **Configuring odbcinst.ini**
 
@@ -139,14 +166,13 @@ To configure the MapR Drill ODBC Driver in the `mapr.drillodbc.ini
 
   1. Open the `mapr.drillodbc.ini` configuration file in a text editor.
   2. Edit the DriverManagerEncoding setting. The value is typically UTF-16 or UTF-32, but depends on the driver manger used. iODBC uses UTF-32 and unixODBC uses UTF-16. Review your ODBC Driver Manager documentation for the correct setting.
-  3. Edit the `ODBCInstLib` setting. The value is the name of the `ODBCInst` shared library for the ODBC driver manager that you use. The configuration file defaults to the shared library for`iODBC`. In Linux, the shared library name for iODBC is `libiodbcinst.so`. In Mac OS X, the shared library name for `iODBC` is `libiodbcinst.dylib.  
-`**Note: **Review your ODBC Driver Manager documentation for the correct
+  3. Edit the `ODBCInstLib` setting. The value is the name of the `ODBCInst` shared library for the ODBC driver manager that you use. The configuration file defaults to the shared library for`iODBC`. In Linux, the shared library name for iODBC is `libiodbcinst.so`. In Mac OS X, the shared library name for `iODBC` is `libiodbcinst.dylib.`
+     **Note:**Review your ODBC Driver Manager documentation for the correct
 setting. Specify an absolute or relative filename for the library. If you use
 the relative file name, include the path to the library in the library path
 environment variable. In Linux, the library path environment variable is named
 `LD_LIBRARY_PATH``.` In Mac OS X, the library path environment variable is
 named `DYLD_LIBRARY_PATH`.
-
   4. `Save the `mapr.drillodbc.ini` configuration file.`
 
 ### Next Step

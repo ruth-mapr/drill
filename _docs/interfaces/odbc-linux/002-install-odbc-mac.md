@@ -55,6 +55,7 @@ To install the driver, complete the following steps:
 
 The DYLD_LIBRARY_PATH environment variable must include paths to the following
 libraries:
+
   * Installed ODBC driver manager libraries
   * Installed MapR Drill ODBC Driver for Drill shared libraries
 
