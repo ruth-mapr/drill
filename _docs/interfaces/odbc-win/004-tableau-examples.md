@@ -233,7 +233,7 @@ Now, we can create a connection to the Parquet file using the custom SQL.
      Note: The path to the file depends on its location in your file system.` `
 
   7. Click **OK** to complete the connection.  
-     ![]({{ site.baseurl }}/docs/imgODBC_CustomSQL.png)
+     ![]({{ site.baseurl }}/docs/img/ODBC_CustomSQL.png)
   8. In the _Data Connection dialog_, click **Connect Live**.
 
 ### Step 3. Visualize the Data in Tableau
@@ -242,5 +242,5 @@ Once you connect to the data, the fields appear in the Data window. To
 visualize the data, drag fields from the Data window to the workspace view.
 
 For example, you can visualize the data in this way:
-![]({{ site.baseurl }}/docs/RegionParquet_table.png)
+![]({{ site.baseurl }}/docs/img/RegionParquet_table.png)
 
