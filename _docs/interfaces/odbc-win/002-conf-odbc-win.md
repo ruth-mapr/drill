@@ -29,15 +29,14 @@ The ODBC Data Source Administrator window appears.
   6. Optionally, enter a description of the DSN in the Description field.
   7. In the Connection Type section, select a connection type and enter the associated connection details:
 
-     <table style='table-layout:fixed;width:100%'><tbody><tr><th>Connection Type</th><th class="confluenceTh">Properties</th><th class="confluenceTh">Descriptions</th></tr><tr><td rowspan="2" valign="top" width="10%">Zookeeper Quorum</td><td valign="top" style='width: 100px;'>Quorum</td><td valign="top" style='width: 400px;'>A comma-separated list of servers in a Zookeeper cluster.<p>For example, &lt;ip_zookeepernode1&gt;:5181,&lt;ip_zookeepernode21&gt;:5181,…</p></td></tr><tr><td valign="top">ClusterID</td><td valign="top">Name of the drillbit cluster. The default is drillbits1. You may need to specify a different value if the cluster ID was changed in the drill-override.conf file.</td></tr><tr><td colspan="1" valign="top">Direct to Drillbit</td><td colspan="1" valign="top"> </td><td colspan="1" valign="top">Provide the IP address or host name of the Drill server and the port number that that the Drill server is listening on.  The port number defaults to 31010. You may need to specify a different value if the port number was changed in the drill-override.conf file.</td></tr></tbody></table> 
-  
+     <table style='table-layout:fixed;width:100%'><tbody><tr><th>Connection Type</th><th class="confluenceTh">Properties</th><th class="confluenceTh">Descriptions</th></tr><tr><td rowspan="2" valign="top" width="10%">Zookeeper Quorum</td><td valign="top" style='width: 100px;'>Quorum</td><td valign="top" style='width: 400px;'>A comma-separated list of servers in a Zookeeper cluster.<p>For example, &lt;ip_zookeepernode1&gt;:5181,&lt;ip_zookeepernode21&gt;:5181,…</p></td></tr><tr><td valign="top">ClusterID</td><td valign="top">Name of the drillbit cluster. The default is drillbits1. You may need to specify a different value if the cluster ID was changed in the drill-override.conf file.</td></tr><tr><td colspan="1" valign="top">Direct to Drillbit</td><td colspan="1" valign="top"> </td><td colspan="1" valign="top">Provide the IP address or host name of the Drill server and the port number that that the Drill server is listening on.  The port number defaults to 31010. You may need to specify a different value if the port number was changed in the drill-override.conf file.</td></tr></tbody></table>
      For information on selecting the appropriate connection type, see Connection
 Types.
-  8. In the **Default Schema** field, select the default schema that you want to connect to.   
+  8. In the **Default Schema** field, select the default schema that you want to connect to.
      For more information about the schemas that appear in this list, see Schemas.
   9. Optionally, perform one of the following operations:
 
-     <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Option</th><th class="confluenceTh">Action</th></tr><tr><td valign="top">Update the configuration of the advanced properties.</td><td valign="top">Edit the default values in the <strong>Advanced Properties</strong> section. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-AdvancedProperties">Advanced Properties</a>.</td></tr><tr><td valign="top">Configure the types of events that you want the driver to log.</td><td valign="top">Click <strong>Logging Options</strong>. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-LoggingOptions">Logging Options</a>.</td></tr><tr><td valign="top">Create views or explore Drill sources.</td><td valign="top">Click <strong>Drill Explorer</strong>. <br />For more information, see <a href="/confluence/display/DRILL/Using+Drill+Explorer+to+Browse+Data+and+Create+Views">Using Drill Explorer to Browse Data and Create Views</a>.</td></tr></tbody></table>  
+     <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Option</th><th class="confluenceTh">Action</th></tr><tr><td valign="top">Update the configuration of the advanced properties.</td><td valign="top">Edit the default values in the <strong>Advanced Properties</strong> section. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-AdvancedProperties">Advanced Properties</a>.</td></tr><tr><td valign="top">Configure the types of events that you want the driver to log.</td><td valign="top">Click <strong>Logging Options</strong>. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-LoggingOptions">Logging Options</a>.</td></tr><tr><td valign="top">Create views or explore Drill sources.</td><td valign="top">Click <strong>Drill Explorer</strong>. <br />For more information, see <a href="/confluence/display/DRILL/Using+Drill+Explorer+to+Browse+Data+and+Create+Views">Using Drill Explorer to Browse Data and Create Views</a>.</td></tr></tbody></table>
   10. Click **OK** to save the DSN.
 
 ## Configuration Options
@@ -50,7 +49,7 @@ connection type based on your environment and Drillbit configuration.
 The following table lists the appropriate connection type for each scenario:
 
 <table class="confluenceTable"><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Scenario</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Connection Type</div></th></tr><tr><td valign="top">Drillbit is running in embedded mode.</td><td valign="top">Direct to Drillbit</td></tr><tr><td valign="top">Drillbit is registered with the ZooKeeper in a testing environment.</td><td valign="top">ZooKeeper Quorum or Direct to Drillbit</td></tr><tr><td valign="top">Drillbit is registered with the ZooKeeper in a production environment.</td><td valign="top">ZooKeeper Quorum</td></tr></tbody></table> 
-  
+
 #### Connection to Zookeeper Quorum
 
 When you choose to connect to a ZooKeeper Quorum, the ODBC driver connects to
@@ -95,7 +94,6 @@ The Advanced Properties field allows you to customize the DSN.
 You can configure the values of the following advanced properties:
 
 <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Property Name</th><th class="confluenceTh">Default Value</th><th class="confluenceTh">Description</th></tr><tr><td valign="top">HandshakeTimeout</td><td valign="top">5</td><td valign="top">An integer value representing the number of seconds that the driver waits to establish a connection before aborting. When set to 0, the driver does not abort connection attempts.</td></tr><tr><td valign="top">QueryTimeout</td><td valign="top">180</td><td valign="top">An integer value representing the number of seconds for the driver to wait before automatically stopping a query. When set to 0, the driver does not stop queries automatically.</td></tr><tr><td valign="top">TimestampTZDisplayTimezone</td><td valign="top">local</td><td valign="top"><p class="Body">A string value that defines how the timestamp with timezone is displayed:</p><ul><li class="Body"><strong>local</strong>—Timestamps appear in the time zone of the user.</li><li class="Body"><strong>utc</strong>—Timestamps appear in Coordinated Universal Time (UTC).</li></ul></td></tr><tr><td valign="top">ExcludedSchemas</td><td valign="top">sys, INFORMATION_SCHEMA</td><td valign="top">A list of schemas that should not appear in client applications such as Drill Explorer, Tableau, and Excel. Separate schemas in the list using a comma (,).</td></tr></tbody></table> 
-  
 Separate each advanced property using a semicolon.
 
 For example, the following Advanced Properties string excludes the schemas
@@ -113,14 +111,14 @@ If logging is enabled, the MapR Drill ODBC driver logs events in following log
 files in the log path that you configure:
 
 <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Log File</th><th class="confluenceTh">Description</th></tr><tr><td valign="top">driver.log</td><td valign="top">A log of driver events.</td></tr><tr><td valign="top">drillclient.log</td><td valign="top">A log of the Drill client events.</td></tr></tbody></table> 
-  
+
 #### Logging Levels
 
 Each logging level provides a different level of detail in the log files. The
 following log levels are available:
 
 <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Logging Level</th><th class="confluenceTh">Description</th></tr><tr><td valign="top">OFF</td><td valign="top">Disables all logging.</td></tr><tr><td valign="top">FATAL</td><td valign="top">Logs severe error events that may cause the driver to stop running.</td></tr><tr><td valign="top">ERROR</td><td valign="top">Logs error events that may allow the driver to continue running.</td></tr><tr><td valign="top">WARNING</td><td valign="top">Logs events about potentially harmful situations.</td></tr><tr><td valign="top">INFO</td><td valign="top">Logs high-level events about driver processes.</td></tr><tr><td valign="top">DEBUG</td><td valign="top">Logs detailed events that may help to debug issues.</td></tr><tr><td colspan="1" valign="top">TRACE</td><td colspan="1" valign="top">Logs finer-grained events than the DEBUG level.</td></tr></tbody></table>
-  
+
 ## Create an ODBC Connection String
 
 If you want to connect to a Drill data source from an application that does
@@ -129,7 +127,7 @@ The following table describes the properties that you can use in the
 connection string:
 
 <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Property</th><th class="confluenceTh">Description</th></tr><tr><td valign="top">AdvancedProperties</td><td valign="top"><p class="Body" style="margin-left: 0.0in;">Separate advanced properties using a semicolon (;), and then surround all advanced properties in a connection string using braces { and }.</p><p class="Body" style="margin-left: 0.0in;">For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-AdvancedProperties">Advanced Properties</a>.</p></td></tr><tr><td valign="top">Catalog</td><td valign="top">The name of the catalog, under which all of the schemas are organized. The catalog name is DRILL.</td></tr><tr><td valign="top">ConnectionType</td><td valign="top"><p>One of the following values:<br />• Direct—Connect to a Drill server using Host and Port properties in the connection string.<br />• ZooKeeper—Connect to a ZooKeeper cluster using ZKQuorum and ZKClusterID properties in the connection string.</p><p>For more information, see<a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-ConnectionType"> Connection Type</a>.</p></td></tr><tr><td valign="top">DRIVER</td><td valign="top"><p>The name of the installed driver: MapR Drill ODBC Driver<br />(Required)</p></td></tr><tr><td valign="top">Host</td><td valign="top">If the ConnectionType property is set to Direct, indicate the IP address or hostname of the Drillbit server.</td></tr><tr><td valign="top">Port</td><td valign="top">If the ConnectionType property is set to Direct, indicate the port on which the Drillbit server is listening.</td></tr><tr><td valign="top">Schema</td><td valign="top"><p>The name of the database schema to use when a schema is not explicitly specified in a query.<br />Note: Queries on other schemas can still be issued by explicitly specifying the schema in the query.</p></td></tr><tr><td valign="top">ZKClusterID</td><td valign="top">If the ConnectionType property is set to ZooKeeper, then use ZKClusterID to indicate the name of the Drillbit cluster to use.</td></tr><tr><td valign="top"><p class="Body">ZKQuorum</p></td><td valign="top">If the ConnectionType property is set to ZooKeeper, then use ZKQuorum to indicate the server(s) in your ZooKeeper cluster. Separate multiple servers using a comma (,).</td></tr></tbody></table>
-  
+
 #### Connection String Examples
 
 The following is an example connection string for the Direct connection type:  
@@ -141,7 +139,5 @@ type:
 
         DRIVER=MapR Drill ODBC Driver;AdvancedProperties={HandshakeTimeout=0;QueryTimeout=0;TimestampTZDisplayTimezone=utc;ExcludedSchemas=sys, INFORMATION_SCHEMA;};Catalog=DRILL;Schema=;ConnectionType=ZooKeeper;ZKQuorum=192.168.39.43:5181;ZKClusterID=drillbits1
 
-#### What's Next? Go to [Step 3. Connect to Drill Data Sources from a BI Tool]
-(/confluence/display/DRILL/Step+3.+Connect+to+Drill+Data+Sources+from+a+BI+Too
-l).
+#### What's Next? Go to [Step 3. Connect to Drill Data Sources from a BI Tool](/drill/docs/step-3-connect-to-drill-data-sources-from-a-bi-tool).
 
