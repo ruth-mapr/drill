@@ -35,7 +35,7 @@ In this example, we are connecting to a Zookeeper Quorum.
   6. In the **Schema** field, select the Hive schema.
      In this example, the Hive schema is named hive.default.
      ![]({{ site.baseurl }}/docs/img/Hive_DSN.png)
-     
+ 
   7. Click **OK** to create the DSN and return to the ODBC Data Source Administrator window.
   8. Click **OK** to close the ODBC Data Source Administrator.
 
@@ -58,7 +58,7 @@ configure the connection to the Hive table and click **OK**.** **
   6. Select the table from the list and click **Select**.   
      In this example, the table name is student_hive.
   7. Click **OK** to complete the connection.  
-      ![]({{ site.baseurl }}/docs/img/ODBC_HiveConnection.png)
+     ![]({{ site.baseurl }}/docs/img/ODBC_HiveConnection.png)
   8. In the _Data Connection_ dialog, click **Connect Live**.
 
 ## Step 3. Visualize the Data in Tableau
@@ -68,7 +68,7 @@ visualize the data, drag fields from the Data window to the workspace view.
 
 For example, you can visualize the data in this way:
 
-![](({{ site.baseurl }}/docs/img/student_hive.png)
+![]({{ site.baseurl }}/docs/img/student_hive.png)
 
 # Example: Connect to Self-Describing Data in Tableau
 
