@@ -215,8 +215,7 @@ Example: `~/apache-drill-<version>`
 also starts a local Drillbit. If you are connecting to an Apache Drill
 cluster, the value of `zk=` would be a list of Zookeeper quorum nodes. For
 more information about how to run Drill in clustered mode, go to [Deploying
-Apache Drill in a Clustered Environment](/confluence/display/DRILL/Deploying+A
-pache+Drill+in+a+Clustered+Environment).
+Apache Drill in a Clustered Environment](/drill/docs/deploying-apache-drill-in-a-clustered-environment).
 
 When SQLLine starts, the system displays the following prompt:  
 `0: jdbc:drill:zk=local>`

@@ -27,8 +27,7 @@ steps:
   * Step 4: Configure the MapR Drill ODBC Driver
 
 Once you have completed the required steps, refer to [Testing the ODBC
-Connection on Linux and Mac OS X](/confluence/display/DRILL/Testing+the+ODBC+C
-onnection+on+Linux+and+Mac+OS+X).
+Connection on Linux and Mac OS X](/drill/docs/testing-the-odbc-connection-on-linux-and-mac-os-x).
 
 #### Sample Configuration Files
 

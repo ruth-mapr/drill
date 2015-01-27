@@ -5,9 +5,9 @@ Review the Apache Drill design docs for early descriptions of Apache Drill
 functionality, terms, and goals, and reference the research articles to learn
 about Apache Drill's history:
 
-  * [Drill Plan Syntax](/confluence/display/DRILL/Drill+Plan+Syntax)
-  * [RPC Overview](/confluence/display/DRILL/RPC+Overview)
-  * [Query Stages](/confluence/display/DRILL/Query+Stages)
-  * [Useful Research](/confluence/display/DRILL/Useful+Research)
-  * [Value Vectors](/confluence/display/DRILL/Value+Vectors)
+  * [Drill Plan Syntax](/drill/docs/drill-plan-syntax)
+  * [RPC Overview](/drill/docs/rpc-overview)
+  * [Query Stages](/drill/docs/query-stages)
+  * [Useful Research](/drill/docs/useful-research)
+  * [Value Vectors](/drill/docs/value-vectors)
 

@@ -8,7 +8,7 @@ sources:
   * Create a Data Source Name
   * Create an ODBC Connection String
 
-**Prerequisite:** An Apache Drill installation must be available that is configured to access the data sources that you want to connect to.  For information about how to install Apache Drill, see [Install Drill](/confluence/display/DRILL/Install+Drill). For information about configuring data sources, see the [Apache Drill Wiki documentation](https://cwiki.apache.org/confluence/display/DRILL/Apache+Drill+Wiki).
+**Prerequisite:** An Apache Drill installation must be available that is configured to access the data sources that you want to connect to.  For information about how to install Apache Drill, see [Install Drill](/drill/docs/install-drill). For information about configuring data sources, see the [Apache Drill documentation](/drill/docs).
 
 ## Create a Data Source Name (DSN)
 
@@ -36,7 +36,7 @@ Types.
      For more information about the schemas that appear in this list, see Schemas.
   9. Optionally, perform one of the following operations:
 
-     <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Option</th><th class="confluenceTh">Action</th></tr><tr><td valign="top">Update the configuration of the advanced properties.</td><td valign="top">Edit the default values in the <strong>Advanced Properties</strong> section. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-AdvancedProperties">Advanced Properties</a>.</td></tr><tr><td valign="top">Configure the types of events that you want the driver to log.</td><td valign="top">Click <strong>Logging Options</strong>. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-LoggingOptions">Logging Options</a>.</td></tr><tr><td valign="top">Create views or explore Drill sources.</td><td valign="top">Click <strong>Drill Explorer</strong>. <br />For more information, see <a href="/confluence/display/DRILL/Using+Drill+Explorer+to+Browse+Data+and+Create+Views">Using Drill Explorer to Browse Data and Create Views</a>.</td></tr></tbody></table>
+     <table class="confluenceTable"><tbody><tr><th class="confluenceTh">Option</th><th class="confluenceTh">Action</th></tr><tr><td valign="top">Update the configuration of the advanced properties.</td><td valign="top">Edit the default values in the <strong>Advanced Properties</strong> section. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-AdvancedProperties">Advanced Properties</a>.</td></tr><tr><td valign="top">Configure the types of events that you want the driver to log.</td><td valign="top">Click <strong>Logging Options</strong>. <br />For more information, see <a href="#Step2.ConfigureODBCConnectionstoDrillDataSources-LoggingOptions">Logging Options</a>.</td></tr><tr><td valign="top">Create views or explore Drill sources.</td><td valign="top">Click <strong>Drill Explorer</strong>. <br />For more information, see <a href="/drill/docs/using-drill-explorer-to-browse-data-and-create-views">Using Drill Explorer to Browse Data and Create Views</a>.</td></tr></tbody></table>
   10. Click **OK** to save the DSN.
 
 ## Configuration Options
