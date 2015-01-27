@@ -150,9 +150,7 @@ connect and access from Drill. The interfaces include the following.
 
 Drill provides ODBC/JDBC drivers to connect from BI tools such as Tableau,
 MicroStrategy, SQUirrel, and Jaspersoft; refer to [Using ODBC to Access Apache
-Drill from BI Tools](http://doc.mapr.com/display/MapR/Using+ODBC+to+Access+Apa
-che+Drill+from+BI+Tools) and [Using JDBC to Access Apache Drill](http://doc.ma
-pr.com/display/MapR/Using+JDBC+to+Access+Apache+Drill+from+SQuirreL) to learn
+Drill from BI Tools](/drill/docs/odbc-jdbc-interfaces/using-odbc-to- access-apache-drill-from-bi-tools) and [Using JDBC to Access Apache Drill](/drill/docs/odbc-jdbc-interfaces#using-jdbc-to-access-apache-drill-from-squirrel) to learn
 more.
 
 ### SQLLine

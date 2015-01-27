@@ -337,10 +337,10 @@ Let’s get the total number of records from the view.
     +------------+
 
 In addition to these queries, you can get many more deeper insights using
-Drill’s [SQL functionality](/drill/docs/sql-reference/). If you are not comfortable with writing queries manually, you
+Drill’s [SQL functionality](/drill/docs/sql-reference). If you are not comfortable with writing queries manually, you
 can use a BI/Analytics tools such as Tableau/MicroStrategy to query raw
-files/Hive/HBase data or Drill-created views directly using Drill ODBC/JDBC
-drivers.
+files/Hive/HBase data or Drill-created views directly using Drill [ODBC/JDBC
+drivers](/drill/docs/odbc-jdbc-interfaces).
 
 The goal of Apache Drill is to provide the freedom and flexibility in
 exploring data in ways we have never seen before with SQL technologies. The
