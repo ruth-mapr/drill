@@ -32,9 +32,9 @@ In this step, we will create a DSN that accesses a Hive table.
   4. Enter a name for the data source.
   5. Specify the connection type based on your requirements. The connection type provides the DSN access to Drill Data Sources. .  
 In this example, we are connecting to a Zookeeper Quorum.
-  6. In the **Schema** field, select the Hive schema.  
-     In this example, the Hive schema is named hive.default.  
-     ![]({{ site.baseurl }}/docs/img/Hive_DSN.PNG)
+  6. In the **Schema** field, select the Hive schema.
+     In this example, the Hive schema is named hive.default.
+     ![]({{ site.baseurl }}/docs/img/Hive_DSN.png)
   7. Click **OK** to create the DSN and return to the ODBC Data Source Administrator window.
   8. Click **OK** to close the ODBC Data Source Administrator.
 
@@ -57,8 +57,7 @@ configure the connection to the Hive table and click **OK**.** **
   6. Select the table from the list and click **Select**.   
      In this example, the table name is student_hive.
   7. Click **OK** to complete the connection.  
-
-      ![]({{ site.baseurl }}/docs/img/ODBC_HiveConnection.PNG)
+      ![]({{ site.baseurl }}/docs/img/ODBC_HiveConnection.png)
   8. In the _Data Connection_ dialog, click **Connect Live**.
 
 ## Step 3. Visualize the Data in Tableau
@@ -68,7 +67,7 @@ visualize the data, drag fields from the Data window to the workspace view.
 
 For example, you can visualize the data in this way:
 
-![](({{ site.baseurl }}/docs/img/student_hive.PNG)
+![](({{ site.baseurl }}/docs/img/student_hive.png)
 
 # Example: Connect to Self-Describing Data in Tableau
 
@@ -94,21 +93,19 @@ Administrator to create a DSN that connects to the view.
   1. To launch the ODBC Administrator, click **Start > All Programs > MapR Drill ODBC Driver 1.0 (32|64-bit) > (32|64-bit) ODBC Administrator**.  
      The _ODBC Data Source Administrator_ window appears.
   2. On the System DSN tab, click **Add**.
-  3. Select **MapR Drill ODBC Driver** and click **Finish**.  
+  3. Select **MapR Drill ODBC Driver** and click **Finish**.
      The _MapR Drill ODBC Driver DSN Setup_ window appears.
-  4. Specify the Connection Type based on your requirements.   
+  4. Specify the Connection Type based on your requirements.
      The connection type provides the DSN access to a Drillbit. For more
 information, see [Connection Type](http://doc.mapr.com/display/MapR/Step+2.+Co
 nfigure+ODBC+Connections+to+Drill+Data+Sources#ConnectionType).
-  5. Click **Drill Explorer** to start exploring the data.  
+  5. Click **Drill Explorer** to start exploring the data.
      The Drill Explorer dialog appears. You can use the Browse tab to visually
 explore the metadata and data available from Drill data sources. Advanced
 users can use SQL tab to type in SQL manually to explore the data and save the
 SQL query as a view.
   6. Select the schema that you want to create a view for.
-    
-      ![]({{ site.baseurl }}/docs/img/Hbase_Browse.png)
-         
+      ![]({{ site.baseurl }}/docs/img/Hbase_Browse.png)        
      Drill Explorer displays the metadata and column families for the selected
 HBase table.
   7. To create a view of the HBase table, click the **SQL** tab.  
