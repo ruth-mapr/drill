@@ -13,14 +13,12 @@ To add a custom function to Drill, complete the following steps:
   2. On all nodes running a Drillbit, add the name of the package that contains the classes to the main Drill configuration file in the following location:
   
         <drill installation directory>/conf/drill-override.conf
-
 	To add the package, add the package name to
 	`drill.logical.function.package+=`. Separate package names with a comma.
 	
     **Example**
 		
 		drill.logical.function.package+= [“org.apache.drill.exec.expr.fn.impl","org.apache.drill.udfs”]
-
   3. On each Drill node in the cluster, navigate to the Drill installation directory, and issue the following command to restart the Drillbit:
   
         <drill installation directory>/bin/drillbit.sh restart

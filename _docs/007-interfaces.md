@@ -1,7 +1,34 @@
 ---
-title: "Using JDBC to Access Apache Drill from SQuirreL"
-parent: "Drill Interfaces"
+title: "Drill Interfaces"
 ---
+You can connect to Apache Drill through the following interfaces:
+
+  * Drill shell (SQLLine)
+  * Drill Web UI
+  * [ODBC](/drill/docs/drill-interfaces#using-odbc-to-access-apache-drill-from-bi-tools)*
+  * [JDBC](/drill/docs/drill-interfaces#using-jdbc-to-access-apache-drill-from-squirrel)
+  * C++ API
+
+*Apache Drill does not have an open source ODBC driver. However, MapR provides an ODBC driver that you can use to connect to Apache Drill from BI tools. 
+
+# Using ODBC to Access Apache Drill from BI Tools
+
+MapR provides ODBC drivers for Windows, Mac OS X, and Linux. It is recommended
+that you install the latest version of Apache Drill with the latest version of
+the Drill ODBC driver.
+
+For example, if you have Apache Drill 0.5 and a Drill ODBC driver installed on
+your machine, and then you upgrade to Apache Drill 0.6, do not assume that the
+Drill ODBC driver installed on your machine will work with the new version of
+Apache Drill. Install the latest available Drill ODBC driver to ensure that
+the two components work together.
+
+You can access the latest Drill ODBC drivers in the following location:
+
+<http://package.mapr.com/tools/MapR-ODBC/MapR_Drill/MapRDrill_odbc>
+
+# Using JDBC to Access Apache Drill from SQuirrel
+
 You can connect to Drill through a JDBC client tool, such as SQuirreL, on
 Windows, Linux, and Mac OS X systems, to access all of your data sources
 registered with Drill. An embedded JDBC driver is included with Drill.
@@ -21,7 +48,7 @@ For information about how to use SQuirreL, refer to the [SQuirreL Quick
 Start](http://squirrel-sql.sourceforge.net/user-manual/quick_start.html)
 guide.
 
-### Prerequisites
+## Prerequisites
 
   * SQuirreL requires JRE 7
   * Drill installed in distributed mode on one or multiple nodes in a cluster. Refer to the [Install Drill](/drill/docs/install-drill/) documentation for more information.
@@ -164,4 +191,3 @@ To query sample data with Squirrel, complete the following steps:
      ![drill query flow]({{ site.baseurl }}/docs/img/42.png) 
 
 You have successfully run a Drill query from the SQuirreL client.
-

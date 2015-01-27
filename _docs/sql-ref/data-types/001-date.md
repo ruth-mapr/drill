@@ -41,7 +41,7 @@ The following table provides some examples for the `date` data type:
   |Literal| `select date ‘2008-2-23’ from dfs.`/tmp/input.json`;`|
   |`JSON` input | `{"date_col" : "2008-2-23"} 
   | `CAST` from `VARCHAR`| `` select CAST(date_col as date) as CAST_DATE from dfs.`/tmp/input.json`; ``|
- 
+
 ## Timestamp
 
 Drill supports the `timestamp` data type in the following format:
@@ -70,7 +70,7 @@ The following table provides some examples for the `timestamp` data type:
    </tr>
   </tbody>
  </table>
-  
+
 ## Time
 
 Drill supports the `time` data type in the following format:
@@ -96,7 +96,7 @@ The following table provides some examples for the `time` data type:
   <td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select cast(time_col as time) from dfs.`/tmp/input.json`;</span></code></td>
 </tr></tbody>
 </table>
-  
+
 ## Interval
 
 Drill supports the `interval year` and `interval day` data types.
@@ -124,7 +124,7 @@ The following table provides examples for `interval year` data type:
     <td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select cast(col as interval year) from dfs.`/tmp/input.json`;</span></code></td>
   </tr>
   </tbody></table> 
-  
+
 ### Interval Day
 
 The `interval day` data type stores time duration in days, hours, minutes, and
@@ -136,7 +136,7 @@ supports the `interval day` data type in the following format:
 The following table provides examples for `interval day` data type:
 
 <div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Use</th><th class="confluenceTh">Example</th></tr><tr><td valign="top">Literal</td><td valign="top"><code><span style="color: rgb(0,0,0);">select interval '1 10:20:30.123' day to second from dfs.`/tmp/input.json`;<br /></span><span style="color: rgb(0,0,0);">select interval '1 10' day to hour from dfs.`/tmp/input.json`;<br /></span><span style="color: rgb(0,0,0);">select interval '10' day  from dfs.`/tmp/input.json`;<br /></span><span style="color: rgb(0,0,0);">select interval '10' hour  from dfs.`/tmp/input.json`;</span></code><code><span style="color: rgb(0,0,0);">select interval '10.999' second  from dfs.`/tmp/input.json`;</span></code></td></tr><tr><td colspan="1" valign="top"><code>JSON</code> Input</td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;P1DT10H20M30S&quot;}<br /></span><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;P1DT10H20M30.123S&quot;}<br /></span><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;P1D&quot;}<br /></span><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;PT10H&quot;}<br /></span><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;PT10.10S&quot;}<br /></span><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;PT20S&quot;}<br /></span><span style="color: rgb(0,0,0);">{&quot;col&quot; : &quot;PT10H10S&quot;}</span></code></td></tr><tr><td colspan="1" valign="top"><code>CAST</code> from <code>VARCHAR</code></td><td colspan="1" valign="top"><code><span style="color: rgb(0,0,0);">select cast(col as interval day) from dfs.`/tmp/input.json`;</span></code></td></tr></tbody></table></div> 
-  
+
 ## Literal
 
 The following table provides a list of `date/time` literals that Drill

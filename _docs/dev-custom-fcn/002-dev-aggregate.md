@@ -16,14 +16,12 @@ Complete the following steps to create an aggregate function:
 		<artifactId>drill-java-exec</artifactId>
 		<version>1.0.0-m2-incubating-SNAPSHOT</version>
 		</dependency>
-
   2. Create a class that implements the `DrillAggFunc` interface and identify the scope as `FunctionTemplate.FunctionScope.POINT_AGGREGATE`.
 
 	**Example**
 	
 		@FunctionTemplate(name = "count", scope = FunctionTemplate.FunctionScope.POINT_AGGREGATE)
 		public static class BitCount implements DrillAggFunc{
-
   3. Provide the variables used in the code in the `Param, Workspace, `and `Output` bit holders.
 
 	**Example**
@@ -31,7 +29,6 @@ Complete the following steps to create an aggregate function:
 		@Param BitHolder in;
 		@Workspace BitHolder value;
 		@Output BitHolder out;
-
   4. Include the `setup(), add(), output(),` and `reset()` methods.
 	
 	**Example**
@@ -52,7 +49,6 @@ Complete the following steps to create an aggregate function:
 		public void reset() {
 		 
 		    value.value = 0;
-
   5. Use the maven-source-plugin to compile the sources and classes JAR files. Verify that an empty `drill-module.conf` is included in the resources folder of the JARs.   
 Drill searches this module during classpath scanning. If the file is not
 included in the resources folder, you can add it to the JAR file or add it to
