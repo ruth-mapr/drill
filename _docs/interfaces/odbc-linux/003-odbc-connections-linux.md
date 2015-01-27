@@ -130,8 +130,7 @@ The following table provides information about each of the sections:
 Section| Description  
 ---|---  
 [ODBC Drivers]| This section lists the names of all the installed ODBC drivers.  
-User Defined|  A section having the same name as the driver name specified  
-in the [ODBC Drivers] section lists driver attributes and values.  
+User Defined|  A section having the same name as the driver name specified in the [ODBC Drivers] section lists driver attributes and values.
   
 You can see the sections in the following example `odbcinst.ini` file:
 
