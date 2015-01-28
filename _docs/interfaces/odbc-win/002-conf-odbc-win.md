@@ -30,8 +30,8 @@ The ODBC Data Source Administrator window appears.
   7. In the Connection Type section, select a connection type and enter the associated connection details:
 
      <table style='table-layout:fixed;width:100%'><tbody><tr><th>Connection Type</th><th class="confluenceTh">Properties</th><th class="confluenceTh">Descriptions</th></tr><tr><td rowspan="2" valign="top" width="10%">Zookeeper Quorum</td><td valign="top" style='width: 100px;'>Quorum</td><td valign="top" style='width: 400px;'>A comma-separated list of servers in a Zookeeper cluster.For example, &lt;ip_zookeepernode1&gt;:5181,&lt;ip_zookeepernode21&gt;:5181,…</td></tr><tr><td valign="top">ClusterID</td><td valign="top">Name of the drillbit cluster. The default is drillbits1. You may need to specify a different value if the cluster ID was changed in the drill-override.conf file.</td></tr><tr><td colspan="1" valign="top">Direct to Drillbit</td><td colspan="1" valign="top"> </td><td colspan="1" valign="top">Provide the IP address or host name of the Drill server and the port number that that the Drill server is listening on.  The port number defaults to 31010. You may need to specify a different value if the port number was changed in the drill-override.conf file.</td></tr></tbody></table>
-     For information on selecting the appropriate connection type, see Connection
-Types.
+     For information on selecting the appropriate connection type, see [Connection
+Types](/drill/docs/step-2-configure-odbc-connections-to-drill-data-sources#connection-type).
   8. In the **Default Schema** field, select the default schema that you want to connect to.
      For more information about the schemas that appear in this list, see Schemas.
   9. Optionally, perform one of the following operations:
