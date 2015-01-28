@@ -54,9 +54,11 @@ To install the driver, complete the following steps:
   3. Enter the following command where _RPMFileName_ is the file name of the RPM package containing the version of the driver that you want to install: 
 
      **RedHat/CentOS**
+     
      `yum localinstall --nogpgcheck RPMFileName`
 
      **SUSE**
+     
      `zypper install RPMFileName`
 
 **Note:** The MapR Drill ODBC Driver depends on the following resources:
