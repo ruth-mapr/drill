@@ -67,12 +67,10 @@ To stop Drill, issue the following command at the Drill prompt.
 
         0: jdbc:drill:zk=local> !quit
 
-In some cases, this command does not stop Drill. For example, if the IP
-address of the host changes during a Drill session, the `!quit` command fails.
-You need to kill the Drill process. For example, on Mac OS X and Linux, follow
+In some cases, such as stopping while a query is in progress, this command does not stop Drill. You need to kill the Drill process. For example, on Mac OS X and Linux, follow
 these steps:
 
-  1. Issue a CTRL Z to exit SQLLine.
+  1. Issue a CTRL C to stop the query, and then a CTRL Z to exit SQLLine.
   2. Search for the Drill process ID.
   
         $ ps auwx | grep drill

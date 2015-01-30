@@ -4,18 +4,12 @@ parent: "SQL Reference"
 ---
 You can use the following SQL data types in your Drill queries:
 
-#### Binary Types
 
-  * BYTEA
-  * VARBINARY
+#### Character
 
-#### Character Types
+  * VARCHAR/CHAR 
 
-  * CHAR
-  * VARCHAR 
-  * TEXT
-
-#### Date/Time Data Types
+#### Date/Time
 
   * DATE
   * INTERVAL
@@ -31,20 +25,17 @@ Refer to [Supported Date/Time Data Type formats](/drill/docs/supported-date-time
   * BIGINT
   * INT
   * SMALLINT
-  * TINYINT
 
-#### Numeric Types
+#### Numeric
 
   * DECIMAL
   * FLOAT 
   * DOUBLE PRECISION (FLOAT 8)
   * REAL (FLOAT 4) 
 
-#### Boolean Types
+#### Boolean
 
-  * FALSE
-  * NULL
-  * TRUE
+Values are FALSE or TRUE.
 
 ## Complex Data Types
 
