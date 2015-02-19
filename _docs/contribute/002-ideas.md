@@ -48,7 +48,7 @@ drill/blob/103072a619741d5e228fdb181501ec2f82e111a3/sandbox/prototype/exec
 /java-exec/src/main/java/org/apache/drill/exec/expr/fn/impl/ComparisonFunction
 s.java)** **
 
-**Additional ideas on functions that can be added to Drill SQL support**
+**Additional ideas on functions that can be added to SQL support**
 
   * Madlib integration
   * Machine learning functions

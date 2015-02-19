@@ -63,7 +63,7 @@ create as many workspaces as they need within Drill.
 Each workspace can also be configured as “writable” or not, which indicates
 whether users can write data to this location and defines the storage format
 in which the data will be written (parquet, csv, json). These attributes
-become relevant when you explore Drill SQL commands, especially CREATE TABLE
+become relevant when you explore SQL commands, especially CREATE TABLE
 AS (CTAS) and CREATE VIEW.
 
 Drill can query files and directories directly and can detect the file formats

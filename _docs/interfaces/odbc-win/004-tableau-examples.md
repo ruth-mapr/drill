@@ -124,9 +124,8 @@ HBase table.
         hbase.voter
 
      HBase does not contain type information, so you need to cast the data in Drill
-Explorer. For information about Drill SQL query support, see the Drill SQL
-Reference in the [Apache Drill Wiki documentation](https://cwiki.apache.org/co
-nfluence/display/DRILL/Apache+Drill+Wiki).
+Explorer. For information about SQL query support, see the [SQL
+Reference] (/drill/docs/sql-reference).
   9. To save the view, click **Create As**.
   10. Specify the schema where you want to save the view, enter a name for the view, and click **Save**.  
 
