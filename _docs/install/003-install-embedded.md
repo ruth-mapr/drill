@@ -13,11 +13,11 @@ running Linux, Mac OS X, or Windows.
 
 You must have the following software installed on your machine to run Drill:
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><strong>Software</strong></td><td class="confluenceTd"><strong>Description</strong></td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" rel="nofollow">Oracle JDK version 7</a></td><td class="confluenceTd">A set of programming tools for developing Java applications.</td></tr></tbody></table>
+<table ><tbody><tr><td ><strong>Software</strong></td><td ><strong>Description</strong></td></tr><tr><td ><a class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" rel="nofollow">Oracle JDK version 7</a></td><td >A set of programming tools for developing Java applications.</td></tr></tbody></table>
 
 You can run the following command to verify that the system meets the software
 prerequisite:
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><strong>Command</strong></td><td class="confluenceTd"><strong>Example Output</strong></td></tr><tr><td class="confluenceTd"><code>java –version</code></td><td class="confluenceTd"><code>java version &quot;1.7.0_65&quot;</code><br /><code>Java(TM) SE Runtime Environment (build 1.7.0_65-b19)</code><br /><code>Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)</code></td></tr></tbody></table>
+<table ><tbody><tr><td ><strong>Command</strong></td><td ><strong>Example Output</strong></td></tr><tr><td ><code>java –version</code></td><td ><code>java version &quot;1.7.0_65&quot;</code><br /><code>Java(TM) SE Runtime Environment (build 1.7.0_65-b19)</code><br /><code>Java HotSpot(TM) 64-Bit Server VM (build 24.65-b04, mixed mode)</code></td></tr></tbody></table>
 
 Follow installation instructions in this documentation for your particular operating system.
