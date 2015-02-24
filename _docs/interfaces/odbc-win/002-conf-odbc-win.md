@@ -48,7 +48,7 @@ connection type based on your environment and Drillbit configuration.
 
 The following table lists the appropriate connection type for each scenario:
 
-<table ><tbody><tr><th ><div class="tablesorter-header-inner">Scenario</div></th><th ><div class="tablesorter-header-inner">Connection Type</div></th></tr><tr><td valign="top">Drillbit is running in embedded mode.</td><td valign="top">Direct to Drillbit</td></tr><tr><td valign="top">Drillbit is registered with the ZooKeeper in a testing environment.</td><td valign="top">ZooKeeper Quorum or Direct to Drillbit</td></tr><tr><td valign="top">Drillbit is registered with the ZooKeeper in a production environment.</td><td valign="top">ZooKeeper Quorum</td></tr></tbody></table> 
+<table ><tbody><tr><th >Scenario</th><th >Connection Type</th></tr><tr><td valign="top">Drillbit is running in embedded mode.</td><td valign="top">Direct to Drillbit</td></tr><tr><td valign="top">Drillbit is registered with the ZooKeeper in a testing environment.</td><td valign="top">ZooKeeper Quorum or Direct to Drillbit</td></tr><tr><td valign="top">Drillbit is registered with the ZooKeeper in a production environment.</td><td valign="top">ZooKeeper Quorum</td></tr></tbody></table> 
 
 #### Connection to Zookeeper Quorum
 
