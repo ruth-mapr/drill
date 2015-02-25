@@ -3,7 +3,7 @@ title: "Project Bylaws"
 ---
 ## Introduction
 
-This document defines the bylaws under which the Apache Drill project
+This document defines the bylaws by which the Apache Drill project
 operates. It defines the roles and responsibilities of the project, who may
 vote, how voting works, how conflicts are resolved, etc.
 
