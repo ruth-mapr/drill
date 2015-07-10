@@ -166,3 +166,15 @@ yarn-daemon.sh start resourcemanager
 ```
 ### Running Myriad Executor / Node Managers
 Myriad Executor and Node Managers are launched automatically by Myriad Scheduler as a response to [flexup REST API]({{site.baseurl}}/docs/myriad-rest-api-methods/#put-api-cluster-flexup).
+
+```sql
+SELECT AVG([ALL | DISTINCT] aggregate_expression)
+FROM tables
+WHERE conditions;
+
+SELECT expression1, expression2, ... expression_n,
+       AVG([ALL | DISTINCT] aggregate_expression)
+FROM tables
+WHERE conditions
+GROUP BY expression1, expression2, ... expression_n;
+```
