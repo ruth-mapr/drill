@@ -35,7 +35,7 @@ hadoop fs -put myriad-executor/build/libs/myriad-executor-runnable-0.0.1.jar /di
 ```
 
 Edit `/opt/hadoop/etc/hadoop/myriad-config-default`.  For standard configuration see 
-[myriad-configuration](myriad-configuration.md).  To enable remote binary distribution you must set the following options:
+[myriad-configuration]({{site.baseurl}}/docs/myriad-configuration-properties/myriad-configuration.md).  To enable remote binary distribution you must set the following options:
 
 ```YAML
 frameworkSuperUser: admin # Must be root or have passwordless sudo on all nodes!
@@ -48,7 +48,7 @@ yarnEnvironment:
   YARN_HOME: hadoop-2.5.0 # This should be relative if nodeManagerUri is set  
 ```
 
-Configure `/opt/hadoop-2.5.0/etc/hadoop/yarn-site.xml` as instructed in: [myriad-configuration](myriad-configuration.md)
+Configure `/opt/hadoop-2.5.0/etc/hadoop/yarn-site.xml` as instructed in: [myriad-configuration]({{site.baseurl}}/docs/myriad-configuration-properties/myriad-configuration.md).
 
 Create the tarball and place it in hdfs:
 
