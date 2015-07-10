@@ -16,7 +16,7 @@ During the lifecycle of this task, if it launches one or more children, they get
 /sys/fs/cgroup/cpu/mesos/<parent-mesos-id>/hadoop-yarn/<child-yarn-id-2>
 ```
 
-![cgroups hierarchy]{{ site.baseurl }}/docs/img/cgroups.png)
+![cgroups hierarchy]({{ site.baseurl }}/docs/img/cgroups.png)
 
 ### Enabling cgroups for mesos-slave
 
