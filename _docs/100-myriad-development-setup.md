@@ -51,7 +51,7 @@ At this point the jars will be located in the following directories (relative to
 ```
 
 ### Building Myriad Scheduler
-**Before** building Myriad Scheduler, please modify [myriad-config-default.yml](../myriad-scheduler/src/main/resources/myriad-config-default.yml) with appropriate configuration properties (Please read  [Myriad Configuration Properties](myriad-configuration.md)). This is needed because currently myriad-config-default.yml will be embedded into Myriad Scheduler jar.
+**Before** building Myriad Scheduler, please modify [myriad-config-default.yml](https://github.com/mesos/myriad/blob/phase1/myriad-scheduler/src/main/resources/myriad-config-default.yml) with appropriate configuration properties (Please read  [Myriad Configuration Properties]({{site.baseurl}}/docs/myriad-configuration-properties/). This is needed because currently myriad-config-default.yml will be embedded into Myriad Scheduler jar.
 
 To build Myriad Scheduler, from `$PROJECT_HOME/myriad-scheduler` run:
 
@@ -165,4 +165,4 @@ nodemanager:
 yarn-daemon.sh start resourcemanager
 ```
 ### Running Myriad Executor / Node Managers
-Myriad Executor and Node Managers are launched automatically by Myriad Scheduler as a response to [flexup REST API](API.md).
+Myriad Executor and Node Managers are launched automatically by Myriad Scheduler as a response to [flexup REST API]({{site.baseurl}}/docs/myriad-rest-api-methods/#put-api-cluster-flexup).

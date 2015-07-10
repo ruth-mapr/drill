@@ -3,11 +3,11 @@ title: "Myriad REST API Methods"
 parent: "Myriad REST API"
 ---
 * [Cluster](#cluster-api)
-  * [PUT /api/cluster/flexup: Expands the size of cluster with {clusterId}](#put-apiclusterflexup)
-  * [PUT /api/cluster/flexdown: Shrinks the size of cluster with {clusterId}](#put-apiclusterflexdown)
+  * [PUT /api/cluster/flexup: Expands the size of cluster with {clusterId}](#put-api-cluster-flexup)
+  * [PUT /api/cluster/flexdown: Shrinks the size of cluster with {clusterId}](#put-api-cluster-flexdown)
 
 * [State](#state-api)
-  * [GET /api/state: Returns a snapshot of scheduler state](#get-apistate)
+  * [GET /api/state: Returns a snapshot of scheduler state](#get-api-state)
   
 ## Cluster API
 
