@@ -1,3 +1,0 @@
----
-title: "ODBC/JDBC Interfaces"
----
