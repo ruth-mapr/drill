@@ -97,7 +97,7 @@ To configure YARN to use Myriad, please update ```$YARN_HOME/etc/hadoop/yarn-sit
 
 To configure Myriad itself, please add following file to ```$YARN_HOME/etc/hadoop/myriad-default-config.yml```:
 
-```yaml -->
+```yaml
 mesosMaster: 10.141.141.20:5050
 checkpoint: false
 frameworkFailoverTimeout: 43200000
