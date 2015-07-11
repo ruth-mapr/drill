@@ -14,18 +14,19 @@ You are welcome to use any editor you like, however many of the myriad developer
 open myriad.ipr
 ```
 
-
-
 **NOTE:** if you are interested in using eclipse, there is a plugin for that.  Either send in a pull request, or send a message on the dev mail list that you would make use of it.
 
 ## Build instructions
 System requirements:
-* JDK 1.7+
-* Gradle
+
+* JDK 1.7+  
+* Gradle  
 * Hadoop 2.5.0
 
 Myriad requires two components to be built:
+
 * **Myriad Scheduler** - This component plugs into Resource Manager process and negotiates resources from Mesos. It is responsible to launch Node Manager processes via Mesos.
+
 * **Myriad Executor** - This component implements [Mesos Executor](http://mesos.apache.org/api/latest/java/org/apache/mesos/Executor.html) interface. It is launched by Myriad Scheduler via Mesos and runs as a separate process on each mesos-slave. Myriad Executor is responsible for launching Node Manager process as a Mesos Task.
 
 The project is a multi-project build using gradle.  You can go to the `$PROJECT_HOME` (which is where you cloned the git project to) and type `./gradlew build` which will build all projects or you can go into each individual project and build them separately.
