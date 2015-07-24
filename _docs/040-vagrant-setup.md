@@ -9,15 +9,17 @@ You can use following guide to setup a cluster in a virtual machine.
 * Virtualbox
 * Vagrant
 
-To start the cluster run following:
+
+### Starting the Cluster
+To start the cluster, run following:
 
 ```
 vagrant up
 ```
 
-At this point the VM will have a single node mesos cluster running.
+At this point, the VM has a single node mesos cluster running.
 
-To ssh in the cluster run following:
+To ssh into the cluster, run following:
 
 ```
 vagrant ssh
@@ -25,24 +27,25 @@ vagrant ssh
 
 The password for vagrant user is 'vagrant'.
 
-To setup YARN/Hadoop inside VM, run following:
+### Setting up YARN/Hadoop
+To setup YARN/Hadoop inside VM, run the following yarn setup shell files.
 
-```
+1. Run the first yarn setup shell command from the vagrant directory to create a user hduser in group hadoop. Be sure to remember the password that you provide for this user.
+
+   ```
 cd /vagrant
 ./setup-yarn-1.sh
 ```
 
-This will create a user hduser in group hadoop. Remember the password that you provide for this user.
+2. Run the second yarn setup shell command as sudo.
 
-Now, do following:
-
-```
+   ```
 sudo su - hduser
 cd /vagrant
 ./setup-yarn-2.sh
 ```
 
-If everything goes fine you'll see following processes running (process ids will be different):
+The following processes should be running:
 
 ```
 9844 Jps
@@ -51,23 +54,29 @@ If everything goes fine you'll see following processes running (process ids will
 6874 DataNode
 ```
 
-To build myriad scheduler inside VM, you can do following:
+Note: Process IDs are different
+
+
+### Building Myriad Scheduler inside a VM
+To build the Myriad Scheduler inside a VM, run the gradlew build:
 
 ```
 cd /vagrant
 ./gradlew build
 ```
 
-**Dealing with a build failure**
+
+### Troubleshooting Build Failures
+
 If you get a build failure which is not the build itself, but a failure to write to disk.  This can happen when you built outside the vagrant instance first.  Exit the user `hduser` by typing `exit` and build again as the `vagrant` user.   
 
-At this point, myriad's scheduler jar and all the runtime dependencies will be available here: `/vagrant/myriad-scheduler/build/libs/*`. Please copy these jars to `$YARN_HOME/share/hadoop/yarn/lib/`.  The default `$YARN_HOME` is `/usr/local/hadoop/`.
+At this point, myriad's scheduler jar and all the runtime dependencies is available here: `/vagrant/myriad-scheduler/build/libs/*`. Please copy these jars to `$YARN_HOME/share/hadoop/yarn/lib/`.  The default `$YARN_HOME` is `/usr/local/hadoop/`.
 
 ```
 cp /vagrant/myriad-scheduler/build/libs/* /usr/local/hadoop/share/hadoop/yarn/lib/
 ```
 
-The self-contained myriad executor jar will be available here: `/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`. Please copy this jar to `/usr/local/libexec/mesos/`.
+The self-contained myriad executor jar is available here: `/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`. Please copy this jar to `/usr/local/libexec/mesos/`.
 
 ```
 sudo mkdir -p /usr/local/libexec/mesos/
