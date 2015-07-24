@@ -1,0 +1,42 @@
+{% comment %}
+Notes:
+* Other doc attributes: relative_path, url
+* Directories don't matter at all. You don't have to use them.
+* File names don't matter either, except the alphabetical order between them.
+{% endcomment %}
+      
+{% assign page_data = site.data.docs.by_title[page.title] %}
+
+{% capture titles %} {{ page.title }}|{{ page_data.breadcrumbs[0].title}}|{{page_data.breadcrumbs[1].title}}{% endcapture %}
+{% capture titles_array %} {{ titles | split: "|" }} {% endcapture %}
+<aside class="sidebar">
+  <div class="docsidebar">
+    <div class="docsidebarwrapper">
+      <ul style="display: block;">
+      {% for doc0 in site.data.docs.hierarchy %}
+        {% if doc0.children.size == 0 %}
+          <li class="toctree-l1{% if page.title == doc0.title %} current{% endif %}"><a class="reference internal" href="{{ site.baseurl }}{{ doc0.url }}">{{ doc0.title }}</a></li>
+        {% else %}
+          <li class="toctree-l1{% if page.title == doc0.title %} current{% endif %}{%if titles_array contains doc0.title %} current_section {% endif %}"><a href="javascript: void(0);">{{ doc0.title }}</a></li>
+          <ul {% if titles_array contains doc0.title %}class="current_section"{% else %}style="display: none"{% endif %}>
+          {% for doc1 in doc0.children %}
+            {% if doc1.children.size == 0 %}
+              <li class="toctree-l2{% if page.title == doc1.title %} current{% endif %}"><a class="reference internal" href="{{ site.baseurl }}{{ doc1.url }}">{{ doc1.title }}</a></li>
+            {% else %}
+              <li class="toctree-l2{% if page.title == doc1.title %} current{% endif %}"><a href="javascript: void(0);">{{ doc1.title }}</a></li>
+              <ul style="{% if titles_array contains doc1.title%}{%else%}display: none{% endif %}">
+              {% for doc2 in doc1.children %}
+                <li class="toctree-l3{% if page.title == doc2.title %} current{% endif %}"><a class="reference internal" href="{{ site.baseurl }}{{ doc2.url }}">{{ doc2.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</aside>
+

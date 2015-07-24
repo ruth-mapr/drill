@@ -1,0 +1,46 @@
+<div class="bui"></div>
+
+<div id="menu" class="mw">
+<ul>
+  <li class='toc-categories'>
+  <a class="expand-toc-icon" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="logo"><a href="{{ site.baseurl }}/"></a></li>
+  <li class='expand-menu'>
+  <a href="javascript:void(0);"><span class='menu-text'>Menu</span><span class='expand-icon'><i class="fa fa-bars"></i></span></a>
+  </li>
+  <li class='clear-float'></li>
+  <li class="documentation-menu">
+    <a href="{{ site.baseurl }}/docs/">Documentation</a>
+    <ul>
+      {% for doc in site.data.docs.hierarchy %}
+        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li class='nav'>
+    <a href="{{ site.baseurl }}/community-resources/">Community</a>
+    <ul>
+      <li><a href="{{ site.baseurl }}/team/">Team</a></li>
+      <li><a href="{{ site.baseurl }}/mailinglists/">Mailing Lists</a></li>
+      <li><a href="{{ site.baseurl }}/community-resources/">Community Resources</a></li>
+    </ul>
+  </li>
+  <li class='nav'><a href="{{ site.baseurl }}/faq/">FAQ</a></li>
+  <li class='nav'><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+  <li id="twitter-menu-item"><a href="https://twitter.com/apachedrill" title="apachedrill on twitter" target="_blank"><img src="{{ site.baseurl }}/images/twitter_32_26_white.png" alt="twitter logo" align="center"></a> </li>
+  <li class='search-bar'>
+    <form id="drill-search-form">
+      <input type="text" placeholder="Search Apache Drill" id="drill-search-term" />
+      <button type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </li>
+  <li class="d">
+    <a href="{{ site.baseurl }}/download/">
+      <i class="fa fa-cloud-download"></i> Download
+    </a>
+  </li>
+</ul>
+</div>

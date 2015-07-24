@@ -1,0 +1,159 @@
+---
+layout: default
+---
+<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.4/slick.min.css" rel="stylesheet" type="text/css"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.4/slick-theme.min.css" rel="stylesheet" type="text/css"/>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" language="javascript" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.4/slick.min.js" language="javascript" type="text/javascript"></script>
+
+<link href="{{ site.baseurl }}/css/home.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $(".various").fancybox({
+    fitToView: true,
+    autoSize: true,
+    beforeLoad: function(){
+      var url= $(this.element).attr("href");
+      url = url.replace(new RegExp("watch\\?v=", "i"), 'v/');
+      url += '?fs=1&autoplay=1';
+      this.href = url
+    }
+  });
+
+  $('div#video-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true
+  });
+});
+
+</script>
+
+<div id="header" class="mw">
+
+<div class="nav-circlepop">
+  <a class="aLeft prev"><span class="icon-wrap"></span></a>
+  <a class="aRight next"><span class="icon-wrap"></span></a>
+</div>
+
+<div class="dots"></div>
+<div class="scroller">
+  <div class="item">
+    <div class="headlines tc">
+      <div id="video-slider" class="slider">
+        <div class="slide"><a class="various fancybox.iframe" href="//www.youtube.com/embed/6pGeQOXDdD8"><img src="{{ site.baseurl }}/images/thumbnail-65c42i7Xg7Q.jpg" class="thumbnail" /><img src="{{ site.baseurl }}/images/play-mq.png" class="play" /></a><div class="title">The Rise of the Non-Relational Datastore</div></div>
+        <div class="slide"><a class="various fancybox.iframe" href="//www.youtube.com/embed/MYY51kiFPTk"><img src="{{ site.baseurl }}/images/thumbnail-MYY51kiFPTk.jpg" class="thumbnail" /><img src="{{ site.baseurl }}/images/play-mq.png" class="play" /></a><div class="title">Deployment Options and BI Tools</div></div>
+        <div class="slide"><a class="various fancybox.iframe" href="//www.youtube.com/embed/bhmNbH2yzhM"><img src="{{ site.baseurl }}/images/thumbnail-bhmNbH2yzhM.jpg" class="thumbnail" /><img src="{{ site.baseurl }}/images/play-mq.png" class="play" /></a><div class="title">Connecting to Data Sources</div></div>
+        <div class="slide"><a class="various fancybox.iframe" href="//www.youtube.com/embed/6pGeQOXDdD8"><img src="{{ site.baseurl }}/images/thumbnail-6pGeQOXDdD8.jpg" class="thumbnail" /><img src="{{ site.baseurl }}/images/play-mq.png" class="play" /></a><div class="title">High Performance with a JSON Data Model</div></div>
+      </div>
+      <h1 class="main-headline">Apache Drill</h1>
+      <h2 id="sub-headline">Schema-free SQL Query Engine <br class="mobile-break" />for Hadoop, NoSQL and <br class="mobile-break" />Cloud Storage</h2>
+      <a href="{{ site.baseurl }}/download/" class="download-headline btn btn-1 btn-1c"><span>DOWNLOAD NOW</span></a>
+    </div>
+  </div>
+</div>
+
+</div><!-- header -->
+<div class="alertbar">
+  <div class="news">News:</div>{% assign post = site.categories.blog[0] %}<div><a href="{{ post.url | prepend: site.baseurl }}">{% if post.news_title %}{{ post.news_title }}{% else %}{{ post.title }}{% endif %}</a><br/><span>({% include authors.html %})</span></div>{% assign post = site.categories.blog[1] %}<div><a href="{{ post.url | prepend: site.baseurl }}">{% if post.news_title %}{{ post.news_title }}{% else %}{{ post.title }}{% endif %}</a><br/><span>({% include authors.html %})</span></div>
+</div>
+
+<div class="mw introWrapper">
+  <table class="intro" cellpadding="0" cellspacing="0" align="center">
+    <tbody>
+      <tr>
+        <td class="ag">
+          <h1>Agility</h1>
+          <p>Get faster insights without the overhead (data loading, schema creation and maintenance, transformations, etc.)</p>
+        </td>
+        <td class="fl">
+          <h1>Flexibility</h1>
+          <p>Analyze the multi-structured and nested data in non-relational datastores directly without transforming or restricting the data</p>
+        </td>
+        <td class="fam">
+          <h1>Familiarity</h1>
+          <p>Leverage your existing SQL skillsets and BI tools including Tableau, Qlikview, MicroStrategy, Spotfire, Excel and more</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="home-row">
+  <div class="big"><img src="{{ site.baseurl }}/images/home-any.png" style="width:300px" /></div>
+  <div class="description">
+    <h1>Query any non-relational datastore (well, almost...)</h1>
+    <p>Drill supports a variety of NoSQL databases and file systems, including HBase, MongoDB, MapR-DB, HDFS, MapR-FS, Amazon S3, Azure Blob Storage, Google Cloud Storage, Swift, NAS and local files. A single query can join data from multiple datastores. For example, you can join a user profile collection in MongoDB with a directory of event logs in Hadoop.</p>
+    <p>Drill's datastore-aware optimizer automatically restructures a query plan to leverage the datastore's internal processing capabilities. In addition, Drill supports data locality, so it's a good idea to co-locate Drill and the datastore on the same nodes.</p>
+  </div>
+  <div class="small"><img src="{{ site.baseurl }}/images/home-any.png" style="width:300px" /></div>
+</div>
+
+<div class="home-row">
+  <div class="description">
+    <h1>Kiss the overhead goodbye and enjoy data agility</h1>
+    <p>Traditional query engines demand significant IT intervention before data can be queried. Drill gets rid of all that overhead so that users can just query the raw data in-situ. There's no need to load the data, create and maintain schemas, or transform the data before it can be processed. Instead, simply include the path to a Hadoop directory, MongoDB collection or S3 bucket in the SQL query.</p>
+    <p>Drill leverages advanced query compilation and re-compilation techniques to maximize performance without requiring up-front schema knowledge.</p>
+  </div>
+  <div class="small big"><pre>SELECT * FROM <span class="code-underline">dfs.root.`/web/logs`</span>;
+
+SELECT country, count(*)
+  FROM <span class="code-underline">mongodb.web.users</span>
+  GROUP BY country;
+
+SELECT timestamp
+  FROM <span class="code-underline">s3.root.`clicks.json`</span>
+  WHERE user_id = 'jdoe';</pre></div>
+</div>
+
+<div class="home-row">
+  <div class="big"><img src="{{ site.baseurl }}/images/home-json.png" style="width:300px" /></div>
+  <div class="description">
+    <h1>Treat your data like a table even when it's not</h1>
+    <p>Drill features a JSON data model that enables queries on complex/nested data as well as rapidly evolving structures commonly seen in modern applications and non-relational datastores. Drill also provides intuitive extensions to SQL so that you can easily query complex data.
+    <p>Drill is the only columnar query engine that supports complex data. It features an in-memory shredded columnar representation for complex data which allows Drill to achieve columnar speed with the flexibility of an internal JSON document model.</p>
+  </div>
+  <div class="small"><img src="{{ site.baseurl }}/images/home-json.png" style="width:300px" /></div>
+</div>
+
+<div class="home-row">
+  <div class="description">
+    <h1>Keep using the BI tools you love</h1>
+    <p>Drill supports standard SQL. Business users, analysts and data scientists can use standard BI/analytics tools such as Tableau, Qlik, MicroStrategy, Spotfire, SAS and Excel to interact with non-relational datastores by leveraging Drill's JDBC and ODBC drivers. Developers can leverage Drill's simple REST API in their custom applications to create beautiful visualizations.</p>
+    <p>Drill's virtual datasets allow even the most complex, non-relational data to be mapped into BI-friendly structures which users can explore and visualize using their tool of choice.</p>
+  </div>
+  <div class="small big"><img src="{{ site.baseurl }}/images/home-bi.png" style="width:300px" /></div>
+</div>
+
+<div class="home-row">
+  <div class="big"><pre>$ curl &lt;url&gt; -o drill.tgz
+$ tar xzf drill.tgz
+$ cd apache-drill-&lt;version&gt;
+$ bin/drill-embedded</pre></div>
+  <div class="description">
+    <h1>Scale from one laptop to 1000s of servers</h1>
+    <p>We made it easy to download and run Drill on your laptop. It runs on Mac, Windows and Linux, and within a minute or two you'll be exploring your data. When you're ready for prime time, deploy Drill on a cluster of commodity servers and take advantage of the world's most scalable and high performance execution engine.
+    <p>Drill's symmetrical architecture (all nodes are the same) and simple installation make it easy to deploy and operate very large clusters.</p>
+  </div>
+  <div class="small"><pre>$ curl &lt;url&gt; -o drill.tgz
+  $ tar xzf drill.tgz
+  $ cd apache-drill-&lt;version&gt;
+  $ bin/drill-embedded</pre></div>
+</div>
+
+<div class="home-row">
+  <div class="description">
+    <h1>No more waiting for coffee</h1>
+    <p>Drill isn't the world's first query engine, but it's the first that combines both flexibility and speed. To achieve this, Drill features a radically different architecture that enables record-breaking performance without sacrificing the flexibility offered by the JSON document model. Drill's design includes:<ul>
+<li>Columnar execution engine (the first ever to support complex data!)</li>
+<li>Data-driven compilation and recompilation at execution time</li>
+<li>Specialized memory management that reduces memory footprint and eliminates garbage collections</li>
+<li>Locality-aware exeucution that reduces network traffic when Drill is co-located with the datastore</li>
+<li>Advanced cost-based optimizer that pushes processing into the datastore when possible</li></ul></p>
+  </div>
+  <div class="small big"><img src="{{ site.baseurl }}/images/home-coffee.jpg" style="width:300px" /></div>
+</div>
