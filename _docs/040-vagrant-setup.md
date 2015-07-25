@@ -33,17 +33,17 @@ To setup YARN/Hadoop inside VM, run the following yarn setup shell files.
 1. Run the first yarn setup shell command from the vagrant directory to create a user hduser in group hadoop. Be sure to remember the password that you provide for this user.
 
    ```
-cd /vagrant
-./setup-yarn-1.sh
-```
+   cd /vagrant
+   ./setup-yarn-1.sh
+   ```
 
 2. Run the second yarn setup shell command as sudo.
 
    ```
-sudo su - hduser
-cd /vagrant
-./setup-yarn-2.sh
-```
+   sudo su - hduser
+   cd /vagrant
+   ./setup-yarn-2.sh
+   ```
 
 The following processes should be running:
 
