@@ -52,7 +52,7 @@ The following processes should be running:
 6874 DataNode
 ```
 
-Note: Process IDs are different
+Note: Process IDs are different.
 
 
 ### Building Myriad Scheduler inside a VM
