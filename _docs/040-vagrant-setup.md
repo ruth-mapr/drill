@@ -8,7 +8,7 @@ This section provides information for setting up a cluster in a virtual machine.
 1. Start the cluster.
 2. Setup YARN/Hadoop.
 3. Build the Myriad Scheduler.
-4. Get started
+4. Get started.
 
 ## Prerequisities
 * Virtualbox
@@ -69,7 +69,7 @@ Building the Myriad Scheduler involves:
 4. Configuring YARN to use Myriad.
 5. Configuring Myriad.
 
-### Step 1: Run gradlew build
+### Step 1: Run `gradlew build`
 To build the Myriad Scheduler inside a VM, run the gradlew build:
 
 ```
@@ -80,19 +80,22 @@ cd /vagrant
 
 NOTE: If a build failure occurs, the issue is not with the build itself, but a failure to write to disk.  This can happen when you build outside the vagrant instance first.  To resolve this issue, exit the user `hduser` by typing `exit` and build again as the `vagrant` user. 
 
-### Step 2: Copy myriad-scheduler jar files
+### Step 2: Copy the Myriad Scheduler Jar Files
 
 At this point, myriad's scheduler jar and all the runtime dependencies are available in the following location: 
 ```/vagrant/myriad-scheduler/build/libs/*``` 
 
-Copy these jars to `$YARN_HOME/share/hadoop/yarn/lib/`.  The default `$YARN_HOME` is `/usr/local/hadoop/`.
+Copy these myriad scheduler files to `$YARN_HOME/share/hadoop/yarn/lib/`.  The default `$YARN_HOME` is `/usr/local/hadoop/`.
 
 ```
 cp /vagrant/myriad-scheduler/build/libs/* /usr/local/hadoop/share/hadoop/yarn/lib/
 ```
 
-### Step 3: Copy myriad-executor jar files
-The self-contained myriad executor jar is available here: `/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`. Copy this myriad-executor-runnable jar to `/usr/local/libexec/mesos/`.
+### Step 3: Copy Myriad Executor Jar File
+The self-contained myriad executor jar is available at the following location: 
+`/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`. 
+
+Copy the myriad executor jar file to `/usr/local/libexec/mesos/`.
 
 ```
 sudo mkdir -p /usr/local/libexec/mesos/
