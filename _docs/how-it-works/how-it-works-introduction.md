@@ -17,9 +17,10 @@ The following diagram showcases a node running YARN NodeManager as a Mesos Slave
 * Mesos Slave processes advertises all of a node’s resources (8 CPUs, 16 GB RAM) to Mesos Master. 
 * The YARN Node Manager is started as a Mesos Task. This task is allotted (4 CPUs and 8 GB RAM) and the Node Manager is configured to only advertise 3 CPUs and 7 GB RAM. 
 * The Node Manager is also configured to mount the YARN containers under the [cgroup hierarchy]({{ site.baseurl }}/docs/configuring-cgroups) which stems from a Mesos task. For example:
-```bash
-/sys/fs/cgroup/cpu/mesos/node-manager-task-id/container-1
-```
+
+	```bash
+	/sys/fs/cgroup/cpu/mesos/node-manager-task-id/container-1
+	```
 
 ![Node]({{ site.baseurl }}/docs/img/node.png)
 
