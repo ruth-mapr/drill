@@ -158,6 +158,40 @@
             "title": "How It Works Introduction", 
             "url": "/docs/how-it-works-introduction/"
         }, 
+        "Myriad Cluster API": {
+            "breadcrumbs": [
+                {
+                    "title": "Myriad REST API", 
+                    "url": "/docs/myriad-rest-api/"
+                }
+            ], 
+            "children": [], 
+            "next_title": "Myriad State API", 
+            "next_url": "/docs/myriad-state-api/", 
+            "parent": "Myriad REST API", 
+            "previous_title": "Myriad REST API Summary", 
+            "previous_url": "/docs/myriad-rest-api-summary/", 
+            "relative_path": "_docs/api/010-rest-myriad-cluster.md", 
+            "title": "Myriad Cluster API", 
+            "url": "/docs/myriad-cluster-api/"
+        }, 
+        "Myriad Configuration API": {
+            "breadcrumbs": [
+                {
+                    "title": "Myriad REST API", 
+                    "url": "/docs/myriad-rest-api/"
+                }
+            ], 
+            "children": [], 
+            "next_title": "Myriad Webapp", 
+            "next_url": "/docs/myriad-webapp/", 
+            "parent": "Myriad REST API", 
+            "previous_title": "Myriad State API", 
+            "previous_url": "/docs/myriad-state-api/", 
+            "relative_path": "_docs/api/030-rest-myriad-config.md", 
+            "title": "Myriad Configuration API", 
+            "url": "/docs/myriad-configuration-api/"
+        }, 
         "Myriad Configuration Properties": {
             "breadcrumbs": [
                 {
@@ -191,7 +225,7 @@
                     "parent": "Myriad Development", 
                     "previous_title": "Myriad Development", 
                     "previous_url": "/docs/myriad-development/", 
-                    "relative_path": "_docs/100-myriad-dev-setup.md", 
+                    "relative_path": "_docs/100-myriad-development-setup.md", 
                     "title": "Myriad Development Setup", 
                     "url": "/docs/myriad-development-setup/"
                 }
@@ -201,7 +235,7 @@
             "parent": "", 
             "previous_title": "Myriad Webapp Setup", 
             "previous_url": "/docs/myriad-webapp-setup/", 
-            "relative_path": "_docs/090-myriad-dev.md", 
+            "relative_path": "_docs/090-myriad-development.md", 
             "title": "Myriad Development", 
             "url": "/docs/myriad-development/"
         }, 
@@ -218,7 +252,7 @@
             "parent": "Myriad Development", 
             "previous_title": "Myriad Development", 
             "previous_url": "/docs/myriad-development/", 
-            "relative_path": "_docs/100-myriad-dev-setup.md", 
+            "relative_path": "_docs/100-myriad-development-setup.md", 
             "title": "Myriad Development Setup", 
             "url": "/docs/myriad-development-setup/"
         }, 
@@ -233,18 +267,69 @@
                         }
                     ], 
                     "children": [], 
-                    "next_title": "Myriad Webapp", 
-                    "next_url": "/docs/myriad-webapp/", 
+                    "next_title": "Myriad Cluster API", 
+                    "next_url": "/docs/myriad-cluster-api/", 
                     "parent": "Myriad REST API", 
                     "previous_title": "Myriad REST API", 
                     "previous_url": "/docs/myriad-rest-api/", 
                     "relative_path": "_docs/060-myriad-rest-api-methods.md", 
-                    "title": "Myriad REST API Methods", 
-                    "url": "/docs/myriad-rest-api-methods/"
+                    "title": "Myriad REST API Summary", 
+                    "url": "/docs/myriad-rest-api-summary/"
+                }, 
+                {
+                    "breadcrumbs": [
+                        {
+                            "title": "Myriad REST API", 
+                            "url": "/docs/myriad-rest-api/"
+                        }
+                    ], 
+                    "children": [], 
+                    "next_title": "Myriad State API", 
+                    "next_url": "/docs/myriad-state-api/", 
+                    "parent": "Myriad REST API", 
+                    "previous_title": "Myriad REST API Summary", 
+                    "previous_url": "/docs/myriad-rest-api-summary/", 
+                    "relative_path": "_docs/api/010-rest-myriad-cluster.md", 
+                    "title": "Myriad Cluster API", 
+                    "url": "/docs/myriad-cluster-api/"
+                }, 
+                {
+                    "breadcrumbs": [
+                        {
+                            "title": "Myriad REST API", 
+                            "url": "/docs/myriad-rest-api/"
+                        }
+                    ], 
+                    "children": [], 
+                    "next_title": "Myriad Configuration API", 
+                    "next_url": "/docs/myriad-configuration-api/", 
+                    "parent": "Myriad REST API", 
+                    "previous_title": "Myriad Cluster API", 
+                    "previous_url": "/docs/myriad-cluster-api/", 
+                    "relative_path": "_docs/api/020-rest-myriad-state.md", 
+                    "title": "Myriad State API", 
+                    "url": "/docs/myriad-state-api/"
+                }, 
+                {
+                    "breadcrumbs": [
+                        {
+                            "title": "Myriad REST API", 
+                            "url": "/docs/myriad-rest-api/"
+                        }
+                    ], 
+                    "children": [], 
+                    "next_title": "Myriad Webapp", 
+                    "next_url": "/docs/myriad-webapp/", 
+                    "parent": "Myriad REST API", 
+                    "previous_title": "Myriad State API", 
+                    "previous_url": "/docs/myriad-state-api/", 
+                    "relative_path": "_docs/api/030-rest-myriad-config.md", 
+                    "title": "Myriad Configuration API", 
+                    "url": "/docs/myriad-configuration-api/"
                 }
             ], 
-            "next_title": "Myriad REST API Methods", 
-            "next_url": "/docs/myriad-rest-api-methods/", 
+            "next_title": "Myriad REST API Summary", 
+            "next_url": "/docs/myriad-rest-api-summary/", 
             "parent": "", 
             "previous_title": "Vagrant Setup", 
             "previous_url": "/docs/vagrant-setup/", 
@@ -252,7 +337,7 @@
             "title": "Myriad REST API", 
             "url": "/docs/myriad-rest-api/"
         }, 
-        "Myriad REST API Methods": {
+        "Myriad REST API Summary": {
             "breadcrumbs": [
                 {
                     "title": "Myriad REST API", 
@@ -260,14 +345,14 @@
                 }
             ], 
             "children": [], 
-            "next_title": "Myriad Webapp", 
-            "next_url": "/docs/myriad-webapp/", 
+            "next_title": "Myriad Cluster API", 
+            "next_url": "/docs/myriad-cluster-api/", 
             "parent": "Myriad REST API", 
             "previous_title": "Myriad REST API", 
             "previous_url": "/docs/myriad-rest-api/", 
             "relative_path": "_docs/060-myriad-rest-api-methods.md", 
-            "title": "Myriad REST API Methods", 
-            "url": "/docs/myriad-rest-api-methods/"
+            "title": "Myriad REST API Summary", 
+            "url": "/docs/myriad-rest-api-summary/"
         }, 
         "Myriad Remote Distribution": {
             "breadcrumbs": [
@@ -285,6 +370,23 @@
             "relative_path": "_docs/configuration/020-myriad-remote-distribution-configuration.md", 
             "title": "Myriad Remote Distribution", 
             "url": "/docs/myriad-remote-distribution/"
+        }, 
+        "Myriad State API": {
+            "breadcrumbs": [
+                {
+                    "title": "Myriad REST API", 
+                    "url": "/docs/myriad-rest-api/"
+                }
+            ], 
+            "children": [], 
+            "next_title": "Myriad Configuration API", 
+            "next_url": "/docs/myriad-configuration-api/", 
+            "parent": "Myriad REST API", 
+            "previous_title": "Myriad Cluster API", 
+            "previous_url": "/docs/myriad-cluster-api/", 
+            "relative_path": "_docs/api/020-rest-myriad-state.md", 
+            "title": "Myriad State API", 
+            "url": "/docs/myriad-state-api/"
         }, 
         "Myriad Webapp": {
             "breadcrumbs": [], 
@@ -310,8 +412,8 @@
             "next_title": "Myriad Webapp Setup", 
             "next_url": "/docs/myriad-webapp-setup/", 
             "parent": "", 
-            "previous_title": "Myriad REST API Methods", 
-            "previous_url": "/docs/myriad-rest-api-methods/", 
+            "previous_title": "Myriad Configuration API", 
+            "previous_url": "/docs/myriad-configuration-api/", 
             "relative_path": "_docs/070-myriad-webapp.md", 
             "title": "Myriad Webapp", 
             "url": "/docs/myriad-webapp/"
@@ -534,18 +636,69 @@
                         }
                     ], 
                     "children": [], 
-                    "next_title": "Myriad Webapp", 
-                    "next_url": "/docs/myriad-webapp/", 
+                    "next_title": "Myriad Cluster API", 
+                    "next_url": "/docs/myriad-cluster-api/", 
                     "parent": "Myriad REST API", 
                     "previous_title": "Myriad REST API", 
                     "previous_url": "/docs/myriad-rest-api/", 
                     "relative_path": "_docs/060-myriad-rest-api-methods.md", 
-                    "title": "Myriad REST API Methods", 
-                    "url": "/docs/myriad-rest-api-methods/"
+                    "title": "Myriad REST API Summary", 
+                    "url": "/docs/myriad-rest-api-summary/"
+                }, 
+                {
+                    "breadcrumbs": [
+                        {
+                            "title": "Myriad REST API", 
+                            "url": "/docs/myriad-rest-api/"
+                        }
+                    ], 
+                    "children": [], 
+                    "next_title": "Myriad State API", 
+                    "next_url": "/docs/myriad-state-api/", 
+                    "parent": "Myriad REST API", 
+                    "previous_title": "Myriad REST API Summary", 
+                    "previous_url": "/docs/myriad-rest-api-summary/", 
+                    "relative_path": "_docs/api/010-rest-myriad-cluster.md", 
+                    "title": "Myriad Cluster API", 
+                    "url": "/docs/myriad-cluster-api/"
+                }, 
+                {
+                    "breadcrumbs": [
+                        {
+                            "title": "Myriad REST API", 
+                            "url": "/docs/myriad-rest-api/"
+                        }
+                    ], 
+                    "children": [], 
+                    "next_title": "Myriad Configuration API", 
+                    "next_url": "/docs/myriad-configuration-api/", 
+                    "parent": "Myriad REST API", 
+                    "previous_title": "Myriad Cluster API", 
+                    "previous_url": "/docs/myriad-cluster-api/", 
+                    "relative_path": "_docs/api/020-rest-myriad-state.md", 
+                    "title": "Myriad State API", 
+                    "url": "/docs/myriad-state-api/"
+                }, 
+                {
+                    "breadcrumbs": [
+                        {
+                            "title": "Myriad REST API", 
+                            "url": "/docs/myriad-rest-api/"
+                        }
+                    ], 
+                    "children": [], 
+                    "next_title": "Myriad Webapp", 
+                    "next_url": "/docs/myriad-webapp/", 
+                    "parent": "Myriad REST API", 
+                    "previous_title": "Myriad State API", 
+                    "previous_url": "/docs/myriad-state-api/", 
+                    "relative_path": "_docs/api/030-rest-myriad-config.md", 
+                    "title": "Myriad Configuration API", 
+                    "url": "/docs/myriad-configuration-api/"
                 }
             ], 
-            "next_title": "Myriad REST API Methods", 
-            "next_url": "/docs/myriad-rest-api-methods/", 
+            "next_title": "Myriad REST API Summary", 
+            "next_url": "/docs/myriad-rest-api-summary/", 
             "parent": "", 
             "previous_title": "Vagrant Setup", 
             "previous_url": "/docs/vagrant-setup/", 
@@ -577,8 +730,8 @@
             "next_title": "Myriad Webapp Setup", 
             "next_url": "/docs/myriad-webapp-setup/", 
             "parent": "", 
-            "previous_title": "Myriad REST API Methods", 
-            "previous_url": "/docs/myriad-rest-api-methods/", 
+            "previous_title": "Myriad Configuration API", 
+            "previous_url": "/docs/myriad-configuration-api/", 
             "relative_path": "_docs/070-myriad-webapp.md", 
             "title": "Myriad Webapp", 
             "url": "/docs/myriad-webapp/"
@@ -599,7 +752,7 @@
                     "parent": "Myriad Development", 
                     "previous_title": "Myriad Development", 
                     "previous_url": "/docs/myriad-development/", 
-                    "relative_path": "_docs/100-myriad-dev-setup.md", 
+                    "relative_path": "_docs/100-myriad-development-setup.md", 
                     "title": "Myriad Development Setup", 
                     "url": "/docs/myriad-development-setup/"
                 }
@@ -609,7 +762,7 @@
             "parent": "", 
             "previous_title": "Myriad Webapp Setup", 
             "previous_url": "/docs/myriad-webapp-setup/", 
-            "relative_path": "_docs/090-myriad-dev.md", 
+            "relative_path": "_docs/090-myriad-development.md", 
             "title": "Myriad Development", 
             "url": "/docs/myriad-development/"
         }, 
