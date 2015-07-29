@@ -5,7 +5,7 @@ parent: "Configuration"
 
 A node within a cluster is the location where tasks are run. The tasks are launched with help of a daemon which resides inside the node. This daemon, in the case of Mesos, is Mesos Slave, and in case of YARN, is NodeManager.
 
-The cgroups Linux kernel feature allows aggregating/partitioning a set of tasks and their future children into hierarchical groups with respect to one or more subsystems. For example: When cgroups is enabled for the cpu subsystem, and a task is launched by Mesos Slave, it will go under the hierarchy:
+The cgroups Linux kernel feature allows aggregating/partitioning a set of tasks and their future children into hierarchical groups with respect to one or more subsystems. For example: When cgroups are enabled for the cpu subsystem, and a task is launched by Mesos Slave, it goes under the following hierarchy:
 
 ```bash
 /sys/fs/cgroup/cpu/mesos/<parent-task-id>
@@ -30,9 +30,16 @@ To enable cgroups for mesos-slave, start the slave with following flag:
 
 ### Enabling cgroups for YARN NodeManager
 
-To enable cgroups for YARN NodeManager, add following to ```$YARN_HOME/etc/hadoop/yarn-site.xml```:
+To enable cgroups for YARN NodeManager:
+
+1. Edit the `$YARN_HOME/etc/hadoop/yarn-site.xml` file.
+2. Edit the `$YARN_HOME/etc/hadoop/myriad-default-config.yml` file.
+
+
+Modify the `$YARN_HOME/etc/hadoop/yarn-site.xml` file by adding the following content:  
 
 ```xml
+
 <property>
     <description>who will execute(launch) the containers.</description>
     <name>yarn.nodemanager.container-executor.class</name>
@@ -63,9 +70,12 @@ To enable cgroups for YARN NodeManager, add following to ```$YARN_HOME/etc/hadoo
     <name>yarn.nodemanager.linux-container-executor.path</name>
     <value>${yarn.home}/bin/container-executor</value>
 </property>
+
+
 ```
 
-And, following to ```$YARN_HOME/etc/hadoop/myriad-default-config.yml```:
+Modify the `$YARN_HOME/etc/hadoop/myriad-default-config.yml` file by adding the following content:
+
 
 ```yaml
 ...
