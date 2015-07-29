@@ -10,17 +10,20 @@ Running two resource managers independently results in a statically partitioned 
 
 ## Advertising resources: Mesos Slave and YARN’s Node Manager
 
-Mesos Slave and YARN’s Node Manager are processes that run on the host OS, both advertises available resources to Mesos Master and YARN’s Resource Manager respectively. Each process can be configured to advertise a subset of resources. This ability is leveraged, in conjunction with cgroups, to allow Mesos Slave and YARN’s Node Manager to co-exist on a node. The following diagram showcases a node running YARN NodeManager as a Mesos Slave task:
+Mesos Slave and YARN’s Node Manager are processes that run on the host OS, both advertises available resources to Mesos Master and YARN’s Resource Manager respectively. Each process can be configured to advertise a subset of resources. This ability is leveraged, in conjunction with cgroups, to allow Mesos Slave and YARN’s Node Manager to co-exist on a node. 
 
-![Node]({{ site.baseurl }}/docs/img/node.png)
+The following diagram showcases a node running YARN NodeManager as a Mesos Slave task:
 
 * Mesos Slave processes advertises all of a node’s resources (8 CPUs, 16 GB RAM) to Mesos Master. 
 * The YARN Node Manager is started as a Mesos Task. This task is allotted (4 CPUs and 8 GB RAM) and the Node Manager is configured to only advertise 3 CPUs and 7 GB RAM. 
 * The Node Manager is also configured to mount the YARN containers under the [cgroup hierarchy]({{ site.baseurl }}/docs/configuring-cgroups) which stems from a Mesos task. For example:
-
 ```bash
 /sys/fs/cgroup/cpu/mesos/node-manager-task-id/container-1
 ```
+
+![Node]({{ site.baseurl }}/docs/img/node.png)
+
+
 
 
 ## High Level Design
