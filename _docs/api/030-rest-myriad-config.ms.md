@@ -1,72 +1,27 @@
 ---
-title: "Myriad REST API Methods"
+title: "Myriad Configuration API"
 parent: "Myriad REST API"
 ---
-* [Cluster](#cluster-api)
-  * [PUT /api/cluster/flexup: Expands the size of cluster with {clusterId}](#put-api-cluster-flexup)
-  * [PUT /api/cluster/flexdown: Shrinks the size of cluster with {clusterId}](#put-api-cluster-flexdown)
 
-* [State](#state-api)
-  * [GET /api/state: Returns a snapshot of scheduler state](#get-api-state)
-  
-## Cluster API
+## Description
+The Configuration REST API is used to retrieve configuration information.
 
-### PUT /api/cluster/flexup
-Expands the size of the cluster
 
-Request:
-```json
-{
-  "instances":1, "profile": "small"
-}
+## HTTP Method and URI
+
+```
+GET /api/config
 ```
 
-Response:
-```
-200 OK
-```
 
-### PUT /api/cluster/flexdown
-Shrinks the size of cluster
+### Request Example
 
-Request:
-```json
-{
-  "instances":1
-}
+```
+TBD
 ```
 
-Response:
-```
-200 OK
-```
+### Response Example
 
-## State API
-
-### GET /api/state
-
-Response:
-```json
-{
-  "pendingTasks":[
-
-  ],
-  "stagingTasks":[
-
-  ],
-  "activeTasks":[
-
-  ],
-  "killableTasks":[
-
-  ]
-}
-```
-## Configuration API
-
-### GET /api/config
-
-Sample Response:
 ```json
 {
     "mesosMaster": "10.10.30.131:5050",
