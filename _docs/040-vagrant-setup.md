@@ -78,7 +78,7 @@ cd /vagrant
 ```
 
 
-NOTE: If a build failure occurs, the issue is not with the build itself, but a failure to write to disk.  This can happen when you build outside the vagrant instance first.  To resolve this issue, exit the user `hduser` by typing `exit` and build again as the `vagrant` user. 
+{% include startnote.html %}If a build failure occurs, the issue is not with the build itself, but a failure to write to disk.  This can happen when you build outside the vagrant instance first.  To resolve this issue, exit the user `hduser` by typing `exit` and build again as the `vagrant` user. {% include endnote.html %}
 
 ### Step 2: Copy the Myriad Scheduler Jar Files
 
@@ -93,7 +93,7 @@ cp /vagrant/myriad-scheduler/build/libs/* /usr/local/hadoop/share/hadoop/yarn/li
 
 ### Step 3: Copy the Myriad Executor Jar File
 The self-contained myriad executor jar is available at the following location: 
-`/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`. 
+`/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`
 
 Copy the myriad executor jar file to `/usr/local/libexec/mesos/`.
 

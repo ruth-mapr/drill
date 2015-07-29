@@ -22,7 +22,7 @@ During the lifecycle of this task, if it launches one or more children, they get
 
 ### Enabling cgroups for mesos-slave
 
-To enable cgroups for mesos-slave, start the slave with following flag:
+To enable cgroups for mesos-slave, start the slave with the following flag:
 
 ```bash
 --isolation=cgroups/cpu,cgroups/mem
@@ -75,7 +75,6 @@ Modify the `$YARN_HOME/etc/hadoop/yarn-site.xml` file by adding the following co
 ```
 
 Modify the `$YARN_HOME/etc/hadoop/myriad-default-config.yml` file by adding the following content:
-
 
 ```yaml
 ...
