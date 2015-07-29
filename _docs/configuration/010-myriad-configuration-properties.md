@@ -4,7 +4,7 @@ parent: "Configuration"
 ---
 
 Myriad Scheduler (the component that plugs into Resource Manager process) exposes configuration properties that administrators can modify. 
-It expects a file ```myriad-config-default.yml``` to be present on the Resource Manager's java classpath. 
+It expects a file `myriad-config-default.yml` to be present on the Resource Manager's java classpath. 
 
 Currently, this file is built into Myriad Scheduler jar. So, if you need to modify some of the properties in this file, modify them **before** building Myriad Scheduler.
 
