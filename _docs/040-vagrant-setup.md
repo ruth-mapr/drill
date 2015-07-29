@@ -91,7 +91,7 @@ Copy these myriad scheduler files to `$YARN_HOME/share/hadoop/yarn/lib/`.  The d
 cp /vagrant/myriad-scheduler/build/libs/* /usr/local/hadoop/share/hadoop/yarn/lib/
 ```
 
-### Step 3: Copy Myriad Executor Jar File
+### Step 3: Copy the Myriad Executor Jar File
 The self-contained myriad executor jar is available at the following location: 
 `/vagrant/myriad-executor/build/libs/myriad-executor-runnable-x.y.z.jar`. 
 
@@ -124,7 +124,7 @@ To configure YARN to use Myriad, update ```$YARN_HOME/etc/hadoop/yarn-site.xml``
 </property>
 ```
 
-### Step 5: Configure Myriad
+### Step 5: Configure Myriad Defaults
 To configure Myriad itself, update ```$YARN_HOME/etc/hadoop/myriad-default-config.yml``` with the following content:
 
 

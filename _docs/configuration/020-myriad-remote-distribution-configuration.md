@@ -5,52 +5,73 @@ parent: "Configuration"
 
 The Myriad Scheduler can be configured to automatically download and run the hadoop yarn binaries and get the hadoop 
 configuration from the resource manager. This means you won't have to install and configure hadoop yarn on each machine. 
-Note this is a very new feature and the configuration options may change dramatically in the future.
+NOTE: This is a very new feature and the configuration options may change dramatically in the future.
 
-## Myriad Remote Distribution Bundle Creation
 
-We will assume you are using hadoop-2.5.0 downloaded from hadoop.apache.org.  Specific vendor versions should work but 
-may require additional steps.  We will also assume hadoop is installed in `/opt/hadoop-2.5.0`, adjust this path to fit 
-your installation.
+## Assumptions
+The following are assumptions about your environment:
 
-First configure the Resource Manager as normal.
+* You are using hadoop-2.5.0 downloaded from hadoop.apache.org. Specific vendor versions should work but 
+may require additional steps.  
+* Hadoop is installed in `/opt/hadoop-2.5.0`. This path may need to be modified to conform your installation.
 
-At this point, from the project root you build myriad with the commands:
+## Building the Myriad Remote Distribution Bundle
+Before building Myriad, configure the Resource Manager as you normally would. Building Myriad involves:
+
+1. Running `./gradlew build`.
+2. Copying the Myriad Scheduler jar files in your YARN classpath.
+3. Placing the Myriad Executor jar files in HDFS.
+4. Configuring the Myriad default configuration file.
+5. Configuring the YARN XML file.
+6. Creating the tarball.
+
+
+
+### Step 1: Run `gradlew build`
+From the project root, build Myriad with the following command:
 
 ```
 ./gradlew build  
 ```
 
-and copy the jars and config onto your yarn classpath:
+### Step 2: Copy the Myriad Schedule Jar Files
+Copy the jar files and configuration .yml file onto your YARN classpath:
 
 ```
 cp myriad-scheduler/build/libs/*.jar /opt/hadoop-2.5.0/share/hadoop/yarn/lib/
 cp myriad-scheduler/src/main/resources/myriad-config-default.yml /opt/hadoop-2.5.0/share/hadoop/yarn/lib/
 ```
 
-You will also need to place `myriad-executor-runnable-x.x.x.jar` in hdfs
+### Step 3: Put the Myriad Executor Jar File
+Put the `myriad-executor-runnable-x.x.x.jar` file in HDFS.
 
 ```
 hadoop fs -put myriad-executor/build/libs/myriad-executor-runnable-0.0.1.jar /dist
 ```
 
-Edit `/opt/hadoop/etc/hadoop/myriad-config-default`.  For standard configuration see 
-[myriad-configuration]({{site.baseurl}}/docs/myriad-configuration-properties/myriad-configuration.md).  To enable remote binary distribution you must set the following options:
+### Step 4: Configure the Myriad Configuration File
+Edit `/opt/hadoop/etc/hadoop/myriad-config-default` to configure the default parameters.  For a standard configuration,  see [myriad-configuration]({{site.baseurl}}/docs/myriad-configuration-properties/myriad-configuration.md).  To enable remote binary distribution, you must set the following options:
 
-```YAML
-frameworkSuperUser: admin # Must be root or have passwordless sudo on all nodes!
-frameworkUser: hduser # Should be the same user running the resource manager.
-                      # Must exist on all nodes and be in the 'hadoop' group
+```
+
+frameworkSuperUser: admin     # Must be root or have passwordless sudo on all nodes!
+frameworkUser: hduser         # Should be the same user running the resource manager.
+                              # Must exist on all nodes and be in the 'hadoop' group
 executor:  
   nodeManagerUri: hdfs://namenode:port/dist/hadoop-2.5.0.tar.gz  
   path: hdfs://namenode:port/dist/myriad-executor-runnable-0.0.1.jar
 yarnEnvironment:  
-  YARN_HOME: hadoop-2.5.0 # This should be relative if nodeManagerUri is set  
+  YARN_HOME: hadoop-2.5.0     # This should be relative if nodeManagerUri is set  
+  
 ```
+
+### Step 5: Configure the YARN XML File
 
 Configure `/opt/hadoop-2.5.0/etc/hadoop/yarn-site.xml` as instructed in: [myriad-configuration]({{site.baseurl}}/docs/myriad-configuration-properties/myriad-configuration.md).
 
-Create the tarball and place it in hdfs:
+
+### Step 6: Create the Tarball
+Create the tarball and place it in HDFS:
 
 ```
 cd ~
