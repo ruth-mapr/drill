@@ -3,10 +3,10 @@ title: "Myriad Configuration Properties"
 parent: "Configuration"
 ---
 
-Myriad Scheduler (the component that plugs into Resource Manager process), exposes configuration properties that admins can modify. 
+Myriad Scheduler (the component that plugs into Resource Manager process) exposes configuration properties that administrators can modify. 
 It expects a file ```myriad-config-default.yml``` to be present on the Resource Manager's java classpath. 
 
-Currently, this file is built into Myriad Scheduler jar. So, if you need to modify some of the properties in this file, please modify them **before** building Myriad Scheduler.
+Currently, this file is built into Myriad Scheduler jar. So, if you need to modify some of the properties in this file, modify them **before** building Myriad Scheduler.
 
 ## Properties
 
@@ -70,22 +70,22 @@ Currently, this file is built into Myriad Scheduler jar. So, if you need to modi
     executor:
       jvmMaxMemoryMB: 256   # Xmx for myriad's executor that launches Node Manager.
       path: file://localhost/usr/local/libexec/mesos/myriad-executor-runnable-0.0.1.jar  # Path for the myriad's executor binary.
-                                                                            # Also supports, hdfs:// notation.
-  # These are for remote distribution. Hdfs is assumed, but http, file, and ftp are also possible.
-  # path: hdfs://namenode:port/dist/myriad-executor-runnable-x.x.x.jar # Path for the myriad's executor binary. 
-  # nodeManagerUri: hdfs://namenode:port/dist/hadoop-2.5.0.tar.gz # the uri to d/l hadoop from   # Path to the Hadoop tarball
+                    # Also supports, hdfs:// notation.
+      # These are for remote distribution. Hdfs is assumed, but http, file, and ftp are also possible.
+      # path: hdfs://namenode:port/dist/myriad-executor-runnable-x.x.x.jar # Path for the myriad's executor binary. 
+      # nodeManagerUri: hdfs://namenode:port/dist/hadoop-2.5.0.tar.gz # the uri to d/l hadoop from   # Path to the Hadoop tarball
 
-# Environment variables required to launch Node Manager process. Admin can also pass other environment variables to NodeManager.
-yarnEnvironment:
-  YARN_HOME: /usr/local/hadoop # Or /opt/mapr/hadoop/hadoop-2.5.1/ if using MapR's Hadoop
-  # YARN_HOME: hadoop-2.5.0 # Should be relative nodeManagerUri is set
-  YARN_NODEMANAGER_OPTS: -Dnodemanager.resource.io-spindles=4.0 # Required only if using MapR's Hadoop
-  # JAVA_HOME: /usr/lib/jvm/java-default # System dependent, but sometimes necessary
+    # Environment variables required to launch Node Manager process. Admin can also pass other environment variables to NodeManager.
+    yarnEnvironment:
+      YARN_HOME: /usr/local/hadoop # Or /opt/mapr/hadoop/hadoop-2.5.1/ if using MapR's Hadoop
+      # YARN_HOME: hadoop-2.5.0 # Should be relative nodeManagerUri is set
+      YARN_NODEMANAGER_OPTS: -Dnodemanager.resource.io-spindles=4.0 # Required only if using MapR's Hadoop
+      # JAVA_HOME: /usr/lib/jvm/java-default # System dependent, but sometimes necessary
 
-# Authentication principal for Myriad's mesos framework
-mesosAuthenticationPrincipal: some_principal
+    # Authentication principal for Myriad's mesos framework
+    mesosAuthenticationPrincipal: some_principal
 
-# Authentication secret filename for Myriad's mesos framework
-mesosAuthenticationSecretFilename: /path/to/secret/filename
+    # Authentication secret filename for Myriad's mesos framework
+    mesosAuthenticationSecretFilename: /path/to/secret/filename
 
 ```
