@@ -69,8 +69,9 @@ Currently, this file is built into Myriad Scheduler jar. So, if you need to modi
                             # configures yarn-site.xml to attach YARN's cgroups under Mesos' cgroup hierarchy.
     executor:
       jvmMaxMemoryMB: 256   # Xmx for myriad's executor that launches Node Manager.
-      path: file://localhost/usr/local/libexec/mesos/myriad-executor-runnable-0.0.1.jar  # Path for the myriad's executor binary.
-                    # Also supports, hdfs:// notation.
+      path: file://localhost/usr/local/libexec/mesos/myriad-executor-runnable-0.0.1.jar  
+                            # Path for the myriad's executor binary.
+                            # Also supports, hdfs:// notation.
       # These are for remote distribution. Hdfs is assumed, but http, file, and ftp are also possible.
       # path: hdfs://namenode:port/dist/myriad-executor-runnable-x.x.x.jar # Path for the myriad's executor binary. 
       # nodeManagerUri: hdfs://namenode:port/dist/hadoop-2.5.0.tar.gz # the uri to d/l hadoop from   # Path to the Hadoop tarball
