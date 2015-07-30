@@ -84,7 +84,7 @@ To deploy Myriad Executor:
 1. Build Myriad Executor
 2. Copy myriad-executor-runnable-xxx.jar from `PROJECT_HOME/myriad-executor/build/libs/` to each mesos slave's `/usr/local/libexec/mesos` directory. 
 
-{% include startnode.html %}For advanced users, you can also copy myriad-executor-runnable-xxx.jar to any other directory on slave filesystem or it can be copied to HDFS as well. In either case, you needs to update the executor's path property in myriad-config-default.yml file and prepend the path with either `file://` or `hdfs://`, as appropriate.  {% include endnode.html %}
+{% include startnote.html %}For advanced users, you can also copy myriad-executor-runnable-xxx.jar to any other directory on slave filesystem or it can be copied to HDFS as well. In either case, you needs to update the executor's path property in myriad-config-default.yml file and prepend the path with either `file://` or `hdfs://`, as appropriate.  {% include endnote.html %}
 
 ### Running Myriad Scheduler
 To run the Myriad Scheduler:
