@@ -3,29 +3,33 @@ title: "Myriad Webapp Setup"
 parent: "Myriad Webapp"
 ---
 
-The Myriad webapp is a [React](http://facebook.github.io/react/) single page application served by Jetty embedded in the myriad jar.
+The Myriad webapp is a [React](http://facebook.github.io/react/) single page application served by Jetty embedded in the Myriad jar.
 
-## Building
+## Building the Webapp
 
-The app uses [NPM](https://www.npmjs.com/) to manage depencies and [Gulp](http://gulpjs.com/) to assemble the distribution. 
-The app is served from the webapp/public directory. 
-To get setup, install `npm` and `gulp` and from the webapp directory execute
+The application uses [NPM](https://www.npmjs.com/) to manage dependencies and [Gulp](http://gulpjs.com/) to assemble the distribution. The application is served from the `webapp/public` directory. 
+
+To get setup, install `npm` and `gulp` from the webapp directory by executing the following:
 
 ```
 npm install
 gulp
 ```
 
-## Developing
+## Building a Development Server
 
-The gulpfile contains a dev target that launches a node.js webserver and watches the webapp files, re-assembling when
-files change. To launch simply run
+The gulp file contains a dev target that launches a node.js webserver, watches the webapp files, and re-assembles them when files change. 
+
+To launch, run the following:
 
 ```
 gulp dev
 ```
 
-A browser window should open with the site loaded. If not, it uses [port 8888](http://localhost:8888) 
-It is helpful to have myriad setup in Vagrant locally so the api is available. Default values are coded into
-the dashboard if Myriad api isn't available.
+A browser window should open with the site loaded. If not, specify your localhost with port 8888. 
+```
+http://localhost:8888
+```
+
+{% include startnote.html %}It is helpful to have Myriad setup in Vagrant locally so the API is available. Default values are coded into the dashboard if the Myriad API isn't available.{% include endnote.html %}
 
