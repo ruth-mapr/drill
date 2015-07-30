@@ -117,7 +117,11 @@ export MESOS_NATIVE_JAVA_LIBRARY=/usr/local/lib/libmesos.so
 </property>
 ```
 
-* Optionally, to enable cgroups, add the following to the `yarn-site.xml` file:
+* Optionally, to enable cgroups:
+ 	1. Modify the `yarn-site.xml` file.
+ 	2. Modify the `$YARN_HOME/etc/hadoop/myriad-config-default.yml` file.
+
+To modify the `yarn-site.xml` file, add the following:
 
 ```xml
 <!-- Cgroups specific configuration -->
@@ -153,7 +157,7 @@ export MESOS_NATIVE_JAVA_LIBRARY=/usr/local/lib/libmesos.so
 </property>
 ```
 
-And, following to `$YARN_HOME/etc/hadoop/myriad-config-default.yml`:
+To modify the `$YARN_HOME/etc/hadoop/myriad-config-default.yml` file, add the following:
 
 ```yaml
 ...
@@ -162,7 +166,7 @@ nodemanager:
 ...
 ```
 
-* Start Resource Manager. Myriad Scheduler will run inside Resource Manager as a plugin.
+* Start the Resource Manager. Myriad Scheduler runs inside Resource Manager as a plugin.
 
 ```bash
 yarn-daemon.sh start resourcemanager
